@@ -1,9 +1,8 @@
 import { redirect } from "next/navigation";
 
 /**
- * Serves the static site under /public. "/" redirects to the real homepage
- * (multi-page static HTML, not a React tree).
+ * "/" → /index.html (Claude multi-page static site in /public).
  */
 export default function Home() {
-  redirect("/Home.html");
+  redirect("/index.html");
 }
