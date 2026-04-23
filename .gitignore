@@ -24,7 +24,3 @@ yarn-error.log*
 
 # testing
 coverage/
-
-# large media (use CDN or Git LFS if you need these in-repo)
-*.mov
-*.mp4
