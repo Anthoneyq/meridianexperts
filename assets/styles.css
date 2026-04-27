@@ -2125,3 +2125,88 @@ body { color: var(--slate); }
   color: var(--slate);
   max-width: 44ch;
 }
+
+/* ============================================================
+   PRACTICE → MATTERS cross-link
+   Small "See it in practice →" footer under each practice block.
+============================================================ */
+.practice-detail__see {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(96,119,133,0.18);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+.practice-detail__see a {
+  color: var(--horizon);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.practice-detail__see a:hover {
+  border-bottom-color: var(--horizon);
+}
+
+/* MATTERS filter pills */
+.matters-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--silver);
+}
+.matters-filter__label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--steel);
+  align-self: center;
+  margin-right: 0.5rem;
+}
+.matters-filter__pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid var(--silver);
+  background: var(--off-white);
+  color: var(--slate);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  border-radius: 2px;
+}
+.matters-filter__pill:hover {
+  border-color: var(--horizon);
+  color: var(--horizon);
+}
+.matters-filter__pill.is-active {
+  background: var(--deep-blue);
+  color: var(--off-white);
+  border-color: var(--deep-blue);
+}
+.matter-card.is-hidden { display: none; }
+
+/* MATTERS ledger summary */
+.matters-ledger {
+  margin-bottom: 2.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--silver);
+  border-bottom: 1px solid var(--silver);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--deep-blue);
+  text-align: center;
+  line-height: 1.8;
+}
+.matters-ledger span { color: var(--steel); padding: 0 0.5rem; }

@@ -86,9 +86,24 @@
       <p>The following are representative matters — redacted to respect confidentiality. A full case list, including prior testimony, is available to retaining counsel under engagement letter.</p>
     </div>
 
+    <div class="matters-ledger">
+      8 matters <span>·</span> 7 jurisdictions <span>·</span> Plaintiff &amp; defense <span>·</span> 3 testimonies <span>·</span> 2 mediations <span>·</span> 1 trial <span>·</span> 1 Daubert motion (denied)
+    </div>
+
+    <div class="matters-filter" id="mattersFilter" role="tablist" aria-label="Filter matters by practice area">
+      <span class="matters-filter__label">Filter by Practice</span>
+      <button class="matters-filter__pill is-active" data-filter="all" type="button">All</button>
+      <button class="matters-filter__pill" data-filter="defects" type="button">Construction Defects</button>
+      <button class="matters-filter__pill" data-filter="envelope" type="button">Water &amp; Envelope</button>
+      <button class="matters-filter__pill" data-filter="insurance" type="button">Insurance &amp; Cat Loss</button>
+      <button class="matters-filter__pill" data-filter="structural" type="button">Structural</button>
+      <button class="matters-filter__pill" data-filter="code" type="button">Code &amp; Standard of Care</button>
+      <button class="matters-filter__pill" data-filter="testimony" type="button">Expert Testimony</button>
+    </div>
+
     <div class="matters-grid">
       
-      <article class="matter-card">
+      <article class="matter-card" id="m-multifamily-envelope" data-practice="defects envelope">
         <span class="matter-card__tag">Construction Defect · Multi-family</span>
         <h3>Envelope failures across a 180-unit Class A apartment community.</h3>
         <p>Retained by defense for a national builder. Claims included water intrusion at mulled window assemblies, stucco-system drainage, and deck waterproofing. Our protocol included phased destructive testing across 14 representative units, moisture mapping, and submittal reconciliation.</p>
@@ -96,7 +111,7 @@
           <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>California</dd></div><div><dt>Posture</dt><dd>Pre-trial disclosure</dd></div><div><dt>Outcome</dt><dd>Resolved at mediation</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-hail-roof" data-practice="insurance envelope">
         <span class="matter-card__tag">First-Party Insurance · Hail</span>
         <h3>Disputed hail claim on low-slope modified-bitumen roof system.</h3>
         <p>Retained by policyholder counsel. Opposing adjuster report attributed membrane damage to foot traffic and prior mechanical damage. Our investigation included core samples, manufacturer test comparison, and regional storm-event correlation.</p>
@@ -104,7 +119,7 @@
           <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>Texas</dd></div><div><dt>Posture</dt><dd>Appraisal panel</dd></div><div><dt>Outcome</dt><dd>Panel award exceeded original offer</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-parking-pt-slab" data-practice="structural">
         <span class="matter-card__tag">Structural Failure · Parking Structure</span>
         <h3>Post-tensioned slab distress in a three-level parking garage.</h3>
         <p>Retained jointly by owner and property manager after spalling and tendon corrosion were observed. Work included condition assessment, GPR scanning, chloride testing, and documentation of original construction sequencing against as-built drawings.</p>
@@ -112,7 +127,7 @@
           <div><dt>Role</dt><dd>Joint-retained expert</dd></div><div><dt>Jurisdiction</dt><dd>Nevada</dd></div><div><dt>Posture</dt><dd>Pre-suit</dd></div><div><dt>Outcome</dt><dd>Remediation scope negotiated</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-pex-subrogation" data-practice="insurance">
         <span class="matter-card__tag">Subrogation · Water Loss</span>
         <h3>Catastrophic water loss traced to failed PEX fitting.</h3>
         <p>Retained by carrier subrogation counsel. Work included preservation of the failed fitting under chain-of-custody, metallurgical coordination, and reconstruction of installation sequencing.</p>
@@ -120,7 +135,7 @@
           <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>Arizona</dd></div><div><dt>Posture</dt><dd>Deposition</dd></div><div><dt>Outcome</dt><dd>Settled post-deposition</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-curtainwall-arch" data-practice="code testimony envelope">
         <span class="matter-card__tag">Standard of Care · Design Professional</span>
         <h3>Alleged architect negligence on curtainwall specification.</h3>
         <p>Retained by design-professional counsel. Claim alleged inadequate specification for wind-driven rain exposure. Our work evaluated specification against AAMA and ASTM standards current at time of issue and against the practice in comparable projects of similar class.</p>
@@ -128,7 +143,7 @@
           <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>Oregon</dd></div><div><dt>Posture</dt><dd>Daubert motion</dd></div><div><dt>Outcome</dt><dd>Motion denied; case resolved</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-wildfire-ember" data-practice="insurance">
         <span class="matter-card__tag">Cat Loss · Wildfire</span>
         <h3>Ember-intrusion attic fire; disputed cause and origin.</h3>
         <p>Retained by policyholder counsel after carrier denied coverage citing pre-existing conditions. Our work established ember-intrusion pathway through attic ventilation and documented undisturbed char pattern consistent with wildfire origin.</p>
@@ -136,7 +151,7 @@
           <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>California</dd></div><div><dt>Posture</dt><dd>Pre-trial</dd></div><div><dt>Outcome</dt><dd>Coverage extended</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-ti-life-safety" data-practice="code">
         <span class="matter-card__tag">Code Compliance · Commercial</span>
         <h3>Life-safety deficiency allegations in tenant-improvement build-out.</h3>
         <p>Retained by landlord counsel. Claims alleged egress and fire-rated assembly violations. Work included plan review against applicable IBC edition, documentation of actual field conditions, and analysis of whether deficiencies were owner- or tenant-attributable under lease terms.</p>
@@ -144,7 +159,7 @@
           <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>Colorado</dd></div><div><dt>Posture</dt><dd>Trial</dd></div><div><dt>Outcome</dt><dd>Defense verdict</dd></div>
         </dl>
       </article>
-      <article class="matter-card">
+      <article class="matter-card" id="m-rebuttal-envelope" data-practice="testimony envelope">
         <span class="matter-card__tag">Expert Testimony · Rebuttal</span>
         <h3>Rebuttal engagement on opposing expert's envelope opinion.</h3>
         <p>Retained late in discovery to rebut opposing expert's opinion that air-barrier failures were attributable to design rather than installation. Work focused on methodology review of opposing expert's field work and alternative-cause analysis.</p>
@@ -176,10 +191,13 @@
   <div class="cta__grid"></div>
   <div class="container cta__inner">
     <div>
-      <span class="eyebrow eyebrow--gold">Book a Case Review</span>
-      <h2 class="h-section" style="margin-top:1rem;">Have a matter that depends on the building?</h2>
-      <p>Send a brief description of the case. We respond within one business day with a conflict check and a fit assessment before any engagement is discussed.</p>
-      <div style="margin-top:2rem;"><a href="#" class="btn btn--primary" data-calendly>Book a Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
+      <span class="eyebrow eyebrow--gold">Full Case List</span>
+      <h2 class="h-section" style="margin-top:1rem;">More matters released under engagement letter.</h2>
+      <p>The full case list — including matters not summarized here, jurisdictions of testimony, and prior expert reports — is provided to retaining counsel under engagement letter or NDA. If your matter looks adjacent to one above, send a brief description and we'll respond within one business day.</p>
+      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="contact.html?topic=case-list" class="btn btn--primary">Request Full Case List <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+        <a href="#" class="btn btn--ghost-light" data-calendly>Book a Case Review</a>
+      </div>
     </div>
     <div class="cta__box"><span class="eyebrow eyebrow--gold">Direct Contact</span><h3>Counsel inquiries only.</h3><ul class="cta__contact"><li><strong>Intake</strong><span>admin@meridianexperts.com</span></li><li><strong>Phone</strong><span>214.319.8030</span></li></ul></div>
   </div>
@@ -196,5 +214,42 @@
   </div>
 </footer>
 <script src="assets/site.js"></script>
+<script>
+/* Matters filter — practice-area pills + deep-link from Practice Areas */
+(function(){
+  var filter = document.getElementById('mattersFilter');
+  if (!filter) return;
+  var cards = document.querySelectorAll('.matters-grid .matter-card');
+  var pills = filter.querySelectorAll('.matters-filter__pill');
+
+  function apply(key){
+    cards.forEach(function(card){
+      var p = (card.getAttribute('data-practice') || '').split(/\s+/);
+      if (key === 'all' || p.indexOf(key) !== -1) card.classList.remove('is-hidden');
+      else card.classList.add('is-hidden');
+    });
+    pills.forEach(function(pill){
+      pill.classList.toggle('is-active', pill.getAttribute('data-filter') === key);
+    });
+  }
+
+  pills.forEach(function(pill){
+    pill.addEventListener('click', function(){ apply(pill.getAttribute('data-filter')); });
+  });
+
+  /* If URL has #m-... anchor, smooth-scroll and briefly highlight */
+  if (location.hash && location.hash.indexOf('#m-') === 0) {
+    var target = document.querySelector(location.hash);
+    if (target) {
+      setTimeout(function(){
+        target.scrollIntoView({behavior:'smooth', block:'center'});
+        target.style.transition = 'box-shadow 0.4s ease';
+        target.style.boxShadow = '0 0 0 2px var(--horizon)';
+        setTimeout(function(){ target.style.boxShadow = ''; }, 1800);
+      }, 80);
+    }
+  }
+})();
+</script>
 </body>
 </html>
