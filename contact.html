@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
 <title>Case Review — Meridian Experts</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +24,35 @@
 <link rel="alternate icon" href="assets/favicon.ico">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="theme-color" content="#25566E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Case Review — Meridian Experts",
+  "url": "https://meridianexperts.com/contact",
+  "description": "Submit a case summary for conflict check and fit assessment within one business day."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://meridianexperts.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Review",
+      "item": "https://meridianexperts.com/contact"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -37,8 +67,8 @@
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
-      <li><a href="tel:+12143198030" class="nav__phone editable" data-editable="Replace with real phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="contact.html" data-nav="contact" class="nav__cta">Case Review</a></li>
+      <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
+      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
     </ul>
     <button class="nav__burger" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -49,102 +79,118 @@
 <header class="pagehead">
   <div class="container pagehead__inner">
     <span class="eyebrow">Case Review</span>
-    <h1>Send us the matter. We'll read it honestly.</h1>
-    <p>Response within one business day with a conflict check and a fit assessment — before any engagement is discussed. Rush handling available for statute-of-limitations, pre-suit investigation, and inspection deadlines.</p>
+    <h1>Book a 20-minute case review.</h1>
+    <p>Pick a time that works. We'll use the call to confirm conflict-free status, discuss fit, and tell you — honestly — whether the matter is one we should take on. Rush handling available for statute-of-limitations, pre-suit investigation, and inspection deadlines.</p>
   </div>
 </header>
 
 <section class="practice-detail">
   <div class="container">
-    <div class="contact-layout">
-      <form class="form" id="caseForm" novalidate>
-        <div class="form__success" id="formSuccess">
-          <strong>Thank you.</strong> Your case summary has been received. A Meridian principal will respond within one business day to confirm conflict-free status and discuss fit.
-        </div>
 
-        <div class="form__row">
-          <div class="form__field"><label for="name">Your Name <span class="req">*</span></label><input type="text" id="name" name="name" required></div>
-          <div class="form__field"><label for="firm">Firm <span class="req">*</span></label><input type="text" id="firm" name="firm" required></div>
-        </div>
-
-        <div class="form__row">
-          <div class="form__field"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
-          <div class="form__field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
-        </div>
-
-        <div class="form__field">
-          <label for="matterType">Matter Type <span class="req">*</span></label>
-          <select id="matterType" name="matterType" required>
-            <option value="">Select one…</option>
-            <option>Construction Defect</option>
-            <option>Water Intrusion / Envelope</option>
-            <option>Insurance / Catastrophe Loss</option>
-            <option>Structural Failure</option>
-            <option>Code &amp; Standard of Care</option>
-            <option>Expert Testimony Only</option>
-            <option>Other / Unsure</option>
-          </select>
-        </div>
-
-        <div class="form__row">
-          <div class="form__field"><label for="jurisdiction">Jurisdiction</label><input type="text" id="jurisdiction" name="jurisdiction" placeholder="State, county, venue"></div>
-          <div class="form__field"><label for="deadline">Key Deadline</label><input type="text" id="deadline" name="deadline" placeholder="e.g. SOL 04/15, inspection 05/02"></div>
-        </div>
-
-        <div class="form__field">
-          <label for="summary">Case Summary <span class="req">*</span></label>
-          <textarea id="summary" name="summary" required placeholder="Parties (anonymized if preferred), building type, alleged defects or loss, current procedural posture, and what you need from the expert."></textarea>
-          <div class="form__hint">Do not include privileged information. A formal engagement letter will govern any further disclosure.</div>
-        </div>
-
-        <div class="form__field">
-          <label>Upload Documents</label>
-          <div class="dropzone" id="dropzone">
-            <svg class="dropzone__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v14"/><path d="M6 9l6-6 6 6"/><path d="M4 21h16"/></svg>
-            <div class="dropzone__primary">Drop files or click to upload</div>
-            <div class="dropzone__secondary">PDF, DOCX, JPG, PNG, MP4 · up to 25 MB each</div>
-            <input type="file" id="fileInput" name="files" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,.mp4,.mov,.tif,.tiff,.zip">
-          </div>
-          <ul class="filelist" id="filelist"></ul>
-          <div class="form__hint">Plans, photos, prior reports, inspection correspondence — anything that helps us assess fit. Files transmit over TLS; formally privileged material should wait until engagement.</div>
-        </div>
-
-        <div class="form__field">
-          <label for="conflict">Parties Involved (for Conflict Check) <span class="req">*</span></label>
-          <textarea id="conflict" name="conflict" required style="min-height:90px;" placeholder="List all parties — plaintiff(s), defendant(s), insurers, contractors, design professionals, and related entities."></textarea>
-        </div>
-
-        <div class="form__actions">
-          <button type="submit" class="btn btn--primary">Submit Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></button>
-          <div class="form__legal">This submission is not an engagement. No attorney-client or consultant relationship is formed until a written engagement letter is executed.</div>
-        </div>
-      </form>
-
-      <aside class="contact-sidebar">
-        <span class="eyebrow eyebrow--gold">Direct Contact</span>
-        <h3>For matters on the clock.</h3>
-        <p>If a deadline is within 72 hours, call the intake line directly. Leave a message — principal callback within the business day.</p>
-        <dl>
-          <dt>Intake Email</dt><dd><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></dd>
-          <dt>Phone</dt><dd><a href="tel:+12143198030">214.319.8030</a></dd>
-          <dt>Hours</dt><dd>Mon–Fri · Response within 1 business day</dd>
-          <dt>After Hours</dt><dd>Statute-of-limitations matters accommodated; note urgency in the form.</dd>
-        </dl>
-      </aside>
+    <!-- Calendly inline widget (primary action) -->
+    <div
+      class="calendly-inline-widget calendly-embed"
+      data-url="https://calendly.com/dkessinger-meridianexperts/expert-case-evaluation?hide_landing_page_details=1&amp;hide_gdpr_banner=1&amp;primary_color=25566e"
+      style="min-width:320px;height:760px;">
     </div>
+
+    <!-- Direct contact strip -->
+    <div class="contact-direct">
+      <div>
+        <span class="eyebrow eyebrow--gold">For matters on the clock</span>
+        <h3>Deadline within 72 hours?</h3>
+        <p>Call the intake line directly. Leave a message — a principal returns within the business day.</p>
+      </div>
+      <dl class="contact-direct__meta">
+        <dt>Intake Email</dt><dd><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></dd>
+        <dt>Phone</dt><dd><a href="tel:+12143198030">214.319.8030</a></dd>
+        <dt>Hours</dt><dd>Mon–Fri · Reply within 1 business day</dd>
+      </dl>
+    </div>
+
+    <!-- Secondary: demoted form as collapsible details reveal -->
+    <details class="form-reveal">
+      <summary>
+        <span>Prefer to send case details first?</span>
+        <span class="form-reveal__hint">Use the written intake if you'd rather submit a summary and documents before scheduling.</span>
+      </summary>
+
+      <div class="form-reveal__body">
+        <form class="form" id="caseForm" novalidate>
+          <div class="form__success" id="formSuccess">
+            <strong>Thank you.</strong> Your case summary has been received. A Meridian principal will respond within one business day to confirm conflict-free status and discuss fit.
+          </div>
+
+          <div class="form__row">
+            <div class="form__field"><label for="name">Your Name <span class="req">*</span></label><input type="text" id="name" name="name" required></div>
+            <div class="form__field"><label for="firm">Firm <span class="req">*</span></label><input type="text" id="firm" name="firm" required></div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+            <div class="form__field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="matterType">Matter Type <span class="req">*</span></label>
+            <select id="matterType" name="matterType" required>
+              <option value="">Select one…</option>
+              <option>Construction Defect</option>
+              <option>Water Intrusion / Envelope</option>
+              <option>Insurance / Catastrophe Loss</option>
+              <option>Structural Failure</option>
+              <option>Code &amp; Standard of Care</option>
+              <option>Expert Testimony Only</option>
+              <option>Other / Unsure</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field"><label for="jurisdiction">Jurisdiction</label><input type="text" id="jurisdiction" name="jurisdiction" placeholder="State, county, venue"></div>
+            <div class="form__field"><label for="deadline">Key Deadline</label><input type="text" id="deadline" name="deadline" placeholder="e.g. SOL 04/15, inspection 05/02"></div>
+          </div>
+
+          <div class="form__field">
+            <label for="summary">Case Summary <span class="req">*</span></label>
+            <textarea id="summary" name="summary" required placeholder="Parties (anonymized if preferred), building type, alleged defects or loss, current procedural posture, and what you need from the expert."></textarea>
+            <div class="form__hint">Do not include privileged information. A formal engagement letter will govern any further disclosure.</div>
+          </div>
+
+          <div class="form__field">
+            <label>Upload Documents</label>
+            <div class="dropzone" id="dropzone">
+              <svg class="dropzone__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v14"/><path d="M6 9l6-6 6 6"/><path d="M4 21h16"/></svg>
+              <div class="dropzone__primary">Drop files or click to upload</div>
+              <div class="dropzone__secondary">PDF, DOCX, JPG, PNG, MP4 · up to 25 MB each</div>
+              <input type="file" id="fileInput" name="files" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,.mp4,.mov,.tif,.tiff,.zip">
+            </div>
+            <ul class="filelist" id="filelist"></ul>
+            <div class="form__hint">Plans, photos, prior reports, inspection correspondence — anything that helps us assess fit. Files transmit over TLS; formally privileged material should wait until engagement.</div>
+          </div>
+
+          <div class="form__field">
+            <label for="conflict">Parties Involved (for Conflict Check) <span class="req">*</span></label>
+            <textarea id="conflict" name="conflict" required style="min-height:90px;" placeholder="List all parties — plaintiff(s), defendant(s), insurers, contractors, design professionals, and related entities."></textarea>
+          </div>
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary">Submit Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></button>
+            <div class="form__legal">This submission is not an engagement. No attorney-client or consultant relationship is formed until a written engagement letter is executed.</div>
+          </div>
+        </form>
+      </div>
+    </details>
+
   </div>
 </section>
 
-<footer>
+<footer style="height: 450px">
+  <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__brand">
-        <a href="index.html" class="wordmark" aria-label="Meridian Experts"><img src="assets/logo-white.png" alt="Meridian Experts" style="height:40px;width:auto;"></a>
-        <p>Independent building consultants. Retained by attorneys in construction, insurance, and structural failure matters.</p>
-      </div>
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
       <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
-      <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030" class="editable" data-editable="Replace with real phone">214.319.8030</a></li><li class="editable" data-editable="Replace with real address" style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">San Diego, California</li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
@@ -202,7 +248,10 @@
         return;
       }
       success.classList.add('is-visible');
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Smooth-scroll to the confirmation without using scrollIntoView
+      const rect = success.getBoundingClientRect();
+      const target = window.scrollY + rect.top - (window.innerHeight - rect.height) / 2;
+      window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
       // Uncomment when a backend exists:
       // form.submit();
     });

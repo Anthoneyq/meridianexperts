@@ -1,11 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    { "source": "/practice-areas", "destination": "/practice-areas.html" },
-    { "source": "/approach", "destination": "/approach.html" },
-    { "source": "/process", "destination": "/process.html" },
-    { "source": "/matters", "destination": "/matters.html" },
-    { "source": "/credentials", "destination": "/credentials.html" },
-    { "source": "/contact", "destination": "/contact.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
