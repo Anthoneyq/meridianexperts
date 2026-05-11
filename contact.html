@@ -3,259 +3,486 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<title>Case Review — Meridian Experts</title>
+<title>Engage an Expert — Meridian Experts</title>
+<meta name="description" content="Begin a confidential engagement. Conflict check, scope of work, and engagement letter — typically within one business day.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://meridianexperts.com/contact">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Meridian Experts">
-<meta property="og:title" content="Case Review — Meridian Experts">
-<meta property="og:description" content="Submit a case summary. Response within one business day with a conflict check and a fit assessment before any engagement is discussed.">
-<meta property="og:url" content="https://meridianexperts.com/contact">
-<meta property="og:image" content="https://meridianexperts.com/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Case Review — Meridian Experts">
-<meta name="twitter:description" content="Submit a case summary. Response within one business day with a conflict check and a fit assessment before any engagement is discussed.">
-<meta name="twitter:image" content="https://meridianexperts.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/v2.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="alternate icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#25566E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Case Review — Meridian Experts",
-  "url": "https://meridianexperts.com/contact",
-  "description": "Submit a case summary for conflict check and fit assessment within one business day."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://meridianexperts.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Case Review",
-      "item": "https://meridianexperts.com/contact"
-    }
-  ]
-}
-</script>
+<style>
+  /* === Cinematic split hero — form on glass over media === */
+  .ct-hero {
+    position: relative; min-height: 100vh;
+    background: var(--off-black); color: var(--off-white);
+    overflow: hidden;
+    padding: 8rem 0 5rem;
+  }
+  .ct-hero__media {
+    position: absolute; inset: 0; z-index: 0;
+  }
+  .ct-hero__media image-slot { width: 100%; height: 100%; }
+  .ct-hero__tint {
+    position: absolute; inset: 0; z-index: 1;
+    background:
+      linear-gradient(115deg, rgba(15,32,46,0.92) 0%, rgba(15,32,46,0.65) 45%, rgba(15,32,46,0.4) 100%),
+      radial-gradient(ellipse at 80% 50%, transparent 0%, rgba(15,32,46,0.7) 100%);
+  }
+  .ct-hero__grid {
+    position: absolute; inset: 0; z-index: 1; opacity: 0.18;
+    background-image:
+      linear-gradient(to right, rgba(245,250,245,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(245,250,245,0.06) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  .ct-hero__inner {
+    position: relative; z-index: 5;
+    display: grid; grid-template-columns: 1fr 480px; gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+  }
+  @media (max-width: 1000px) { .ct-hero__inner { grid-template-columns: 1fr; gap: 3rem; } }
+
+  .ct-hero h1 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(2.4rem, 5vw, 4.6rem); line-height: 1.0;
+    letter-spacing: -0.025em; color: var(--off-white);
+    margin-bottom: 2rem;
+  }
+  .ct-hero h1 em {
+    font-weight: 300; color: rgba(245,250,245,0.55); font-style: normal;
+    display: block;
+  }
+  .ct-hero__sub {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: 1.05rem; line-height: 1.6; color: var(--ice-blue);
+    max-width: 52ch; margin-bottom: 2.5rem;
+  }
+  .ct-hero__direct {
+    margin-top: 2rem; padding-top: 1.5rem;
+    border-top: 1px solid rgba(196,173,130,0.25);
+  }
+  .ct-hero__direct-label {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .ct-hero__direct-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    margin-top: 1.25rem;
+  }
+  .ct-hero__direct-item strong {
+    display: block;
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1.1rem; color: var(--off-white);
+    margin-bottom: 0.2rem;
+  }
+  .ct-hero__direct-item span {
+    font-family: var(--font-body); font-size: 0.85rem; color: var(--ice-blue);
+  }
+
+  /* === Glass form panel === */
+  .ct-form {
+    background: rgba(245,250,245,0.06);
+    backdrop-filter: blur(28px) saturate(140%);
+    -webkit-backdrop-filter: blur(28px) saturate(140%);
+    border: 1px solid rgba(245,250,245,0.18);
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(196,173,130,0.12) inset;
+    padding: clamp(2rem, 3vw, 2.5rem);
+    color: var(--off-white);
+  }
+  .ct-form__head {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(196,173,130,0.25);
+    display: flex; justify-content: space-between; align-items: end;
+  }
+  .ct-form__head-eyebrow {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .ct-form__head h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 1.35rem; color: var(--off-white); margin-top: 0.4rem;
+    text-transform: none; letter-spacing: -0.01em;
+  }
+  .ct-form__step {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.7rem; color: var(--ice-blue); letter-spacing: 0.08em;
+  }
+
+  .ct-field {
+    margin-bottom: 1.1rem;
+  }
+  .ct-field label {
+    display: block;
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ice-blue); margin-bottom: 0.5rem;
+  }
+  .ct-field input,
+  .ct-field select,
+  .ct-field textarea {
+    width: 100%;
+    background: rgba(15,32,46,0.4);
+    border: 1px solid rgba(245,250,245,0.18);
+    color: var(--off-white);
+    font-family: var(--font-body); font-size: 0.95rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0;
+    transition: border-color 200ms, background 200ms;
+  }
+  .ct-field input:focus,
+  .ct-field select:focus,
+  .ct-field textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(15,32,46,0.6);
+  }
+  .ct-field textarea { min-height: 100px; resize: vertical; }
+  .ct-field--row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  }
+  .ct-field--row .ct-field { margin-bottom: 0; }
+
+  .ct-form__submit {
+    margin-top: 1.25rem;
+    width: 100%;
+    background: var(--gold); color: var(--charcoal);
+    border: 1px solid var(--gold);
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 1.05rem 1.5rem;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 0.85rem;
+    transition: background 200ms, color 200ms;
+  }
+  .ct-form__submit:hover {
+    background: var(--off-white); border-color: var(--off-white);
+  }
+  .ct-form__legal {
+    margin-top: 1.25rem;
+    font-family: var(--font-body); font-size: 0.75rem;
+    color: var(--ice-blue); line-height: 1.55; opacity: 0.7;
+  }
+
+  /* === What happens next strip === */
+  .next-strip {
+    background: var(--off-white);
+    padding: clamp(4rem, 7vw, 6rem) 0;
+    border-top: 1px solid var(--silver);
+  }
+  .next-strip__head {
+    max-width: 720px; margin-bottom: 3rem;
+  }
+  .next-strip__head .eyebrow { color: var(--steel); }
+  .next-strip__head h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.75rem, 3.4vw, 2.6rem); line-height: 1.05;
+    letter-spacing: -0.015em; color: var(--charcoal); text-transform: none;
+  }
+
+  .next-flow {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    border: 1px solid var(--silver);
+    background: var(--off-white);
+  }
+  @media (max-width: 900px) { .next-flow { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .next-flow { grid-template-columns: 1fr; } }
+  .next-flow__cell {
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--silver);
+    position: relative;
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  .next-flow__cell:last-child { border-right: 0; }
+  @media (max-width: 900px) {
+    .next-flow__cell:nth-child(2n) { border-right: 0; }
+    .next-flow__cell:nth-child(-n+2) { border-bottom: 1px solid var(--silver); }
+  }
+  @media (max-width: 500px) {
+    .next-flow__cell { border-right: 0; border-bottom: 1px solid var(--silver); }
+    .next-flow__cell:last-child { border-bottom: 0; }
+  }
+  .next-flow__num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.65rem; letter-spacing: 0.24em; color: var(--gold);
+  }
+  .next-flow__title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1.1rem; color: var(--charcoal); line-height: 1.2;
+  }
+  .next-flow__detail {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: 0.88rem; color: var(--slate); line-height: 1.55;
+  }
+  .next-flow__time {
+    margin-top: auto; padding-top: 0.5rem;
+    border-top: 1px solid var(--silver);
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.7rem; color: var(--steel); letter-spacing: 0.08em;
+  }
+
+  /* === Office card === */
+  .office-block {
+    padding: clamp(5rem, 7vw, 7rem) 0;
+    background: var(--mist);
+    border-top: 1px solid var(--silver);
+  }
+  .office-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 4vw, 4rem);
+    align-items: stretch;
+  }
+  @media (max-width: 900px) { .office-grid { grid-template-columns: 1fr; } }
+
+  .office-card {
+    background: var(--charcoal); color: var(--off-white);
+    padding: clamp(2rem, 4vw, 3rem);
+    display: flex; flex-direction: column;
+    border: 1px solid rgba(196,173,130,0.25);
+  }
+  .office-card .eyebrow { color: var(--gold); margin-bottom: 1rem; }
+  .office-card h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--off-white);
+    margin-bottom: 1.5rem; line-height: 1.05;
+    text-transform: none;
+  }
+  .office-list {
+    list-style: none; padding: 0; margin: 0;
+    border-top: 1px solid rgba(196,173,130,0.2);
+  }
+  .office-list li {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(196,173,130,0.15);
+    display: grid; grid-template-columns: 130px 1fr; gap: 1rem;
+    align-items: baseline;
+  }
+  .office-list li strong {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  .office-list li span {
+    font-family: var(--font-body); font-size: 0.95rem; color: var(--off-white);
+    line-height: 1.5;
+  }
+  .office-list li span small {
+    display: block;
+    font-size: 0.82rem; color: var(--ice-blue); margin-top: 0.2rem;
+  }
+
+  .office-photo {
+    aspect-ratio: 4/5; min-height: 100%;
+    border: 1px solid var(--silver); overflow: hidden;
+    position: relative;
+  }
+  .office-photo image-slot { width: 100%; height: 100%; }
+  .office-photo__tag {
+    position: absolute; top: 1.25rem; left: 1.25rem; z-index: 3;
+    background: var(--charcoal); color: var(--gold);
+    font-family: var(--font-display); font-size: 0.65rem;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    padding: 0.45rem 0.8rem;
+  }
+</style>
 </head>
 <body>
 
-<nav class="nav nav--solid" data-page="contact">
+<!-- ========== NAV ========== -->
+<nav class="nav nav--dark" data-page="contact">
   <div class="nav__inner">
-    <a href="index.html" class="wordmark" aria-label="Meridian Experts">
-      <img src="assets/logo-white.png" alt="Meridian Experts">
-    </a>
+    <a href="index.html" class="wordmark"><img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'"></a>
     <ul class="nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
-      <li><a href="approach.html" data-nav="approach">Approach</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
       <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
     </ul>
-    <button class="nav__burger" aria-label="Menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
   </div>
 </nav>
 
-<header class="pagehead">
-  <div class="container pagehead__inner">
-    <span class="eyebrow">Case Review</span>
-    <h1>Book a 20-minute case review.</h1>
-    <p>Pick a time that works. We'll use the call to confirm conflict-free status, discuss fit, and tell you — honestly — whether the matter is one we should take on. Rush handling available for statute-of-limitations, pre-suit investigation, and inspection deadlines.</p>
+<!-- ========== HERO + GLASS FORM ========== -->
+<section class="ct-hero" data-screen-label="01 Hero + Form">
+  <div class="ct-hero__media">
+    <image-slot id="ct-hero" placeholder="Cinematic — institutional architecture, calm dusk light"></image-slot>
   </div>
-</header>
+  <div class="ct-hero__tint"></div>
+  <div class="ct-hero__grid"></div>
 
-<section class="practice-detail">
-  <div class="container">
+  <div class="container ct-hero__inner">
+    <div>
+      <span class="cr-hero__eyebrow" style="color: var(--gold); font-family: var(--font-display); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 2rem; display: block;">Engage an Expert</span>
+      <h1 class="fade is-visible">Begin a confidential<br><em>engagement.</em></h1>
+      <p class="ct-hero__sub fade fade--delay-1 is-visible">Send a brief description of the matter — names, parties, peril, and posture. We'll respond within one business day with a conflict check and an honest read on fit before any engagement is discussed.</p>
 
-    <!-- Calendly inline widget (primary action) -->
-    <div
-      class="calendly-inline-widget calendly-embed"
-      data-url="https://calendly.com/dkessinger-meridianexperts/expert-case-evaluation?hide_landing_page_details=1&amp;hide_gdpr_banner=1&amp;primary_color=25566e"
-      style="min-width:320px;height:760px;">
+      <div class="ct-hero__direct fade fade--delay-2 is-visible">
+        <span class="ct-hero__direct-label">Direct Contact</span>
+        <div class="ct-hero__direct-grid">
+          <div class="ct-hero__direct-item">
+            <strong>214.319.8030</strong>
+            <span>Mon–Fri · Time-sensitive matters answered same-day</span>
+          </div>
+          <div class="ct-hero__direct-item">
+            <strong>admin@meridianexperts.com</strong>
+            <span>For document intake under engagement letter</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Direct contact strip -->
-    <div class="contact-direct">
-      <div>
-        <span class="eyebrow eyebrow--gold">For matters on the clock</span>
-        <h3>Deadline within 72 hours?</h3>
-        <p>Call the intake line directly. Leave a message — a principal returns within the business day.</p>
+    <form class="ct-form fade fade--delay-1 is-visible" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Submitted — response within 1 business day'; this.querySelector('button').disabled=true;">
+      <div class="ct-form__head">
+        <div>
+          <span class="ct-form__head-eyebrow">Confidential Intake</span>
+          <h2>Case Summary</h2>
+        </div>
+        <span class="ct-form__step">FORM-INTAKE-01</span>
       </div>
-      <dl class="contact-direct__meta">
-        <dt>Intake Email</dt><dd><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></dd>
-        <dt>Phone</dt><dd><a href="tel:+12143198030">214.319.8030</a></dd>
-        <dt>Hours</dt><dd>Mon–Fri · Reply within 1 business day</dd>
-      </dl>
-    </div>
 
-    <!-- Secondary: demoted form as collapsible details reveal -->
-    <details class="form-reveal">
-      <summary>
-        <span>Prefer to send case details first?</span>
-        <span class="form-reveal__hint">Use the written intake if you'd rather submit a summary and documents before scheduling.</span>
-      </summary>
-
-      <div class="form-reveal__body">
-        <form class="form" id="caseForm" novalidate>
-          <div class="form__success" id="formSuccess">
-            <strong>Thank you.</strong> Your case summary has been received. A Meridian principal will respond within one business day to confirm conflict-free status and discuss fit.
-          </div>
-
-          <div class="form__row">
-            <div class="form__field"><label for="name">Your Name <span class="req">*</span></label><input type="text" id="name" name="name" required></div>
-            <div class="form__field"><label for="firm">Firm <span class="req">*</span></label><input type="text" id="firm" name="firm" required></div>
-          </div>
-
-          <div class="form__row">
-            <div class="form__field"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
-            <div class="form__field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
-          </div>
-
-          <div class="form__field">
-            <label for="matterType">Matter Type <span class="req">*</span></label>
-            <select id="matterType" name="matterType" required>
-              <option value="">Select one…</option>
-              <option>Construction Defect</option>
-              <option>Water Intrusion / Envelope</option>
-              <option>Insurance / Catastrophe Loss</option>
-              <option>Structural Failure</option>
-              <option>Code &amp; Standard of Care</option>
-              <option>Expert Testimony Only</option>
-              <option>Other / Unsure</option>
-            </select>
-          </div>
-
-          <div class="form__row">
-            <div class="form__field"><label for="jurisdiction">Jurisdiction</label><input type="text" id="jurisdiction" name="jurisdiction" placeholder="State, county, venue"></div>
-            <div class="form__field"><label for="deadline">Key Deadline</label><input type="text" id="deadline" name="deadline" placeholder="e.g. SOL 04/15, inspection 05/02"></div>
-          </div>
-
-          <div class="form__field">
-            <label for="summary">Case Summary <span class="req">*</span></label>
-            <textarea id="summary" name="summary" required placeholder="Parties (anonymized if preferred), building type, alleged defects or loss, current procedural posture, and what you need from the expert."></textarea>
-            <div class="form__hint">Do not include privileged information. A formal engagement letter will govern any further disclosure.</div>
-          </div>
-
-          <div class="form__field">
-            <label>Upload Documents</label>
-            <div class="dropzone" id="dropzone">
-              <svg class="dropzone__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v14"/><path d="M6 9l6-6 6 6"/><path d="M4 21h16"/></svg>
-              <div class="dropzone__primary">Drop files or click to upload</div>
-              <div class="dropzone__secondary">PDF, DOCX, JPG, PNG, MP4 · up to 25 MB each</div>
-              <input type="file" id="fileInput" name="files" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic,.mp4,.mov,.tif,.tiff,.zip">
-            </div>
-            <ul class="filelist" id="filelist"></ul>
-            <div class="form__hint">Plans, photos, prior reports, inspection correspondence — anything that helps us assess fit. Files transmit over TLS; formally privileged material should wait until engagement.</div>
-          </div>
-
-          <div class="form__field">
-            <label for="conflict">Parties Involved (for Conflict Check) <span class="req">*</span></label>
-            <textarea id="conflict" name="conflict" required style="min-height:90px;" placeholder="List all parties — plaintiff(s), defendant(s), insurers, contractors, design professionals, and related entities."></textarea>
-          </div>
-
-          <div class="form__actions">
-            <button type="submit" class="btn btn--primary">Submit Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></button>
-            <div class="form__legal">This submission is not an engagement. No attorney-client or consultant relationship is formed until a written engagement letter is executed.</div>
-          </div>
-        </form>
+      <div class="ct-field--row">
+        <div class="ct-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="ct-field">
+          <label for="firm">Firm</label>
+          <input type="text" id="firm" name="firm" placeholder="Doe &amp; Associates" required>
+        </div>
       </div>
-    </details>
 
+      <div class="ct-field--row">
+        <div class="ct-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="counsel@firm.com" required>
+        </div>
+        <div class="ct-field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(214) 555-0100">
+        </div>
+      </div>
+
+      <div class="ct-field--row">
+        <div class="ct-field">
+          <label for="role">Posture</label>
+          <select id="role" name="role" required>
+            <option value="">— Select —</option>
+            <option>Plaintiff counsel</option>
+            <option>Defense counsel</option>
+            <option>Insured / public adjuster</option>
+            <option>Carrier / claim</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="ct-field">
+          <label for="peril">Peril / Loss Type</label>
+          <select id="peril" name="peril">
+            <option value="">— Select —</option>
+            <option>Hail / wind</option>
+            <option>Hurricane / named storm</option>
+            <option>Water / flood</option>
+            <option>Fire / smoke / wildfire</option>
+            <option>Freeze</option>
+            <option>Construction defect</option>
+            <option>Multi-peril</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ct-field">
+        <label for="summary">Case Summary</label>
+        <textarea id="summary" name="summary" placeholder="Brief description: parties, jurisdiction, posture, key dates, and what kind of opinion you need." required></textarea>
+      </div>
+
+      <button type="submit" class="ct-form__submit">
+        Send for Conflict Check
+        <svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+      </button>
+      <p class="ct-form__legal">Submission does not create an engagement, attorney-expert privilege, or representation. A conflict check and engagement letter precede any work.</p>
+    </form>
   </div>
 </section>
 
+<!-- ========== WHAT HAPPENS NEXT ========== -->
+<section class="next-strip" data-screen-label="02 Next">
+  <div class="container">
+    <div class="next-strip__head fade">
+      <span class="eyebrow">What Happens Next</span>
+      <h2>From submission to engagement letter, in four steps.</h2>
+    </div>
+    <div class="next-flow fade">
+      <div class="next-flow__cell">
+        <span class="next-flow__num">Step 01</span>
+        <div class="next-flow__title">Submission Received</div>
+        <p class="next-flow__detail">Inquiry routed to principal. No documents accepted yet — this is an exchange of summary only.</p>
+        <span class="next-flow__time">IMMEDIATE</span>
+      </div>
+      <div class="next-flow__cell">
+        <span class="next-flow__num">Step 02</span>
+        <div class="next-flow__title">Conflict Check</div>
+        <p class="next-flow__detail">Names, parties, and matter screened against active and historical engagement record.</p>
+        <span class="next-flow__time">~ 1 BUSINESS DAY</span>
+      </div>
+      <div class="next-flow__cell">
+        <span class="next-flow__num">Step 03</span>
+        <div class="next-flow__title">Counsel Call</div>
+        <p class="next-flow__detail">Confidential conversation: fit, scope, posture, timeline, fee structure.</p>
+        <span class="next-flow__time">SCHEDULED</span>
+      </div>
+      <div class="next-flow__cell">
+        <span class="next-flow__num">Step 04</span>
+        <div class="next-flow__title">Engagement Letter</div>
+        <p class="next-flow__detail">Scope of work, fee schedule, document protocol — signed before file intake.</p>
+        <span class="next-flow__time">~ 2–3 DAYS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OFFICE / DIRECT ========== -->
+<section class="office-block" data-screen-label="03 Office">
+  <div class="container">
+    <div class="office-grid fade">
+      <div class="office-card">
+        <span class="eyebrow eyebrow--gold">The Office</span>
+        <h3>Woodlands, Texas.</h3>
+        <ul class="office-list">
+          <li><strong>Address</strong><span>Woodlands, Texas<small>Full address provided to engaging counsel under retention</small></span></li>
+          <li><strong>Phone</strong><span>214.319.8030<small>Mon–Fri · After-hours for time-sensitive matters</small></span></li>
+          <li><strong>Email</strong><span>admin@meridianexperts.com<small>Document intake handled under engagement letter</small></span></li>
+          <li><strong>Hours</strong><span>Monday — Friday<small>Response to inquiries within 1 business day</small></span></li>
+          <li><strong>Coverage</strong><span>National — primary in TX, OK, LA, AR, NM, CO, FL, GA<small>Travel accommodated for the right matter</small></span></li>
+          <li><strong>Rush</strong><span>Time-sensitive matters accommodated<small>Statute deadlines, disclosure cutoffs, weather windows</small></span></li>
+        </ul>
+      </div>
+      <div class="office-photo">
+        <span class="office-photo__tag">Office — Woodlands</span>
+        <image-slot id="ct-office" placeholder="Office interior — calm modern professional, soft daylight"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
 <footer style="height: 450px">
   <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Damages Assessment</a></li><li><a href="practice-areas.html#envelope">Repair Scope &amp; Cost</a></li><li><a href="practice-areas.html#insurance">Rebuttal Analysis</a></li><li><a href="practice-areas.html#structural">Mediation &amp; Appraisal</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
       <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
 </footer>
 
+<script src="assets/image-slot.js"></script>
 <script src="assets/site.js"></script>
-<script>
-  (function () {
-    const dz = document.getElementById('dropzone');
-    const input = document.getElementById('fileInput');
-    const list = document.getElementById('filelist');
-    const form = document.getElementById('caseForm');
-    const success = document.getElementById('formSuccess');
-    if (!dz || !input || !list || !form) return;
-
-    const dt = new DataTransfer();
-    const fmt = (b) => b < 1024 ? b + ' B' : b < 1048576 ? (b/1024).toFixed(1) + ' KB' : (b/1048576).toFixed(2) + ' MB';
-
-    const render = () => {
-      list.innerHTML = '';
-      Array.from(dt.files).forEach((f, i) => {
-        const li = document.createElement('li');
-        li.innerHTML = `<span class="filelist__name">${f.name}</span><span class="filelist__size">${fmt(f.size)}</span><button type="button" aria-label="Remove">×</button>`;
-        li.querySelector('button').addEventListener('click', () => {
-          const remaining = Array.from(dt.files).filter((_, j) => j !== i);
-          while (dt.items.length) dt.items.remove(0);
-          remaining.forEach(file => dt.items.add(file));
-          input.files = dt.files;
-          render();
-        });
-        list.appendChild(li);
-      });
-    };
-
-    input.addEventListener('change', () => {
-      Array.from(input.files).forEach(f => dt.items.add(f));
-      input.files = dt.files;
-      render();
-    });
-
-    ['dragenter', 'dragover'].forEach(e => dz.addEventListener(e, (ev) => { ev.preventDefault(); dz.classList.add('is-hover'); }));
-    ['dragleave', 'drop'].forEach(e => dz.addEventListener(e, (ev) => { ev.preventDefault(); dz.classList.remove('is-hover'); }));
-    dz.addEventListener('drop', (ev) => {
-      if (!ev.dataTransfer) return;
-      Array.from(ev.dataTransfer.files).forEach(f => dt.items.add(f));
-      input.files = dt.files;
-      render();
-    });
-
-    form.addEventListener('submit', (ev) => {
-      ev.preventDefault();
-      // Minimal client-side validation feedback; real backend wiring (Formspree, Resend, etc.) goes here.
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-      success.classList.add('is-visible');
-      // Smooth-scroll to the confirmation without using scrollIntoView
-      const rect = success.getBoundingClientRect();
-      const target = window.scrollY + rect.top - (window.innerHeight - rect.height) / 2;
-      window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
-      // Uncomment when a backend exists:
-      // form.submit();
-    });
-  })();
-</script>
+<script src="assets/v2.js"></script>
 </body>
 </html>

@@ -3,228 +3,546 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
 <title>Engagement Process — Meridian Experts</title>
-<meta name="description" content="Six-stage engagement process for an independent building expert retained by counsel — from intake and document review through field investigation, expert reporting, deposition, and trial testimony.">
+<meta name="description" content="Five stages: intake, document review, field investigation, expert report, deposition and trial. Documented at every step.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://meridianexperts.com/process">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Meridian Experts">
-<meta property="og:title" content="Engagement Process — Meridian Experts">
-<meta property="og:description" content="Six-stage engagement process for an independent building expert retained by counsel — from intake and document review through field investigation, expert reporting, deposition, and trial testimony.">
-<meta property="og:url" content="https://meridianexperts.com/process">
-<meta property="og:image" content="https://meridianexperts.com/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Engagement Process — Meridian Experts">
-<meta name="twitter:description" content="Six-stage engagement process for an independent building expert retained by counsel — from intake and document review through field investigation, expert reporting, deposition, and trial testimony.">
-<meta name="twitter:image" content="https://meridianexperts.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/v2.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="alternate icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#25566E">
+<style>
+  .pr-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); font-weight: 400; }
+  .pr-hero h1 em { font-weight: 300; color: rgba(245,250,245,0.55); }
+  .v2-hero__bottom-fade {
+    position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+    height: 22%;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent 0%, var(--charcoal) 100%);
+  }
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Meridian Experts Engagement Process",
-  "description": "Six-stage engagement process from intake to trial testimony.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Conflict & Intake Review",
-      "text": "Confidential case screening, scope definition, and engagement terms."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Document Review",
-      "text": "Plans, specifications, submittals, RFIs, change orders, inspection records, and prior reports — evaluated before the first site visit."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Field Investigation",
-      "text": "Non-destructive and destructive testing under documented protocols. Evidence preserved under chain-of-custody."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Root-Cause Analysis",
-      "text": "Evidence evaluated against building science, published standards, and the applicable standard of care."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Expert Reporting",
-      "text": "Written opinions structured for clarity and Rule 26 admissibility."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
-      "name": "Deposition & Trial Support",
-      "text": "Counsel consultation, demonstrative preparation, deposition readiness, and expert testimony through trial."
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://meridianexperts.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Process",
-      "item": "https://meridianexperts.com/process"
-    }
-  ]
-}
-</script>
+  /* === Vertical stage anatomy === */
+  .stage { padding: clamp(5rem, 8vw, 8rem) 0; border-top: 1px solid var(--silver); scroll-margin-top: 100px; }
+  .stage--alt { background: var(--mist); }
+  .stage__inner {
+    display: grid; grid-template-columns: 280px 1fr 1fr; gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+  @media (max-width: 1100px) { .stage__inner { grid-template-columns: 200px 1fr; } .stage__visual { grid-column: 1 / -1; margin-top: 1.5rem; } }
+  @media (max-width: 720px) { .stage__inner { grid-template-columns: 1fr; gap: 1.5rem; } }
+
+  .stage__index {
+    position: sticky; top: 110px;
+    border-left: 1px solid var(--gold); padding-left: 1.5rem;
+  }
+  .stage__index-num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 4rem; line-height: 0.9; letter-spacing: -0.04em;
+    color: var(--charcoal);
+  }
+  .stage__index-of {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--gold); margin-top: 0.85rem;
+  }
+  .stage__index-title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1.1rem; color: var(--charcoal); margin-top: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .stage__body h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.85rem, 3.4vw, 2.85rem); line-height: 1.05;
+    letter-spacing: -0.015em; color: var(--charcoal); margin-bottom: 1.25rem;
+    text-transform: none;
+  }
+  .stage__body > p {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: 1.05rem; line-height: 1.6; color: var(--slate);
+    margin-bottom: 2rem;
+  }
+
+  .stage__deliverable {
+    margin-top: 2rem;
+    padding: 1.5rem; border: 1px solid var(--silver);
+    background: var(--off-white);
+    display: grid; grid-template-columns: auto 1fr; gap: 1rem;
+    align-items: center;
+  }
+  .stage--alt .stage__deliverable { background: var(--cool-white); }
+  .stage__deliverable-icon {
+    width: 36px; height: 36px; background: var(--charcoal);
+    color: var(--gold); display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-size: 0.7rem; font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  .stage__deliverable strong {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--steel); display: block;
+  }
+  .stage__deliverable p {
+    font-family: var(--font-body); font-size: 0.92rem; color: var(--charcoal);
+    margin-top: 0.25rem;
+  }
+
+  .stage__substeps {
+    list-style: none; padding: 0; margin: 0;
+    border-top: 1px solid var(--silver);
+  }
+  .stage__substeps li {
+    padding: 1rem 0; border-bottom: 1px solid var(--silver);
+    display: grid; grid-template-columns: 28px 1fr; gap: 1rem;
+  }
+  .stage__substeps li span {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.7rem; letter-spacing: 0.18em; color: var(--steel);
+  }
+  .stage__substeps li p {
+    font-size: 0.92rem; color: var(--charcoal); line-height: 1.5;
+  }
+
+  .stage__visual {
+    aspect-ratio: 4/5;
+    border: 1px solid var(--silver);
+    overflow: hidden; background: var(--off-white);
+    position: relative;
+  }
+  .stage__visual image-slot { width: 100%; height: 100%; }
+  .stage__visual-tag {
+    position: absolute; top: 1.25rem; left: 1.25rem; z-index: 3;
+    background: rgba(17,24,33,0.92); color: var(--gold);
+    font-family: var(--font-display); font-size: 0.65rem;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    padding: 0.45rem 0.8rem;
+  }
+
+  /* === Vertical timeline strip on the right of every stage === */
+  .timeline-strip {
+    background: var(--charcoal); color: var(--off-white);
+    padding: clamp(3rem, 5vw, 5rem) 0;
+  }
+  .timeline-strip__head {
+    text-align: center; margin-bottom: 3rem;
+  }
+  .timeline-strip__head .eyebrow { color: var(--gold); }
+  .timeline-strip__head h2 { color: var(--off-white); }
+  .timeline-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    border: 1px solid rgba(196,173,130,0.3);
+  }
+  @media (max-width: 900px) { .timeline-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .timeline-grid { grid-template-columns: 1fr; } }
+  .timeline-cell {
+    padding: 1.5rem 1.25rem; border-right: 1px solid rgba(196,173,130,0.15);
+    border-bottom: 1px solid rgba(196,173,130,0.15);
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  .timeline-cell:last-child { border-right: 0; }
+  .timeline-cell__num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.65rem; letter-spacing: 0.24em; color: var(--gold);
+  }
+  .timeline-cell__title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1rem; color: var(--off-white); line-height: 1.2;
+  }
+  .timeline-cell__time {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.7rem; color: var(--ice-blue);
+    margin-top: auto;
+    padding-top: 0.5rem; border-top: 1px solid rgba(176,211,223,0.15);
+  }
+
+  /* === Diagram for stage 03 — Field Investigation === */
+  .field-diagram {
+    aspect-ratio: 4/3; position: relative; max-width: 100%;
+    background: var(--off-white); border: 1px solid var(--silver);
+    overflow: hidden;
+  }
+  .field-diagram image-slot { width: 100%; height: 100%; }
+  .field-diagram .callout-f1 { top: 18%; left: 12%; }
+  .field-diagram .callout-f1 .callout__line { left: 11px; top: 50%; width: 50px; }
+  .field-diagram .callout-f2 { top: 36%; left: 8%; }
+  .field-diagram .callout-f2 .callout__line { left: 11px; top: 50%; width: 60px; }
+  .field-diagram .callout-f3 { top: 60%; left: 14%; }
+  .field-diagram .callout-f3 .callout__line { left: 11px; top: 50%; width: 50px; }
+  .field-diagram .callout-f4 { top: 26%; right: 8%; flex-direction: row-reverse; }
+  .field-diagram .callout-f4 .callout__line { right: 11px; top: 50%; width: 50px; }
+  .field-diagram .callout-f5 { top: 54%; right: 10%; flex-direction: row-reverse; }
+  .field-diagram .callout-f5 .callout__line { right: 11px; top: 50%; width: 60px; }
+
+  /* Standards / no-do panel */
+  .standards-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 0;
+    border: 1px solid var(--silver);
+  }
+  @media (max-width: 800px) { .standards-grid { grid-template-columns: 1fr; } }
+  .standards-grid__cell {
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+    border-right: 1px solid var(--silver);
+    border-bottom: 1px solid var(--silver);
+  }
+  .standards-grid__cell:nth-child(2n) { border-right: 0; }
+  .standards-grid__cell:nth-last-child(-n+2) { border-bottom: 0; }
+  @media (max-width: 800px) {
+    .standards-grid__cell { border-right: 0; border-bottom: 1px solid var(--silver); }
+    .standards-grid__cell:last-child { border-bottom: 0; }
+  }
+  .standards-grid__cell .num {
+    font-family: var(--font-display); font-size: 0.7rem; font-weight: 600;
+    letter-spacing: 0.22em; color: var(--gold); margin-bottom: 0.85rem;
+    display: block;
+  }
+  .standards-grid__cell h3 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1.15rem; color: var(--charcoal); margin-bottom: 0.85rem;
+    line-height: 1.2;
+  }
+  .standards-grid__cell p {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: 0.92rem; color: var(--slate); line-height: 1.55;
+  }
+</style>
 </head>
 <body>
-<nav class="nav nav--solid" data-page="process">
+
+<!-- ========== NAV ========== -->
+<nav class="nav" data-page="process">
   <div class="nav__inner">
-    <a href="index.html" class="wordmark" aria-label="Meridian Experts"><img src="assets/logo-white.png" alt="Meridian Experts"></a>
+    <a href="index.html" class="wordmark"><img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'"></a>
     <ul class="nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
-      <li><a href="approach.html" data-nav="approach">Approach</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
       <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
     </ul>
-    <button class="nav__burger" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div>
 </nav>
-<header class="pagehead">
-  <div class="container pagehead__inner">
-    <span class="eyebrow">Engagement Process</span>
-    <h1>What happens after you retain us.</h1>
-    <p>Six stages, mapped to the calendar. What counsel receives, when, and in what form — from the conflict check on day one to trial testimony on the back end.</p>
+
+<!-- ========== HERO ========== -->
+<section class="v2-hero pr-hero" data-screen-label="01 Hero" style="min-height: 70vh;">
+  <div class="v2-hero__media">
+    <video id="pr-hero-video" autoplay loop muted playsinline
+           style="width:100%;height:100%;object-fit:cover;"
+           poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'><rect fill='%2325566E' width='16' height='9'/></svg>"></video>
+    <script>
+      // Preview env lacks byte-range support; fetch-as-blob workaround.
+      // For production, simplify to: <video src="assets/process-hero.mp4" preload="metadata" ...>
+      (async () => {
+        const v = document.getElementById('pr-hero-video');
+        try {
+          const r = await fetch('assets/process-hero.mp4');
+          v.src = URL.createObjectURL(await r.blob());
+          v.play().catch(() => {});
+        } catch (e) { v.src = 'assets/process-hero.mp4'; }
+      })();
+    </script>
   </div>
-</header>
-
-<section class="practice-detail">
-  <div class="container">
-    <div class="practice-detail__body" style="max-width:62ch; margin-bottom:1rem;">
-      <p>Every engagement runs through the same six stages. Timing shifts with matter size, record volume, and site access — but the sequence does not. Each stage produces a specific deliverable to retaining counsel.</p>
-      <p style="font-size:0.9rem; color:var(--steel); margin-top:1rem;"><em>This page is about the calendar. For the philosophy behind the work — why opinions are structured the way they are — see <a href="approach.html" style="color:var(--horizon); border-bottom:1px solid var(--horizon);">Approach</a>.</em></p>
-    </div>
-
-    <div class="process-expanded">
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">01</div>
-        <div class="process-expanded__body">
-          <h3>Conflict &amp; Intake Review</h3>
-          <p>Confidential case screening, scope definition, and engagement terms — aligned to statute-of-limitations pressure when needed.</p>
-          <ul><li>Conflict check against prior engagements</li><li>Written scope and rate schedule</li><li>Protective-order compliance confirmed</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>24–48 hours from initial contact</div>
-      </div>
-
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">02</div>
-        <div class="process-expanded__body">
-          <h3>Document Review</h3>
-          <p>Plans, specifications, submittals, RFIs, change orders, inspection records, and prior reports — evaluated before the first site visit so the site work is targeted, not exploratory.</p>
-          <ul><li>Specification and submittal register</li><li>Prior-expert report review (if any)</li><li>Site-visit protocol drafted in advance</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>1–3 weeks depending on volume</div>
-      </div>
-
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">03</div>
-        <div class="process-expanded__body">
-          <h3>Field Investigation</h3>
-          <p>Non-destructive and destructive testing under documented protocols. Photography, sampling, and measurements preserved under chain-of-custody.</p>
-          <ul><li>Moisture mapping, infrared, water testing per ASTM</li><li>Destructive openings with signed logs</li><li>Opposing counsel notice and joint inspection where appropriate</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>1–5 days on site; reconvenes for destructive work</div>
-      </div>
-
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">04</div>
-        <div class="process-expanded__body">
-          <h3>Root-Cause Analysis</h3>
-          <p>Evidence is mapped against the published standards and the building code in effect at time of construction. Findings memo issued to counsel for review before reporting begins.</p>
-          <ul><li>Findings memo (counsel-only, not for disclosure)</li><li>Standard and code citations table</li><li>Alternative-cause matrix</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>2–6 weeks, overlapping with testing</div>
-      </div>
-
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">05</div>
-        <div class="process-expanded__body">
-          <h3>Expert Report Issued</h3>
-          <p>Counsel receives the draft expert report for review, then the final report packaged for Rule 26 or state-equivalent disclosure. Demonstrative exhibits and underlying-data appendices included.</p>
-          <ul><li>Draft report to counsel — comments incorporated</li><li>Final report with demonstratives and appendices</li><li>Disclosure-ready packaging (Rule 26 / FRCP)</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>2–4 weeks after analysis</div>
-      </div>
-
-      <div class="process-expanded__step">
-        <div class="process-expanded__num">06</div>
-        <div class="process-expanded__body">
-          <h3>Deposition &amp; Trial</h3>
-          <p>Pre-deposition prep sessions with retaining counsel. Demonstratives produced for mediation or trial. Rebuttal reports issued as opposing experts disclose. Live testimony at deposition and trial.</p>
-          <ul><li>Pre-deposition prep sessions (typically two, scheduled to counsel's calendar)</li><li>Demonstratives — boards or animations, as the venue requires</li><li>Rebuttal report on opposing expert disclosure</li><li>Deposition and trial testimony</li></ul>
-        </div>
-        <div class="process-expanded__meta"><strong>Timing</strong>Disclosure deadline through verdict; rush accommodated</div>
-      </div>
-    </div>
-
-    <div class="practice-detail__body" style="max-width:62ch; margin-top:3rem;">
-      <h2 class="h-section" style="font-size:1.6rem; margin-bottom:1rem;">Rush engagements</h2>
-      <p>Statute-of-limitations matters, pre-suit investigation, and inspection deadlines can compress this timeline. Stages 1–3 can run concurrently when the matter requires it. Note urgency at intake — we'll tell you in 24 hours whether it can be staffed without compromising the documentation chain.</p>
+  <div class="v2-hero__tint"></div>
+  <div class="v2-hero__bottom-fade"></div>
+  <div class="v2-hero__grid"></div>
+  <div class="v2-hero__ticks">
+    <span class="v2-hero__tick v2-hero__tick--tl"></span>
+    <span class="v2-hero__tick v2-hero__tick--tr"></span>
+    <span class="v2-hero__tick v2-hero__tick--bl"></span>
+    <span class="v2-hero__tick v2-hero__tick--br"></span>
+  </div>
+  <div class="container v2-hero__inner" style="grid-template-columns: 1fr;">
+    <div style="max-width: 880px;">
+      <span class="v2-hero__eyebrow">Engagement Process</span>
+      <h1 class="fade is-visible">From claim file<br><em>to courtroom record.</em></h1>
+      <p class="v2-hero__sub fade fade--delay-1 is-visible">Five stages. Documented at every step. The same workflow whether the matter resolves at mediation or proceeds through trial.</p>
     </div>
   </div>
 </section>
+
+<!-- ========== TIMELINE STRIP — overview ========== -->
+<section class="timeline-strip" data-screen-label="02 Timeline">
+  <div class="container">
+    <div class="timeline-strip__head fade">
+      <span class="eyebrow eyebrow--gold">The Sequence</span>
+      <h2 class="h-section">Five stages. One continuous record.</h2>
+    </div>
+    <div class="timeline-grid fade">
+      <div class="timeline-cell">
+        <span class="timeline-cell__num">Stage 01</span>
+        <div class="timeline-cell__title">Intake &amp; Conflict</div>
+        <p style="font-size: 0.85rem; color: var(--ice-blue); line-height: 1.5;">Confidential case screen, conflict check, scope agreement.</p>
+        <span class="timeline-cell__time">~ 1 BUSINESS DAY</span>
+      </div>
+      <div class="timeline-cell">
+        <span class="timeline-cell__num">Stage 02</span>
+        <div class="timeline-cell__title">Document Review</div>
+        <p style="font-size: 0.85rem; color: var(--ice-blue); line-height: 1.5;">Plans, specs, prior reports, claim file before site visit.</p>
+        <span class="timeline-cell__time">~ 5–10 DAYS</span>
+      </div>
+      <div class="timeline-cell">
+        <span class="timeline-cell__num">Stage 03</span>
+        <div class="timeline-cell__title">Field Investigation</div>
+        <p style="font-size: 0.85rem; color: var(--ice-blue); line-height: 1.5;">Photographic, sample, measurement under chain-of-custody.</p>
+        <span class="timeline-cell__time">~ 1–3 SITE DAYS</span>
+      </div>
+      <div class="timeline-cell">
+        <span class="timeline-cell__num">Stage 04</span>
+        <div class="timeline-cell__title">Expert Report</div>
+        <p style="font-size: 0.85rem; color: var(--ice-blue); line-height: 1.5;">OEC and Loss Analysis built for Rule 26 disclosure.</p>
+        <span class="timeline-cell__time">~ 4–6 WEEKS</span>
+      </div>
+      <div class="timeline-cell">
+        <span class="timeline-cell__num">Stage 05</span>
+        <div class="timeline-cell__title">Deposition &amp; Trial</div>
+        <p style="font-size: 0.85rem; color: var(--ice-blue); line-height: 1.5;">Counsel consult, demonstrative prep, deposition, testimony.</p>
+        <span class="timeline-cell__time">PER CASE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAGE 01 — Intake ========== -->
+<section class="stage" id="intake" data-screen-label="03 Stage 01">
+  <div class="container">
+    <div class="stage__inner">
+      <div class="stage__index fade">
+        <div class="stage__index-num">01</div>
+        <div class="stage__index-of">Stage of Five</div>
+        <div class="stage__index-title">Intake &amp; Conflict</div>
+      </div>
+      <div class="stage__body fade">
+        <h2>Conflict-checked before the file is opened.</h2>
+        <p>An engagement begins with a confidential conversation. Names, parties, and matter type are screened against active and historical engagements before any documents are accepted.</p>
+        <ul class="stage__substeps">
+          <li><span>A.</span><p>Initial counsel call — case summary, parties, jurisdiction, posture.</p></li>
+          <li><span>B.</span><p>Conflict check against active and recent engagement record.</p></li>
+          <li><span>C.</span><p>Scope-of-work definition and engagement letter.</p></li>
+          <li><span>D.</span><p>Document intake protocol and secure transfer.</p></li>
+        </ul>
+        <div class="stage__deliverable">
+          <span class="stage__deliverable-icon">DOC</span>
+          <div>
+            <strong>Deliverable</strong>
+            <p>Engagement letter with scope of work, fee structure, and document protocol.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stage__visual fade">
+        <span class="stage__visual-tag">Intake — Document</span>
+        <image-slot id="pr-stage1" placeholder="Engagement letter on a desk, fountain pen, calm light"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAGE 02 — Document Review ========== -->
+<section class="stage stage--alt" id="review" data-screen-label="04 Stage 02">
+  <div class="container">
+    <div class="stage__inner">
+      <div class="stage__index fade">
+        <div class="stage__index-num">02</div>
+        <div class="stage__index-of">Stage of Five</div>
+        <div class="stage__index-title">Document Review</div>
+      </div>
+      <div class="stage__body fade">
+        <h2>Read before walking the site.</h2>
+        <p>Plans, specs, prior reports, claim file, and policy language are reviewed before the first field visit. The site investigation tests hypotheses formed in document review — not the other way around.</p>
+        <ul class="stage__substeps">
+          <li><span>A.</span><p>Architectural and structural drawings — original construction and any subsequent alterations.</p></li>
+          <li><span>B.</span><p>Prior inspection reports, adjuster estimates, third-party Loss Analysis.</p></li>
+          <li><span>C.</span><p>Claim file, policy provisions, declarations relevant to scope.</p></li>
+          <li><span>D.</span><p>Pre-investigation hypothesis matrix prepared for field testing.</p></li>
+        </ul>
+        <div class="stage__deliverable">
+          <span class="stage__deliverable-icon">DOC</span>
+          <div>
+            <strong>Deliverable</strong>
+            <p>Internal investigation plan keyed to the documentary record.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stage__visual fade">
+        <span class="stage__visual-tag">Document — Review</span>
+        <image-slot id="pr-stage2" placeholder="Architectural drawings stacked on a desk, neutral tones"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAGE 03 — Field Investigation — annotated diagram ========== -->
+<section class="stage" id="field" data-screen-label="05 Stage 03">
+  <div class="container">
+    <div class="stage__inner" style="grid-template-columns: 280px 1fr; gap: clamp(2rem,4vw,4rem);">
+      <div class="stage__index fade">
+        <div class="stage__index-num">03</div>
+        <div class="stage__index-of">Stage of Five</div>
+        <div class="stage__index-title">Field Investigation</div>
+      </div>
+      <div class="stage__body fade">
+        <h2>The site is the witness. Every observation is recorded.</h2>
+        <p>Field investigation operates under documented protocols. Photography, sampling, and measurement proceed under chain-of-custody from the moment of arrival until the moment the report file is closed.</p>
+      </div>
+    </div>
+    <div class="fade" style="margin-top: 3rem;">
+      <div class="field-diagram">
+        <image-slot id="pr-stage3" placeholder="Building exterior or roof — clean technical photograph"></image-slot>
+        <div class="callout callout-f1"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">A</span>Drone &amp; oblique photography</span></div>
+        <div class="callout callout-f2"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">B</span>Documented sample take</span></div>
+        <div class="callout callout-f3"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">C</span>Measurement &amp; mapping</span></div>
+        <div class="callout callout-f4"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">D</span>Conditions log</span></div>
+        <div class="callout callout-f5"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">E</span>Chain-of-custody seal</span></div>
+      </div>
+      <div class="stage__deliverable" style="margin-top: 2rem; max-width: 720px;">
+        <span class="stage__deliverable-icon">DOC</span>
+        <div>
+          <strong>Deliverable</strong>
+          <p>Field record set: photographs, sample log, measurement data, narrative observations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAGE 04 — Report ========== -->
+<section class="stage stage--alt" id="report" data-screen-label="06 Stage 04">
+  <div class="container">
+    <div class="stage__inner">
+      <div class="stage__index fade">
+        <div class="stage__index-num">04</div>
+        <div class="stage__index-of">Stage of Five</div>
+        <div class="stage__index-title">Expert Report</div>
+      </div>
+      <div class="stage__body fade">
+        <h2>The report is the last step, not the first.</h2>
+        <p>OEC and Loss Analysis. Opinions separated from methodology. Basis disclosed. Built for Rule 26 disclosure and Daubert challenge — and built for the client to read in twenty minutes if needed.</p>
+        <ul class="stage__substeps">
+          <li><span>A.</span><p>Causation analysis — peril, date of loss, building system.</p></li>
+          <li><span>B.</span><p>Scope of repair tied to documented field conditions.</p></li>
+          <li><span>C.</span><p>Construction cost analysis with regional basis.</p></li>
+          <li><span>D.</span><p>Photographic exhibits, schematics, demonstratives.</p></li>
+          <li><span>E.</span><p>Statement of opinions and Rule 26 disclosure package.</p></li>
+        </ul>
+        <div class="stage__deliverable">
+          <span class="stage__deliverable-icon">RPT</span>
+          <div>
+            <strong>Deliverable</strong>
+            <p>Signed expert report (OEC and/or Loss Analysis) with full Rule 26 disclosure.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stage__visual fade">
+        <span class="stage__visual-tag">Document — Report</span>
+        <image-slot id="pr-stage4" placeholder="Bound expert report on a clean desk, gold accent"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAGE 05 — Testimony ========== -->
+<section class="stage" id="testimony" data-screen-label="07 Stage 05">
+  <div class="container">
+    <div class="stage__inner">
+      <div class="stage__index fade">
+        <div class="stage__index-num">05</div>
+        <div class="stage__index-of">Stage of Five</div>
+        <div class="stage__index-title">Deposition &amp; Trial</div>
+      </div>
+      <div class="stage__body fade">
+        <h2>The opinion has to hold under cross.</h2>
+        <p>Counsel consultation, demonstrative preparation, deposition readiness, and trial testimony — all built off the same evidentiary record assembled in stages 01–04. Nothing is added late.</p>
+        <ul class="stage__substeps">
+          <li><span>A.</span><p>Pre-deposition counsel meeting and document orientation.</p></li>
+          <li><span>B.</span><p>Demonstrative exhibits — photo boards, scope tables, diagram callouts.</p></li>
+          <li><span>C.</span><p>Daubert and qualification challenge response support.</p></li>
+          <li><span>D.</span><p>Trial testimony — direct, cross, redirect.</p></li>
+        </ul>
+        <div class="stage__deliverable">
+          <span class="stage__deliverable-icon">CRT</span>
+          <div>
+            <strong>Deliverable</strong>
+            <p>Deposition transcript record, trial testimony, complete exhibit set.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stage__visual fade">
+        <span class="stage__visual-tag">Court — Testimony</span>
+        <image-slot id="pr-stage5" placeholder="Courthouse exterior or witness stand, calm institutional"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STANDARDS — what we do / what we don't ========== -->
+<section class="product-section" style="background: var(--cool-white);" data-screen-label="08 Standards">
+  <div class="container">
+    <div class="product-section__head fade">
+      <span class="eyebrow">The Standards We Hold</span>
+      <h2>The discipline behind the deliverable.</h2>
+      <p>Standards we apply to every engagement — and a few practices we decline.</p>
+    </div>
+    <div class="standards-grid fade">
+      <div class="standards-grid__cell">
+        <span class="num">01 — Standard</span>
+        <h3>Methodology before opinion.</h3>
+        <p>Methodology is selected before conclusions are reached. The basis is documented in the report, not assumed.</p>
+      </div>
+      <div class="standards-grid__cell">
+        <span class="num">02 — Standard</span>
+        <h3>Field record under chain-of-custody.</h3>
+        <p>Photographs, samples, and measurements are documented at the moment of collection — not reconstructed later.</p>
+      </div>
+      <div class="standards-grid__cell">
+        <span class="num">03 — Standard</span>
+        <h3>Independent of outcome.</h3>
+        <p>The fee structure does not change based on the conclusion reached or the resolution of the matter.</p>
+      </div>
+      <div class="standards-grid__cell">
+        <span class="num">04 — Standard</span>
+        <h3>One file, retained for record.</h3>
+        <p>The complete engagement record — every photo, note, communication — is preserved and produced on request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
 <section class="cta">
   <div class="cta__grid"></div>
   <div class="container cta__inner">
     <div>
-      <span class="eyebrow eyebrow--gold">Engagement Protocol</span>
-      <h2 class="h-section" style="margin-top:1rem;">Want the protocol summary first?</h2>
-      <p>A one-page protocol summary — covering scope definition, chain-of-custody handling, destructive-testing notification, and deliverable structure — is available to retaining counsel before the engagement letter is signed. Useful when a paralegal or senior associate is vetting experts for the partner.</p>
-      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="contact.html?topic=protocol-summary" class="btn btn--primary">Request Protocol Summary <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
-        <a href="#" class="btn btn--ghost-light" data-calendly>Book a Case Review</a>
-      </div>
+      <span class="eyebrow eyebrow--gold">Engage an Expert</span>
+      <h2 class="h-section" style="margin-top:1rem;">Have a matter approaching one of these stages?</h2>
+      <p>Send a brief description of the case and where it sits. We'll respond within one business day with a conflict check and an honest read on fit.</p>
+      <div style="margin-top:2rem;"><a href="contact.html" class="btn btn--primary">Engage an Expert <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
     </div>
     <div class="cta__box">
-      <span class="eyebrow eyebrow--gold">Direct Contact</span>
-      <h3>Counsel inquiries only.</h3>
+      <span class="eyebrow eyebrow--gold">Rush Engagements</span>
+      <h3>Time-sensitive matters accommodated.</h3>
+      <p style="color: var(--ice-blue); font-size: 0.925rem; line-height: 1.55;">Statute deadlines, disclosure cutoffs, appraisal panel formation, weather-window inspections.</p>
       <ul class="cta__contact">
-        <li><strong>Intake</strong><span>admin@meridianexperts.com</span></li>
         <li><strong>Phone</strong><span>214.319.8030</span></li>
+        <li><strong>Email</strong><span>admin@meridianexperts.com</span></li>
       </ul>
     </div>
   </div>
 </section>
+
+<!-- ========== FOOTER ========== -->
 <footer style="height: 450px">
   <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Stages</h4><ul><li><a href="#intake">01 — Intake &amp; Conflict</a></li><li><a href="#review">02 — Document Review</a></li><li><a href="#field">03 — Field Investigation</a></li><li><a href="#report">04 — Expert Report</a></li><li><a href="#testimony">05 — Deposition &amp; Trial</a></li></ul></div>
       <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
 </footer>
+
+<script src="assets/image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/v2.js"></script>
 </body>
 </html>

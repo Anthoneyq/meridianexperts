@@ -3,390 +3,465 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
 <title>Practice Areas — Meridian Experts</title>
-<meta name="description" content="Six practice areas where Meridian is retained by counsel as an independent expert: construction defects, water intrusion and envelope, insurance and catastrophe loss, structural failures, code and standard of care, and expert witness testimony.">
+<meta name="description" content="Six engagement types — damages, repair scope, rebuttal, appraisal, causation, expert testimony — for first-party property insurance disputes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://meridianexperts.com/practice-areas">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Meridian Experts">
-<meta property="og:title" content="Practice Areas — Meridian Experts">
-<meta property="og:description" content="Six practice areas where Meridian is retained by counsel as an independent expert: construction defects, water intrusion and envelope, insurance and catastrophe loss, structural failures, code and standard of care, and expert witness testimony.">
-<meta property="og:url" content="https://meridianexperts.com/practice-areas">
-<meta property="og:image" content="https://meridianexperts.com/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Practice Areas — Meridian Experts">
-<meta name="twitter:description" content="Six practice areas where Meridian is retained by counsel as an independent expert: construction defects, water intrusion and envelope, insurance and catastrophe loss, structural failures, code and standard of care, and expert witness testimony.">
-<meta name="twitter:image" content="https://meridianexperts.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/v2.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="alternate icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#25566E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "provider": {
-    "@type": "ProfessionalService",
-    "name": "Meridian Experts",
-    "url": "https://meridianexperts.com/"
-  },
-  "name": "Expert Witness Services & Litigation Support",
-  "description": "Six practice areas: construction defects, water intrusion and envelope, insurance and catastrophe loss, structural failures, code and standard of care, and expert witness testimony.",
-  "areaServed": [
-    "California",
-    "Arizona",
-    "Nevada",
-    "Oregon",
-    "Washington",
-    "Texas",
-    "Colorado",
-    "Utah"
-  ],
-  "serviceType": [
-    "Construction Defect Analysis",
-    "Building Envelope Investigation",
-    "Insurance Claim Expert Support",
-    "Structural Failure Analysis",
-    "Code Compliance Review",
-    "Expert Witness Testimony"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"Do you accept both plaintiff and defense engagements?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are retained by both plaintiff and defense counsel across construction-defect, insurance, and structural matters. The evidentiary standard we apply is the same either way — the opinion follows the record, not the retention."}},
-    {"@type":"Question","name":"How quickly can you engage on a matter with a near-term deadline?","acceptedAnswer":{"@type":"Answer","text":"Conflict check and intake review are completed within 24–48 hours of initial contact. For statute-of-limitations, pre-suit investigation, and inspection deadlines, we accommodate rush scheduling where we can staff the work without compromising documentation quality."}},
-    {"@type":"Question","name":"What information do you need at intake?","acceptedAnswer":{"@type":"Answer","text":"A one- or two-paragraph case summary, the procedural posture, the jurisdiction, key deadlines, and a list of parties for conflict check. Plans, prior reports, and photographs help, but are not required to start."}},
-    {"@type":"Question","name":"Do you decline engagements?","acceptedAnswer":{"@type":"Answer","text":"Yes — when the available evidence will not support a defensible opinion, when the scope requested sits outside our disciplines, or when a conflict exists."}},
-    {"@type":"Question","name":"How do you handle chain-of-custody for physical evidence?","acceptedAnswer":{"@type":"Answer","text":"All samples are labeled, photographed in-place prior to removal, logged into a chain-of-custody register, and stored under controlled conditions. Any transfer is signed at both ends."}},
-    {"@type":"Question","name":"Are your reports Rule 26 / Daubert compliant?","acceptedAnswer":{"@type":"Answer","text":"Reports are written to separate observation, methodology, and opinion, with basis disclosed under Rule 26. Methodology is grounded in published standards with citations embedded."}},
-    {"@type":"Question","name":"Where do you practice?","acceptedAnswer":{"@type":"Answer","text":"Primary jurisdictions are California, Arizona, Nevada, Oregon, Washington, Colorado, Utah, and Texas. Additional jurisdictions are available under reciprocity or case-specific admission."}},
-    {"@type":"Question","name":"What is the typical engagement cost?","acceptedAnswer":{"@type":"Answer","text":"Scope and rate schedule are provided in writing at intake. Every engagement letter specifies hourly rates, anticipated phases, and conditions under which scope may expand."}}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://meridianexperts.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Practice Areas",
-      "item": "https://meridianexperts.com/practice-areas"
-    }
-  ]
-}
-</script>
+<style>
+  .pa-hero { min-height: 70vh; }
+  .pa-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); font-weight: 400; }
+  .pa-hero h1 em { font-weight: 300; color: rgba(245,250,245,0.55); }
+
+  /* Service deep-dive sections — alternating image/diagram + content */
+  .service { padding: clamp(5rem, 8vw, 8rem) 0; border-top: 1px solid var(--silver); scroll-margin-top: 100px; }
+  .service:nth-child(odd) { background: var(--off-white); }
+  .service:nth-child(even) { background: var(--mist); }
+  .service__inner {
+    display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: center;
+  }
+  @media (max-width: 900px) { .service__inner { grid-template-columns: 1fr; } }
+  .service__inner--reverse > :first-child { order: 2; }
+  @media (max-width: 900px) { .service__inner--reverse > :first-child { order: 0; } }
+
+  .service__num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.85rem;
+  }
+  .service__num::before {
+    content: ''; width: 36px; height: 1px; background: var(--gold); display: inline-block;
+  }
+  .service h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.85rem, 3.5vw, 2.85rem); line-height: 1.05;
+    letter-spacing: -0.015em; color: var(--charcoal); margin-bottom: 1.5rem;
+    text-transform: none;
+  }
+  .service__lede {
+    font-family: var(--font-body); font-weight: 300;
+    font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.55;
+    color: var(--slate); max-width: 56ch; margin-bottom: 2rem;
+  }
+
+  .service__list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--silver); }
+  .service__list li {
+    padding: 1rem 0; border-bottom: 1px solid var(--silver);
+    display: grid; grid-template-columns: 36px 1fr; gap: 1rem;
+    align-items: baseline;
+  }
+  .service__list li span {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.7rem; letter-spacing: 0.18em; color: var(--steel);
+  }
+  .service__list li p {
+    font-size: 0.93rem; color: var(--slate); line-height: 1.5;
+    margin: 0;
+  }
+
+  .service__media {
+    position: relative; aspect-ratio: 4/5;
+    border: 1px solid var(--silver);
+    overflow: hidden; background: var(--off-white);
+  }
+  .service__media image-slot { width: 100%; height: 100%; }
+  .service__media-tag {
+    position: absolute; top: 1.5rem; left: 1.5rem; z-index: 3;
+    background: var(--charcoal); color: var(--gold);
+    font-family: var(--font-display); font-size: 0.68rem;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    padding: 0.55rem 0.9rem;
+  }
+
+  /* Annotated report mockup for first service */
+  .report-mock {
+    aspect-ratio: 8.5/11; max-width: 540px; margin: 0 auto; position: relative;
+    background: var(--off-white); border: 1px solid var(--silver);
+    box-shadow: 0 30px 60px -30px rgba(0,0,0,0.18);
+    padding: 2rem 2.25rem;
+    display: flex; flex-direction: column; gap: 0.85rem;
+  }
+  .report-mock__head {
+    border-bottom: 1px solid var(--charcoal); padding-bottom: 0.65rem;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .report-mock__head .t-eyebrow { color: var(--gold); }
+  .report-mock__head h4 {
+    font-family: var(--font-display); font-weight: 500; font-size: 0.95rem;
+    color: var(--charcoal); text-transform: none; letter-spacing: 0;
+  }
+  .report-mock__title {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 1.4rem; color: var(--charcoal); line-height: 1.1;
+    margin: 0.25rem 0 0.5rem;
+  }
+  .report-mock__lines {
+    display: flex; flex-direction: column; gap: 0.45rem;
+  }
+  .report-mock__line { height: 6px; background: var(--silver); border-radius: 1px; }
+  .report-mock__line--short { width: 65%; }
+  .report-mock__line--mid { width: 85%; }
+  .report-mock__line--accent { background: var(--steel); width: 40%; }
+  .report-mock__chunk {
+    border-left: 2px solid var(--gold); padding-left: 0.85rem; margin: 0.35rem 0;
+  }
+  .report-mock__chunk h5 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--charcoal); margin-bottom: 0.5rem;
+  }
+  .report-mock__photo-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.5rem 0;
+  }
+  .report-mock__photo {
+    aspect-ratio: 4/3; background: var(--steel);
+    background-image: linear-gradient(135deg, var(--steel) 25%, transparent 25%, transparent 50%, var(--steel) 50%, var(--steel) 75%, transparent 75%);
+    background-size: 8px 8px;
+    opacity: 0.55;
+  }
+  .report-mock__foot {
+    margin-top: auto; display: flex; justify-content: space-between;
+    border-top: 1px solid var(--silver); padding-top: 0.6rem;
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.65rem; color: var(--steel); letter-spacing: 0.08em;
+  }
+
+  /* Report callouts wrapping the mock */
+  .report-frame {
+    position: relative; padding: 3.5rem;
+  }
+  .report-frame .callout-r1 { top: 12%; left: -1rem; }
+  .report-frame .callout-r1 .callout__line { left: 11px; top: 50%; width: 60px; }
+  .report-frame .callout-r2 { top: 38%; left: -1.5rem; }
+  .report-frame .callout-r2 .callout__line { left: 11px; top: 50%; width: 90px; }
+  .report-frame .callout-r3 { top: 64%; left: -1rem; }
+  .report-frame .callout-r3 .callout__line { left: 11px; top: 50%; width: 60px; }
+  .report-frame .callout-r4 { top: 22%; right: -1rem; flex-direction: row-reverse; }
+  .report-frame .callout-r4 .callout__line { right: 11px; top: 50%; width: 70px; }
+  .report-frame .callout-r5 { top: 56%; right: -1.5rem; flex-direction: row-reverse; }
+  .report-frame .callout-r5 .callout__line { right: 11px; top: 50%; width: 100px; }
+  @media (max-width: 1100px) { .report-frame [class*="callout-"] { display: none; } .report-frame { padding: 0; } }
+
+  /* Six service nav strip at top of page */
+  .pa-index {
+    background: var(--off-white); border-top: 1px solid var(--silver);
+    border-bottom: 1px solid var(--silver);
+    padding: 1.5rem 0;
+  }
+  .pa-index__inner {
+    display: flex; flex-wrap: wrap; gap: 0;
+    align-items: stretch; justify-content: space-between;
+  }
+  .pa-index__item {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;
+    padding: 0 1.25rem; flex: 1; min-width: 140px;
+    border-right: 1px solid var(--silver);
+    color: var(--charcoal); text-decoration: none;
+    transition: background 200ms;
+  }
+  .pa-index__item:last-child { border-right: 0; }
+  .pa-index__item:hover { background: var(--mist); }
+  .pa-index__item-num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.65rem; letter-spacing: 0.22em; color: var(--gold);
+  }
+  .pa-index__item-name {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.92rem; color: var(--charcoal); line-height: 1.2;
+  }
+  @media (max-width: 800px) {
+    .pa-index__item { min-width: 50%; flex: 0 0 50%; padding: 0.6rem 1rem; border-bottom: 1px solid var(--silver); }
+    .pa-index__item:nth-child(2n) { border-right: 0; }
+  }
+</style>
 </head>
 <body>
 
-<nav class="nav nav--solid" data-page="practice">
+<!-- ========== NAV ========== -->
+<nav class="nav" data-page="practice">
   <div class="nav__inner">
     <a href="index.html" class="wordmark" aria-label="Meridian Experts">
-      <img src="assets/logo-white.png" alt="Meridian Experts">
+      <img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'">
     </a>
     <ul class="nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
-      <li><a href="approach.html" data-nav="approach">Approach</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
       <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
     </ul>
-    <button class="nav__burger" aria-label="Menu">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
   </div>
 </nav>
 
-<header class="pagehead">
-  <div class="container pagehead__inner">
-    <span class="eyebrow">Practice Areas</span>
-    <h1>What we investigate.</h1>
-    <p>Every engagement begins with the building — and ends with a record clear enough to stand on its own in deposition, mediation, or trial. Six disciplines, one standard of defensibility.</p>
+<!-- ========== HERO ========== -->
+<section class="v2-hero pa-hero" data-screen-label="01 Hero">
+  <div class="v2-hero__media">
+    <image-slot id="pa-hero" placeholder="Cinematic — building under examination, calm overcast, technical"></image-slot>
   </div>
-</header>
-
-<section class="practice-detail">
-  <div class="container">
-
-    <article class="practice-detail__block reveal" id="defects">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 01</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M8 40 L8 18 L24 8 L40 18 L40 40 Z"/><path d="M8 40 L40 40" stroke-width="1.5"/><path d="M18 40 L18 26 L30 26 L30 40"/><path d="M24 26 L24 40"/></svg>
-        <h2>Construction Defects</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Design and workmanship failures across commercial, multi-family, institutional, and custom residential construction. We investigate deviations from plans and specifications, failures to meet the applicable standard of care, and latent defects that emerge years after substantial completion.</p>
-        <p>Our work pairs document-first review with targeted field investigation — destructive and non-destructive — so that opinions on causation, responsibility, and cost of repair trace cleanly back to physical evidence.</p>
-        <ul class="practice-detail__tags">
-          <li>Plan &amp; Spec Review</li><li>Workmanship Analysis</li><li>Scope Disputes</li><li>Latent Defects</li><li>Cost of Repair</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-multifamily-envelope">See it in practice → 180-unit envelope failure, defense engagement</a></p>
-      </div>
-    </article>
-
-    <article class="practice-detail__block reveal" id="envelope">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 02</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M8 14 L40 14 L40 34 L8 34 Z"/><path d="M8 14 L24 26 L40 14"/><path d="M8 34 L18 24"/><path d="M40 34 L30 24"/></svg>
-        <h2>Water Intrusion &amp; Envelope</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Roofing, stucco, EIFS, window and door installations, flashing assemblies, masonry, and moisture migration pathways. We trace the route water took — not just the damage it left behind.</p>
-        <p>Where leaks are alleged, we conduct ASTM-referenced water testing, infrared thermography, and selective destructive openings to document the failure mode before opposing experts arrive on site.</p>
-        <ul class="practice-detail__tags">
-          <li>ASTM E1105 Testing</li><li>EIFS &amp; Stucco</li><li>Roofing Assemblies</li><li>Fenestration</li><li>Thermography</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-rebuttal-envelope">See it in practice → Rebuttal engagement on opposing envelope opinion</a></p>
-      </div>
-    </article>
-
-    <article class="practice-detail__block reveal" id="insurance">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 03</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M24 6 L6 14 L6 28 C6 36 14 42 24 44 C34 42 42 36 42 28 L42 14 Z"/><path d="M17 24 L22 29 L32 19"/></svg>
-        <h2>Insurance &amp; Catastrophe Loss</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Hurricane, hail, wind, and water-loss evaluations for first-party disputes, subrogation claims, and post-event loss analysis. Our reports isolate coverage-relevant causation — separating storm-caused damage from pre-existing conditions, wear, and maintenance-related loss.</p>
-        <p>We work both sides: retained by policyholder counsel and by insurer counsel, with the same evidentiary standard either way.</p>
-        <ul class="practice-detail__tags">
-          <li>Hail &amp; Wind</li><li>Hurricane</li><li>First-Party Disputes</li><li>Subrogation</li><li>Causation Analysis</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-hail-roof">See it in practice → Disputed hail claim, modified-bitumen roof</a></p>
-      </div>
-    </article>
-
-    <article class="practice-detail__block reveal" id="structural">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 04</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M6 38 L6 14 L18 14 L18 38"/><path d="M18 26 L42 26 L42 38"/><path d="M6 38 L42 38"/><path d="M12 20 L12 24"/><path d="M26 32 L26 36"/><path d="M34 32 L34 36"/></svg>
-        <h2>Structural Failures</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Settlement, differential movement, foundation distress, framing deficiencies, and load-path investigations evaluated against the building code and standard of care in effect at time of construction.</p>
-        <p>Engagements frequently involve coordination with licensed structural engineers, geotechnical consultants, and surveyors — all under a single investigative record prepared for disclosure.</p>
-        <ul class="practice-detail__tags">
-          <li>Foundation &amp; Settlement</li><li>Framing</li><li>Load Path</li><li>Geotechnical Coordination</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-parking-pt-slab">See it in practice → Post-tensioned slab distress, three-level parking garage</a></p>
-      </div>
-    </article>
-
-    <article class="practice-detail__block reveal" id="code">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 05</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M14 6 L34 6 L38 10 L38 42 L10 42 L10 10 Z"/><path d="M16 18 L32 18"/><path d="M16 24 L32 24"/><path d="M16 30 L26 30"/><circle cx="34" cy="32" r="5"/><path d="M37 35 L40 38"/></svg>
-        <h2>Code &amp; Standard of Care</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Compliance analysis against governing codes (IBC, IRC, state and local amendments), published industry standards (ASTM, ASHRAE, NRCA, AAMA), and the prevailing standard of care — benchmarked to the date the work was performed, not today's standards.</p>
-        <p>We maintain historical code archives so that opinions on compliance are anchored to what was required at the time.</p>
-        <ul class="practice-detail__tags">
-          <li>IBC / IRC</li><li>ASTM / ASHRAE</li><li>Historical Codes</li><li>Industry Standards</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-ti-life-safety">See it in practice → Life-safety allegations, tenant-improvement build-out</a></p>
-      </div>
-    </article>
-
-    <article class="practice-detail__block reveal" id="testimony">
-      <div class="practice-detail__side">
-        <span class="practice-detail__num">Practice 06</span>
-        <svg class="practice-detail__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="8" y="10" width="32" height="28"/><path d="M8 18 L40 18"/><path d="M14 26 L22 26"/><path d="M14 30 L26 30"/><path d="M30 26 L34 30 L30 34"/></svg>
-        <h2>Expert Witness Testimony</h2>
-      </div>
-      <div class="practice-detail__body">
-        <p>Deposition and trial testimony supported by documented methodology, chain-of-custody evidence handling, and reports structured to separate observation, methodology, and opinion — the architecture a Daubert inquiry expects to see.</p>
-        <p>We prepare counsel for cross-examination of opposing experts and provide demonstrative exhibits built from our own investigative record.</p>
-        <ul class="practice-detail__tags">
-          <li>Deposition</li><li>Trial Testimony</li><li>Daubert Readiness</li><li>Demonstratives</li><li>Cross Prep</li>
-        </ul>
-        <p class="practice-detail__see"><a href="matters.html#m-curtainwall-arch">See it in practice → Architect curtainwall negligence, Daubert motion denied</a></p>
-      </div>
-    </article>
-
+  <div class="v2-hero__tint"></div>
+  <div class="v2-hero__grid"></div>
+  <div class="v2-hero__ticks">
+    <span class="v2-hero__tick v2-hero__tick--tl"></span>
+    <span class="v2-hero__tick v2-hero__tick--tr"></span>
+    <span class="v2-hero__tick v2-hero__tick--bl"></span>
+    <span class="v2-hero__tick v2-hero__tick--br"></span>
   </div>
-</section>
-
-<!-- ========== STANDARDS BAND ========== -->
-<section class="standards-band">
-  <div class="container">
-    <div class="standards-band__head">
-      <div>
-        <span class="eyebrow">Standards &amp; Authority</span>
-        <h2>The standards we cite.</h2>
-      </div>
-      <p>Every opinion is benchmarked to a published standard of care — not a personal one. Below are the authorities most frequently referenced across our practice. Historical editions are maintained for engagements concerning work performed under prior versions of the code.</p>
-    </div>
-    <ul class="standards-list">
-      <li class="standards-list__item">
-        <div class="standards-list__code">ASTM</div>
-        <div class="standards-list__title">ASTM International</div>
-        <div class="standards-list__desc">Building performance, envelope, roofing, and materials standards — including E1105 water penetration testing and E06 committee work.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">IBC / IRC</div>
-        <div class="standards-list__title">International Building &amp; Residential Codes</div>
-        <div class="standards-list__desc">Governing model codes, applied at the edition in effect on the date of construction — with state and local amendments layered in.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">IIBEC</div>
-        <div class="standards-list__title">Int'l Institute of Building Enclosure Consultants</div>
-        <div class="standards-list__desc">Envelope, roofing, and waterproofing consulting standards — including RBEC and RRO practice guidance.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">AAMA / FGIA</div>
-        <div class="standards-list__title">Fenestration &amp; Glazing Industry Alliance</div>
-        <div class="standards-list__desc">Window, door, curtain-wall, and skylight installation, inspection, and performance standards.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">ASCE / SEI</div>
-        <div class="standards-list__title">American Society of Civil Engineers</div>
-        <div class="standards-list__desc">Structural loading (ASCE 7), existing-building evaluation (ASCE 41), and catastrophe-loss reconnaissance methodology.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">NRCA</div>
-        <div class="standards-list__title">National Roofing Contractors Association</div>
-        <div class="standards-list__desc">Roofing industry standards and technical guidance — commonly cited in hail, wind, and first-party roofing disputes.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">ASHRAE</div>
-        <div class="standards-list__title">Building Science &amp; HVAC Performance</div>
-        <div class="standards-list__desc">Hygrothermal performance, vapor control, and ventilation standards — applied in moisture and IAQ-related matters.</div>
-      </li>
-      <li class="standards-list__item">
-        <div class="standards-list__code">NFPA</div>
-        <div class="standards-list__title">National Fire Protection Association</div>
-        <div class="standards-list__desc">Fire-rated assemblies and life-safety provisions — applied to code-compliance and post-fire loss matters.</div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ========== FAQ ========== -->
-<section class="faq-section">
-  <div class="container">
-    <div class="faq-section__head">
-      <div>
-        <span class="eyebrow">Questions From Counsel</span>
-        <h2>What retaining counsel typically ask.</h2>
-      </div>
-      <p>The questions below come up regularly during intake. If yours is different, send the case summary — we'll answer specifically in the fit assessment.</p>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item" open>
-        <summary>Do you accept both plaintiff and defense engagements?</summary>
-        <div class="faq-item__body">
-          <p>Yes. We are retained by both plaintiff and defense counsel across construction-defect, insurance, and structural matters. The evidentiary standard we apply is the same either way — the opinion follows the record, not the retention.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>How quickly can you engage on a matter with a near-term deadline?</summary>
-        <div class="faq-item__body">
-          <p>Conflict check and intake review are completed within 24–48 hours of initial contact. For statute-of-limitations, pre-suit investigation, and inspection deadlines, we accommodate rush scheduling where we can staff the work without compromising documentation quality.</p>
-          <p>If we cannot meet the deadline with defensible work, we say so at intake — before any engagement letter is signed.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>What information do you need at intake?</summary>
-        <div class="faq-item__body">
-          <p>A one- or two-paragraph case summary, the procedural posture, the jurisdiction, key deadlines, and a list of parties for conflict check. Plans, prior reports, and photographs help, but are not required to start.</p>
-          <p>Privileged material should wait until an engagement letter is in place.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Do you decline engagements?</summary>
-        <div class="faq-item__body">
-          <p>Yes — when the available evidence will not support a defensible opinion, when the scope requested sits outside our disciplines, or when a conflict exists. We communicate the decline in writing with a brief rationale so counsel can redirect without losing time.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>How do you handle chain-of-custody for physical evidence?</summary>
-        <div class="faq-item__body">
-          <p>All samples are labeled, photographed in-place prior to removal, logged into a chain-of-custody register, and stored under controlled conditions. Any transfer — to a laboratory, opposing expert, or storage facility — is signed at both ends. Our protocols track physical exhibits, photographs, measurements, and field logs.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Are your reports Rule 26 / Daubert compliant?</summary>
-        <div class="faq-item__body">
-          <p>Reports are written to separate observation, methodology, and opinion, with basis disclosed under Rule 26. Methodology is grounded in published standards — ASTM, AAMA, IIBEC, IBC, and discipline-specific authorities — with citations embedded, not implied. The goal is a record that survives both Daubert inquiry and adversarial cross without restating the investigation from memory.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Where do you practice?</summary>
-        <div class="faq-item__body">
-          <p>Primary jurisdictions are California, Arizona, Nevada, Oregon, Washington, Colorado, Utah, and Texas. Additional jurisdictions are available under reciprocity or case-specific admission — we confirm jurisdictional fit at intake before engagement.</p>
-        </div>
-      </details>
-
-      <details class="faq-item">
-        <summary>What is the typical engagement cost?</summary>
-        <div class="faq-item__body">
-          <p>Scope and rate schedule are provided in writing at intake. Every engagement letter specifies hourly rates, anticipated phases, and the conditions under which scope may expand (e.g. additional destructive testing, rebuttal reports, depositions beyond the originally-noticed list). We scope to what the matter requires — not what runs up the invoice.</p>
-        </div>
-      </details>
+  <div class="container v2-hero__inner" style="grid-template-columns: 1fr;">
+    <div style="max-width: 880px;">
+      <span class="v2-hero__eyebrow">Practice Areas</span>
+      <h1 class="fade is-visible">Six engagement types.<br><em>One evidentiary standard.</em></h1>
+      <p class="v2-hero__sub fade fade--delay-1 is-visible">Each service delivers an independent opinion documented to the same protocols — built to support claim resolution, mediation, appraisal, deposition, and trial.</p>
     </div>
   </div>
 </section>
-<!-- end FAQ -->
 
+<!-- ========== INDEX STRIP ========== -->
+<div class="pa-index">
+  <div class="container pa-index__inner">
+    <a href="#defects" class="pa-index__item"><span class="pa-index__item-num">01</span><span class="pa-index__item-name">Damages Assessment</span></a>
+    <a href="#envelope" class="pa-index__item"><span class="pa-index__item-num">02</span><span class="pa-index__item-name">Repair Scope &amp; Cost</span></a>
+    <a href="#insurance" class="pa-index__item"><span class="pa-index__item-num">03</span><span class="pa-index__item-name">Rebuttal Analysis</span></a>
+    <a href="#structural" class="pa-index__item"><span class="pa-index__item-num">04</span><span class="pa-index__item-name">Mediation &amp; Appraisal</span></a>
+    <a href="#code" class="pa-index__item"><span class="pa-index__item-num">05</span><span class="pa-index__item-name">Causation Opinions</span></a>
+    <a href="#testimony" class="pa-index__item"><span class="pa-index__item-num">06</span><span class="pa-index__item-name">Expert Testimony</span></a>
+  </div>
+</div>
+
+<!-- ========== 01 — DAMAGES — with annotated report mock ========== -->
+<section id="defects" class="service" data-screen-label="02 Damages">
+  <div class="container">
+    <div class="service__inner">
+      <div class="fade">
+        <div class="service__num">01 Foundational</div>
+        <h2>Damages assessment.</h2>
+        <p class="service__lede">Documented field investigation that grounds every downstream opinion. Hail, wind, wildfire, freeze, water and flood, fire, hurricane and named-storm — residential and commercial.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Site investigation under documented protocols — photography, sampling, measurements.</p></li>
+          <li><span>B.</span><p>Damage classification by peril, building system, and date of loss.</p></li>
+          <li><span>C.</span><p>Pre-existing condition analysis and wear-and-tear differentiation.</p></li>
+          <li><span>D.</span><p>Chain-of-custody documentation supporting every observation.</p></li>
+          <li><span>E.</span><p>Output: OEC report and Loss Analysis suitable for claim, ADR, or litigation.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="report-frame">
+          <div class="report-mock">
+            <div class="report-mock__head">
+              <span class="t-eyebrow">Loss Analysis</span>
+              <h4>Section 04 / 12</h4>
+            </div>
+            <h3 class="report-mock__title">Causation &amp; Scope</h3>
+            <div class="report-mock__lines">
+              <div class="report-mock__line report-mock__line--mid"></div>
+              <div class="report-mock__line"></div>
+              <div class="report-mock__line report-mock__line--short"></div>
+            </div>
+            <div class="report-mock__chunk">
+              <h5>4.2 — Roof Field</h5>
+              <div class="report-mock__lines">
+                <div class="report-mock__line report-mock__line--mid"></div>
+                <div class="report-mock__line"></div>
+                <div class="report-mock__line report-mock__line--accent"></div>
+              </div>
+            </div>
+            <div class="report-mock__photo-grid">
+              <div class="report-mock__photo"></div>
+              <div class="report-mock__photo"></div>
+            </div>
+            <div class="report-mock__lines">
+              <div class="report-mock__line report-mock__line--short"></div>
+              <div class="report-mock__line"></div>
+            </div>
+            <div class="report-mock__foot">
+              <span>MERIDIAN-EXPERTS</span>
+              <span>RPT.04.2026.LA.014</span>
+              <span>P. 18</span>
+            </div>
+          </div>
+          <div class="callout callout-r1"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">A</span>Section header</span></div>
+          <div class="callout callout-r2"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">B</span>Causation paragraph</span></div>
+          <div class="callout callout-r3"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">C</span>Field photographs</span></div>
+          <div class="callout callout-r4"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">D</span>Building standard cite</span></div>
+          <div class="callout callout-r5"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">E</span>Report identifier</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 02 — REPAIR SCOPE ========== -->
+<section id="envelope" class="service" data-screen-label="03 Repair Scope">
+  <div class="container">
+    <div class="service__inner service__inner--reverse">
+      <div class="fade">
+        <div class="service__num">02</div>
+        <h2>Repair scope &amp; construction cost.</h2>
+        <p class="service__lede">OEC and Loss Analysis built on regional cost data, line-item documentation, and field-verified conditions. Twenty years of ground-up construction informs every line.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Line-item repair scope tied to specific damaged assemblies.</p></li>
+          <li><span>B.</span><p>Regional construction cost analysis — labor, materials, equipment, indirect.</p></li>
+          <li><span>C.</span><p>Like-kind-and-quality matching analysis where required.</p></li>
+          <li><span>D.</span><p>Differentiation of policy-covered, betterment, and pre-loss work.</p></li>
+          <li><span>E.</span><p>Output: defensible Loss Analysis stage-built for adjustment, appraisal, or trial.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="service__media">
+          <span class="service__media-tag">Field — Repair Scope</span>
+          <image-slot id="pa-2" placeholder="Detail of repair-scope construction work in progress"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 03 — REBUTTAL ========== -->
+<section id="insurance" class="service" data-screen-label="04 Rebuttal">
+  <div class="container">
+    <div class="service__inner">
+      <div class="fade">
+        <div class="service__num">03</div>
+        <h2>Rebuttal analysis.</h2>
+        <p class="service__lede">Structured response to opposing reports, adjuster estimates, and Loss Analysis work product. Issues identified, methodology evaluated, conclusions tested.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Section-by-section evaluation of opposing methodology and basis.</p></li>
+          <li><span>B.</span><p>Identification of unsupported assumptions, missing investigation, scope omissions.</p></li>
+          <li><span>C.</span><p>Independent re-investigation where the opposing record is incomplete.</p></li>
+          <li><span>D.</span><p>Daubert-conscious framing — facts, methods, and reasoning kept separable.</p></li>
+          <li><span>E.</span><p>Output: written rebuttal report and deposition support materials.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="service__media">
+          <span class="service__media-tag">Document — Rebuttal</span>
+          <image-slot id="pa-3" placeholder="Marked-up document review on a desk, calm light"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 — MEDIATION & APPRAISAL ========== -->
+<section id="structural" class="service" data-screen-label="05 Mediation">
+  <div class="container">
+    <div class="service__inner service__inner--reverse">
+      <div class="fade">
+        <div class="service__num">04</div>
+        <h2>Mediation &amp; appraisal.</h2>
+        <p class="service__lede">Retained appraiser, umpire services, ADR support, and demonstrative materials. Built to bring matters to resolution where the file supports it.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Service as a party-appointed appraiser under standard policy provisions.</p></li>
+          <li><span>B.</span><p>Umpire services where both parties agree.</p></li>
+          <li><span>C.</span><p>Demonstrative exhibits, mediation summaries, settlement-position support.</p></li>
+          <li><span>D.</span><p>Pre-mediation joint document review and rebuttal preparation.</p></li>
+          <li><span>E.</span><p>Output: appraisal award, signed report, or mediation-ready binder.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="service__media">
+          <span class="service__media-tag">Conference — Mediation</span>
+          <image-slot id="pa-4" placeholder="Boardroom or mediation table — calm professional setting"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 05 — CAUSATION ========== -->
+<section id="code" class="service" data-screen-label="06 Causation">
+  <div class="container">
+    <div class="service__inner">
+      <div class="fade">
+        <div class="service__num">05</div>
+        <h2>Causation opinions.</h2>
+        <p class="service__lede">When the question is which peril caused which damage, the answer must trace back to documented evidence — not narrative. Differentiation by date of loss, peril, and building system.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Multi-peril differentiation — prior storms, new losses, ongoing failures.</p></li>
+          <li><span>B.</span><p>Construction defect vs. weather peril analysis.</p></li>
+          <li><span>C.</span><p>Wear-and-tear, maintenance, and pre-existing condition treatment.</p></li>
+          <li><span>D.</span><p>Coordination with metallurgical, meteorological, and structural specialists.</p></li>
+          <li><span>E.</span><p>Output: causation matrix and supporting opinion section in Loss Analysis.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="service__media">
+          <span class="service__media-tag">Forensic — Causation</span>
+          <image-slot id="pa-5" placeholder="Roof or envelope detail — close, technical, no people"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 — TESTIMONY ========== -->
+<section id="testimony" class="service" data-screen-label="07 Testimony">
+  <div class="container">
+    <div class="service__inner service__inner--reverse">
+      <div class="fade">
+        <div class="service__num">06</div>
+        <h2>Expert testimony.</h2>
+        <p class="service__lede">Deposition and trial across plaintiff and defense, state and federal court. The opinion held the day it was written; it should still hold under cross.</p>
+        <ul class="service__list">
+          <li><span>A.</span><p>Rule 26 disclosures and engagement-record preparation.</p></li>
+          <li><span>B.</span><p>Pre-deposition counsel consultation and document preparation.</p></li>
+          <li><span>C.</span><p>Demonstrative exhibits — photo boards, diagram callouts, scope tables.</p></li>
+          <li><span>D.</span><p>Daubert and qualification challenge response support.</p></li>
+          <li><span>E.</span><p>Output: deposition transcript record, trial testimony, exhibit set.</p></li>
+        </ul>
+      </div>
+      <div class="fade">
+        <div class="service__media">
+          <span class="service__media-tag">Court — Testimony</span>
+          <image-slot id="pa-6" placeholder="Courthouse architecture / institutional interior"></image-slot>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
 <section class="cta">
   <div class="cta__grid"></div>
   <div class="container cta__inner">
     <div>
-      <span class="eyebrow eyebrow--gold">Next Step</span>
-      <h2 class="h-section" style="margin-top:1rem;">Does your matter fit one of these?</h2>
-      <p>If it's close, send it. We do an honest read on fit before any engagement is discussed — at no cost.</p>
-      <div style="margin-top:2rem;"><a href="#" class="btn btn--primary" data-calendly>Book a Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
+      <span class="eyebrow eyebrow--gold">Engage an Expert</span>
+      <h2 class="h-section" style="margin-top:1rem;">Have a matter that fits one of these engagements?</h2>
+      <p>Send a brief description. We'll respond within one business day with a conflict check and an honest read on fit.</p>
+      <div style="margin-top:2rem;"><a href="contact.html" class="btn btn--primary">Engage an Expert <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
     </div>
     <div class="cta__box">
-      <span class="eyebrow eyebrow--gold">Direct Contact</span>
-      <h3>Time-sensitive matters.</h3>
-      <p style="color: var(--ice-blue); font-size: 0.925rem; line-height: 1.55;">Rush engagements for statute-of-limitations, pre-suit investigation, and inspection deadlines.</p>
+      <span class="eyebrow eyebrow--gold">Process</span>
+      <h3>How an engagement begins.</h3>
       <ul class="cta__contact">
-        <li><strong>Intake</strong><span>admin@meridianexperts.com</span></li>
-        <li><strong>Phone</strong><span>214.319.8030</span></li>
+        <li><strong>Step 1</strong><span>Conflict check &amp; case summary review</span></li>
+        <li><strong>Step 2</strong><span>Engagement letter &amp; document intake</span></li>
+        <li><strong>Step 3</strong><span>Scope of work agreed in writing</span></li>
+        <li><strong>Then</strong><span>Field investigation begins</span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<!-- ========== FOOTER ========== -->
 <footer style="height: 450px">
   <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Practice</h4><ul><li><a href="#defects">Damages Assessment</a></li><li><a href="#envelope">Repair Scope &amp; Cost</a></li><li><a href="#insurance">Rebuttal Analysis</a></li><li><a href="#structural">Mediation &amp; Appraisal</a></li><li><a href="#code">Causation Opinions</a></li><li><a href="#testimony">Expert Testimony</a></li></ul></div>
       <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
 </footer>
 
+<script src="assets/image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/v2.js"></script>
 </body>
 </html>

@@ -3,253 +3,616 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
 <title>Representative Matters — Meridian Experts</title>
-<meta name="description" content="Redacted examples of engagements across construction defect, insurance, subrogation, structural failure, and expert-witness practice.">
+<meta name="description" content="A selected record of representative engagements — by peril, region, and engagement type — supporting counsel from claim through trial.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://meridianexperts.com/matters">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Meridian Experts">
-<meta property="og:title" content="Representative Matters — Meridian Experts">
-<meta property="og:description" content="Redacted examples of engagements across construction defect, insurance, subrogation, structural failure, and expert-witness practice.">
-<meta property="og:url" content="https://meridianexperts.com/matters">
-<meta property="og:image" content="https://meridianexperts.com/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Representative Matters — Meridian Experts">
-<meta name="twitter:description" content="Redacted examples of engagements across construction defect, insurance, subrogation, structural failure, and expert-witness practice.">
-<meta name="twitter:image" content="https://meridianexperts.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/v2.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="alternate icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="theme-color" content="#25566E">
+<style>
+  .mt-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); font-weight: 400; }
+  .mt-hero h1 em { font-weight: 300; color: rgba(245,250,245,0.55); }
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Representative Matters — Meridian Experts",
-  "url": "https://meridianexperts.com/matters",
-  "description": "Eight redacted engagements across construction defect, insurance, subrogation, structural failure, and expert witness practice."
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://meridianexperts.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Representative Matters",
-      "item": "https://meridianexperts.com/matters"
+  /* === Coverage map === */
+  .coverage {
+    padding: clamp(5rem, 8vw, 8rem) 0;
+    background: var(--off-white);
+    border-top: 1px solid var(--silver);
+  }
+  .coverage__head {
+    display: grid; grid-template-columns: 1fr 380px; gap: 3rem;
+    align-items: end; margin-bottom: 3rem;
+  }
+  @media (max-width: 900px) { .coverage__head { grid-template-columns: 1fr; } }
+  .coverage__head h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.85rem, 3.6vw, 3rem); line-height: 1.05;
+    letter-spacing: -0.015em; color: var(--charcoal); text-transform: none;
+  }
+  .coverage__head p {
+    font-family: var(--font-body); font-weight: 300;
+    color: var(--slate); font-size: 1rem; line-height: 1.55;
+    max-width: 420px; padding-bottom: 0.5rem;
+  }
+
+  .map-wrap {
+    position: relative; aspect-ratio: 16/10;
+    background: var(--cool-white);
+    border: 1px solid var(--silver);
+    overflow: visible;
+  }
+  .map-wrap__svg {
+    width: 100%; height: 100%; display: block;
+  }
+  .map-wrap__svg path.state {
+    fill: rgba(96,119,133,0.06);
+    stroke: rgba(96,119,133,0.35);
+    stroke-width: 0.5;
+    transition: fill 250ms;
+  }
+  .map-wrap__svg path.state.active {
+    fill: rgba(196,173,130,0.22);
+    stroke: var(--gold);
+    stroke-width: 0.7;
+  }
+  .map-wrap__svg path.state.primary {
+    fill: rgba(196,173,130,0.42);
+    stroke: var(--gold);
+  }
+  .map-pin {
+    position: absolute; width: 12px; height: 12px;
+    transform: translate(-50%, -50%);
+  }
+  .map-pin::before {
+    content: ''; position: absolute; inset: 0;
+    background: var(--gold); border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(196,173,130,0.18), 0 0 0 12px rgba(196,173,130,0.08);
+  }
+  .map-pin::after {
+    content: ''; position: absolute; inset: 0;
+    background: var(--gold); border-radius: 50%;
+    animation: pinPulse 2.4s infinite;
+  }
+  @keyframes pinPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    70% { transform: scale(2.5); opacity: 0; }
+    100% { transform: scale(2.5); opacity: 0; }
+  }
+
+  /* Floating stat cards over the map */
+  .map-card {
+    position: absolute;
+    background: rgba(245,250,245,0.7);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(245,250,245,0.85);
+    box-shadow: 0 20px 40px -16px rgba(15,32,46,0.25), 0 0 0 1px rgba(96,119,133,0.08) inset;
+    padding: 0.95rem 1.1rem;
+    min-width: 170px;
+    z-index: 4;
+  }
+  .map-card__num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 1.45rem; color: var(--charcoal); line-height: 1; letter-spacing: -0.01em;
+  }
+  .map-card__num em { color: var(--gold); font-style: normal; }
+  .map-card__label {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--steel); margin-top: 0.45rem;
+  }
+  .map-card__sub {
+    font-family: var(--font-body); font-size: 0.78rem; color: var(--slate);
+    margin-top: 0.35rem; line-height: 1.4;
+  }
+  .map-card--tx { top: 58%; left: 6%; }
+  .map-card--se { top: 24%; right: 4%; }
+  .map-card--co { top: 40%; left: 38%; }
+  @media (max-width: 700px) {
+    .map-card { position: static; display: inline-block; margin: 0.5rem; }
+    .map-wrap { padding-bottom: 1rem; }
+  }
+
+  /* Region legend strip */
+  .region-strip {
+    background: var(--charcoal); color: var(--off-white);
+    padding: 2rem 0; border-top: 1px solid rgba(196,173,130,0.18);
+  }
+  .region-strip__inner {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+  }
+  @media (max-width: 800px) { .region-strip__inner { grid-template-columns: repeat(2, 1fr); } }
+  .region-strip__cell {
+    border-left: 1px solid rgba(196,173,130,0.25); padding-left: 1.25rem;
+  }
+  .region-strip__num {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.65rem; letter-spacing: 0.24em; color: var(--gold);
+  }
+  .region-strip__list {
+    margin-top: 0.5rem; font-family: var(--font-body); font-weight: 300;
+    font-size: 0.92rem; line-height: 1.55; color: rgba(245,250,245,0.85);
+  }
+
+  /* === Matter ledger === */
+  .ledger {
+    padding: clamp(5rem, 8vw, 8rem) 0;
+    background: var(--mist);
+  }
+  .ledger__head {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+    margin-bottom: 3rem; align-items: end;
+  }
+  @media (max-width: 900px) { .ledger__head { grid-template-columns: 1fr; } }
+  .ledger__head h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(1.85rem, 3.6vw, 3rem); line-height: 1.05;
+    letter-spacing: -0.015em; color: var(--charcoal); text-transform: none;
+  }
+
+  .ledger-table {
+    border-top: 1px solid var(--charcoal);
+    background: var(--off-white);
+  }
+  .ledger-row {
+    display: grid;
+    grid-template-columns: 90px 100px 1fr 120px 100px 28px;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    border-bottom: 1px solid var(--silver);
+    transition: background 200ms;
+    cursor: pointer;
+  }
+  .ledger-row:hover { background: var(--cool-white); }
+  .ledger-row--head {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--steel); cursor: default;
+    padding: 0.85rem 1.25rem;
+    background: var(--cool-white);
+  }
+  .ledger-row--head:hover { background: var(--cool-white); }
+  .ledger-id {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.78rem; color: var(--steel);
+    letter-spacing: 0.06em;
+  }
+  .ledger-peril {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--charcoal);
+    padding: 0.3rem 0.55rem;
+    background: rgba(196,173,130,0.18);
+    border: 1px solid rgba(196,173,130,0.4);
+    display: inline-block; justify-self: start;
+  }
+  .ledger-title {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1rem; color: var(--charcoal); line-height: 1.3;
+  }
+  .ledger-title small {
+    display: block; font-family: var(--font-body); font-weight: 300;
+    font-size: 0.85rem; color: var(--slate); margin-top: 0.2rem;
+  }
+  .ledger-region {
+    font-family: var(--font-body); font-size: 0.85rem;
+    color: var(--slate); letter-spacing: 0.04em;
+  }
+  .ledger-stage {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--steel);
+  }
+  .ledger-arrow {
+    color: var(--steel);
+    transition: transform 200ms, color 200ms;
+  }
+  .ledger-row:hover .ledger-arrow { color: var(--gold); transform: translateX(3px); }
+  @media (max-width: 800px) {
+    .ledger-row {
+      grid-template-columns: 1fr 28px;
+      gap: 0.5rem 1rem;
+      padding: 1.25rem;
     }
-  ]
-}
-</script>
+    .ledger-row--head { display: none; }
+    .ledger-id, .ledger-peril, .ledger-region, .ledger-stage {
+      grid-column: 1; font-size: 0.7rem;
+    }
+    .ledger-title { grid-column: 1; }
+    .ledger-arrow { grid-column: 2; grid-row: 1 / span 4; }
+  }
+
+  /* Loss-categories grid */
+  .lc-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    border: 1px solid var(--silver);
+    background: var(--off-white);
+  }
+  @media (max-width: 900px) { .lc-grid { grid-template-columns: repeat(2, 1fr); } }
+  .lc-cell {
+    padding: 1.75rem 1.5rem;
+    border-right: 1px solid var(--silver);
+    border-bottom: 1px solid var(--silver);
+    position: relative;
+  }
+  .lc-cell:nth-child(4n) { border-right: 0; }
+  .lc-cell:nth-last-child(-n+4) { border-bottom: 0; }
+  @media (max-width: 900px) {
+    .lc-cell { border-right: 1px solid var(--silver); border-bottom: 1px solid var(--silver); }
+    .lc-cell:nth-child(2n) { border-right: 0; }
+    .lc-cell:nth-last-child(-n+2) { border-bottom: 0; }
+  }
+  .lc-cell__num {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.65rem; letter-spacing: 0.24em; color: var(--gold);
+    margin-bottom: 0.85rem; display: block;
+  }
+  .lc-cell h3 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: 1rem; color: var(--charcoal); margin-bottom: 0.4rem; line-height: 1.2;
+  }
+  .lc-cell__count {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 0.75rem; color: var(--steel);
+    margin-top: 0.4rem;
+  }
+</style>
 </head>
 <body>
-<nav class="nav nav--solid" data-page="matters">
+
+<!-- ========== NAV ========== -->
+<nav class="nav" data-page="matters">
   <div class="nav__inner">
-    <a href="index.html" class="wordmark" aria-label="Meridian Experts"><img src="assets/logo-white.png" alt="Meridian Experts"></a>
+    <a href="index.html" class="wordmark"><img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'"></a>
     <ul class="nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
-      <li><a href="approach.html" data-nav="approach">Approach</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
       <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
     </ul>
-    <button class="nav__burger" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div>
 </nav>
-<header class="pagehead">
-  <div class="container pagehead__inner">
-    <span class="eyebrow">Representative Matters</span>
-    <h1>Eight redacted engagements.</h1>
-    <p>Matter types, roles, and outcomes — to the level of detail confidentiality allows. A full case list is available to retaining counsel.</p>
+
+<!-- ========== HERO ========== -->
+<section class="v2-hero mt-hero" data-screen-label="01 Hero" style="min-height: 70vh;">
+  <div class="v2-hero__media">
+    <image-slot id="mt-hero" placeholder="Wide aerial — diverse American landscape, calm sky"></image-slot>
   </div>
-</header>
+  <div class="v2-hero__tint"></div>
+  <div class="v2-hero__grid"></div>
+  <div class="v2-hero__ticks">
+    <span class="v2-hero__tick v2-hero__tick--tl"></span>
+    <span class="v2-hero__tick v2-hero__tick--tr"></span>
+    <span class="v2-hero__tick v2-hero__tick--bl"></span>
+    <span class="v2-hero__tick v2-hero__tick--br"></span>
+  </div>
+  <div class="container v2-hero__inner" style="grid-template-columns: 1fr;">
+    <div style="max-width: 880px;">
+      <span class="v2-hero__eyebrow">Representative Matters</span>
+      <h1 class="fade is-visible">Where the work<br><em>has been done.</em></h1>
+      <p class="v2-hero__sub fade fade--delay-1 is-visible">A selected record of representative engagements — by peril, region, and engagement type. Filed under the standard the next matter will hold to.</p>
+    </div>
+  </div>
+</section>
 
-<section class="practice-detail">
+<!-- ========== COVERAGE MAP ========== -->
+<section class="coverage" data-screen-label="02 Coverage">
   <div class="container">
-    <div class="practice-detail__body" style="max-width:62ch; margin-bottom:1rem;">
-      <p>The following are representative matters — redacted to respect confidentiality. A full case list, including prior testimony, is available to retaining counsel under engagement letter.</p>
+    <div class="coverage__head fade">
+      <div>
+        <span class="eyebrow">Where We Support Counsel</span>
+        <h2>Active in eight states.<br>Available where the matter requires.</h2>
+      </div>
+      <p>Primary practice across Texas and the South-Central region, with active engagements in the Mountain West and Southeast. Travel accommodated nationally for the right matter.</p>
     </div>
+    <div class="map-wrap fade">
+      <!-- Real US map — rendered from us-atlas TopoJSON (Albers USA, pre-projected 975x610) -->
+      <svg class="map-wrap__svg" viewBox="0 0 975 610" xmlns="http://www.w3.org/2000/svg" aria-label="Map of states served" id="us-map-svg">
+        <defs>
+          <pattern id="mapgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(96,119,133,0.06)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="975" height="610" fill="url(#mapgrid)"/>
+        <g id="us-map-states"></g>
+      </svg>
 
-    <div class="matters-ledger">
-      8 matters <span>·</span> 7 jurisdictions <span>·</span> Plaintiff &amp; defense <span>·</span> 3 testimonies <span>·</span> 2 mediations <span>·</span> 1 trial <span>·</span> 1 Daubert motion (denied)
-    </div>
+      <!-- Pin markers — coordinates in Albers USA projection (975x610) -->
+      <div class="map-pin map-pin--abs" data-x="473" data-y="455" title="Texas / Woodlands"></div>
+      <div class="map-pin map-pin--abs" data-x="385" data-y="395" title="New Mexico"></div>
+      <div class="map-pin map-pin--abs" data-x="430" data-y="305" title="Colorado"></div>
+      <div class="map-pin map-pin--abs" data-x="785" data-y="525" title="Florida"></div>
+      <div class="map-pin map-pin--abs" data-x="715" data-y="455" title="Georgia"></div>
 
-    <div class="matters-filter" id="mattersFilter" role="tablist" aria-label="Filter matters by practice area">
-      <span class="matters-filter__label">Filter by Practice</span>
-      <button class="matters-filter__pill is-active" data-filter="all" type="button">All</button>
-      <button class="matters-filter__pill" data-filter="defects" type="button">Construction Defects</button>
-      <button class="matters-filter__pill" data-filter="envelope" type="button">Water &amp; Envelope</button>
-      <button class="matters-filter__pill" data-filter="insurance" type="button">Insurance &amp; Cat Loss</button>
-      <button class="matters-filter__pill" data-filter="structural" type="button">Structural</button>
-      <button class="matters-filter__pill" data-filter="code" type="button">Code &amp; Standard of Care</button>
-      <button class="matters-filter__pill" data-filter="testimony" type="button">Expert Testimony</button>
-    </div>
-
-    <div class="matters-grid">
-      
-      <article class="matter-card" id="m-multifamily-envelope" data-practice="defects envelope">
-        <span class="matter-card__tag">Construction Defect · Multi-family</span>
-        <h3>Envelope failures across a 180-unit Class A apartment community.</h3>
-        <p>Retained by defense for a national builder. Claims included water intrusion at mulled window assemblies, stucco-system drainage, and deck waterproofing. Our protocol included phased destructive testing across 14 representative units, moisture mapping, and submittal reconciliation.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>California</dd></div><div><dt>Posture</dt><dd>Pre-trial disclosure</dd></div><div><dt>Outcome</dt><dd>Resolved at mediation</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-hail-roof" data-practice="insurance envelope">
-        <span class="matter-card__tag">First-Party Insurance · Hail</span>
-        <h3>Disputed hail claim on low-slope modified-bitumen roof system.</h3>
-        <p>Retained by policyholder counsel. Opposing adjuster report attributed membrane damage to foot traffic and prior mechanical damage. Our investigation included core samples, manufacturer test comparison, and regional storm-event correlation.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>Texas</dd></div><div><dt>Posture</dt><dd>Appraisal panel</dd></div><div><dt>Outcome</dt><dd>Panel award exceeded original offer</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-parking-pt-slab" data-practice="structural">
-        <span class="matter-card__tag">Structural Failure · Parking Structure</span>
-        <h3>Post-tensioned slab distress in a three-level parking garage.</h3>
-        <p>Retained jointly by owner and property manager after spalling and tendon corrosion were observed. Work included condition assessment, GPR scanning, chloride testing, and documentation of original construction sequencing against as-built drawings.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Joint-retained expert</dd></div><div><dt>Jurisdiction</dt><dd>Nevada</dd></div><div><dt>Posture</dt><dd>Pre-suit</dd></div><div><dt>Outcome</dt><dd>Remediation scope negotiated</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-pex-subrogation" data-practice="insurance">
-        <span class="matter-card__tag">Subrogation · Water Loss</span>
-        <h3>Catastrophic water loss traced to failed PEX fitting.</h3>
-        <p>Retained by carrier subrogation counsel. Work included preservation of the failed fitting under chain-of-custody, metallurgical coordination, and reconstruction of installation sequencing.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>Arizona</dd></div><div><dt>Posture</dt><dd>Deposition</dd></div><div><dt>Outcome</dt><dd>Settled post-deposition</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-curtainwall-arch" data-practice="code testimony envelope">
-        <span class="matter-card__tag">Standard of Care · Design Professional</span>
-        <h3>Alleged architect negligence on curtainwall specification.</h3>
-        <p>Retained by design-professional counsel. Claim alleged inadequate specification for wind-driven rain exposure. Our work evaluated specification against AAMA and ASTM standards current at time of issue and against the practice in comparable projects of similar class.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>Oregon</dd></div><div><dt>Posture</dt><dd>Daubert motion</dd></div><div><dt>Outcome</dt><dd>Motion denied; case resolved</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-wildfire-ember" data-practice="insurance">
-        <span class="matter-card__tag">Cat Loss · Wildfire</span>
-        <h3>Ember-intrusion attic fire; disputed cause and origin.</h3>
-        <p>Retained by policyholder counsel after carrier denied coverage citing pre-existing conditions. Our work established ember-intrusion pathway through attic ventilation and documented undisturbed char pattern consistent with wildfire origin.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Plaintiff expert</dd></div><div><dt>Jurisdiction</dt><dd>California</dd></div><div><dt>Posture</dt><dd>Pre-trial</dd></div><div><dt>Outcome</dt><dd>Coverage extended</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-ti-life-safety" data-practice="code">
-        <span class="matter-card__tag">Code Compliance · Commercial</span>
-        <h3>Life-safety deficiency allegations in tenant-improvement build-out.</h3>
-        <p>Retained by landlord counsel. Claims alleged egress and fire-rated assembly violations. Work included plan review against applicable IBC edition, documentation of actual field conditions, and analysis of whether deficiencies were owner- or tenant-attributable under lease terms.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Defense expert</dd></div><div><dt>Jurisdiction</dt><dd>Colorado</dd></div><div><dt>Posture</dt><dd>Trial</dd></div><div><dt>Outcome</dt><dd>Defense verdict</dd></div>
-        </dl>
-      </article>
-      <article class="matter-card" id="m-rebuttal-envelope" data-practice="testimony envelope">
-        <span class="matter-card__tag">Expert Testimony · Rebuttal</span>
-        <h3>Rebuttal engagement on opposing expert's envelope opinion.</h3>
-        <p>Retained late in discovery to rebut opposing expert's opinion that air-barrier failures were attributable to design rather than installation. Work focused on methodology review of opposing expert's field work and alternative-cause analysis.</p>
-        <dl class="matter-card__meta">
-          <div><dt>Role</dt><dd>Rebuttal expert</dd></div><div><dt>Jurisdiction</dt><dd>Washington</dd></div><div><dt>Posture</dt><dd>Deposition</dd></div><div><dt>Outcome</dt><dd>Scope of damages reduced</dd></div>
-        </dl>
-      </article>
-    </div>
-
-    <div class="retained-strip" style="margin-top:4rem;">
-      <div class="container" style="max-width: 1120px; padding: 0;">
-        <div class="retained-strip__head">
-          <h3>Retained by counsel at</h3>
-          <span class="retained-strip__note">Firm identities confidential; attributions available under engagement letter</span>
-        </div>
-        <ul class="retained-strip__items" style="list-style:none; padding:0;">
-          <li class="retained-strip__item"><strong>Am Law 100 defense firm</strong>Construction litigation practice</li>
-          <li class="retained-strip__item"><strong>Regional plaintiff firm</strong>First-party insurance recovery</li>
-          <li class="retained-strip__item"><strong>National carrier subrogation group</strong>Property and casualty</li>
-          <li class="retained-strip__item"><strong>Policyholder firm</strong>Bad-faith and coverage</li>
-          <li class="retained-strip__item"><strong>Design-professional defense firm</strong>Standard-of-care matters</li>
-          <li class="retained-strip__item"><strong>Regional developer counsel</strong>Warranty and post-closeout</li>
-        </ul>
+      <!-- Floating glass stat cards -->
+      <div class="map-card map-card--tx fade">
+        <div class="map-card__num"><em>62%</em></div>
+        <div class="map-card__label">South-Central</div>
+        <div class="map-card__sub">TX, OK, LA, AR, NM</div>
+      </div>
+      <div class="map-card map-card--co fade">
+        <div class="map-card__num"><em>22%</em></div>
+        <div class="map-card__label">Mountain West</div>
+        <div class="map-card__sub">CO, NM</div>
+      </div>
+      <div class="map-card map-card--se fade">
+        <div class="map-card__num"><em>16%</em></div>
+        <div class="map-card__label">Southeast</div>
+        <div class="map-card__sub">FL, GA</div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ========== REGION LEGEND ========== -->
+<section class="region-strip">
+  <div class="container region-strip__inner">
+    <div class="region-strip__cell">
+      <div class="region-strip__num">01 — Primary</div>
+      <p class="region-strip__list">Texas — full statewide coverage including Coastal Bend, Gulf, Hill Country, Panhandle.</p>
+    </div>
+    <div class="region-strip__cell">
+      <div class="region-strip__num">02 — South-Central</div>
+      <p class="region-strip__list">Oklahoma, Louisiana, Arkansas, New Mexico — active matters.</p>
+    </div>
+    <div class="region-strip__cell">
+      <div class="region-strip__num">03 — Mountain West</div>
+      <p class="region-strip__list">Colorado — hail, freeze, wildfire. Available across Front Range and Western Slope.</p>
+    </div>
+    <div class="region-strip__cell">
+      <div class="region-strip__num">04 — Southeast</div>
+      <p class="region-strip__list">Florida, Georgia — hurricane, named-storm, water intrusion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LOSS CATEGORIES ========== -->
+<section class="product-section" data-screen-label="03 Categories">
+  <div class="container">
+    <div class="product-section__head fade">
+      <span class="eyebrow">Loss Categories</span>
+      <h2>Property loss types — by representative volume.</h2>
+      <p>Representative engagement record across the principal first-party perils.</p>
+    </div>
+    <div class="lc-grid fade">
+      <div class="lc-cell">
+        <span class="lc-cell__num">A</span>
+        <h3>Hail &amp; Wind</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Roof systems, envelope, sub-systems. Multi-event differentiation.</p>
+        <div class="lc-cell__count">Representative — 38%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">B</span>
+        <h3>Hurricane &amp; Named Storm</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Wind, water, surge. Coastal Texas, Florida, Gulf.</p>
+        <div class="lc-cell__count">Representative — 18%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">C</span>
+        <h3>Water &amp; Flood</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Plumbing failure, intrusion, rising water, sewer back-up.</p>
+        <div class="lc-cell__count">Representative — 16%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">D</span>
+        <h3>Fire &amp; Smoke</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Structure fire, wildfire smoke, related contents.</p>
+        <div class="lc-cell__count">Representative — 14%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">E</span>
+        <h3>Freeze</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Pipe rupture, building system failure, mass-event response.</p>
+        <div class="lc-cell__count">Representative — 8%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">F</span>
+        <h3>Construction Defect</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Differentiation from peril, workmanship, design, materials.</p>
+        <div class="lc-cell__count">Representative — 4%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">G</span>
+        <h3>Earth Movement</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Soil-related foundation movement, slope failure.</p>
+        <div class="lc-cell__count">Representative — 1%</div>
+      </div>
+      <div class="lc-cell">
+        <span class="lc-cell__num">H</span>
+        <h3>Multi-Peril</h3>
+        <p style="font-family: var(--font-body); font-weight: 300; font-size: 0.88rem; color: var(--slate); line-height: 1.5;">Concurrent or sequential cause matters requiring differentiation.</p>
+        <div class="lc-cell__count">Cross-cutting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LEDGER ========== -->
+<section class="ledger" data-screen-label="04 Ledger">
+  <div class="container">
+    <div class="ledger__head fade">
+      <div>
+        <span class="eyebrow">The Ledger</span>
+        <h2>A selected record of representative engagements.</h2>
+      </div>
+      <p style="font-family: var(--font-body); font-weight: 300; color: var(--slate); font-size: 1rem; line-height: 1.6; max-width: 480px;">Identifying details withheld. Representative matters describe peril, building type, and scope of engagement. Stage indicates the furthest point reached.</p>
+    </div>
+    <div class="ledger-table fade">
+      <div class="ledger-row ledger-row--head">
+        <div>Matter</div>
+        <div>Peril</div>
+        <div>Building &amp; Scope</div>
+        <div>Region</div>
+        <div>Stage</div>
+        <div></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2024-014</div>
+        <div><span class="ledger-peril">Hail</span></div>
+        <div class="ledger-title">Mid-rise apartment, multi-event differentiation<small>Damages, repair scope, causation matrix across three storm dates</small></div>
+        <div class="ledger-region">North Texas</div>
+        <div class="ledger-stage">Mediation</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2024-009</div>
+        <div><span class="ledger-peril">Freeze</span></div>
+        <div class="ledger-title">Commercial flex space, plumbing rupture<small>Repair scope, code-compliance evaluation, defendable cost analysis</small></div>
+        <div class="ledger-region">Central Texas</div>
+        <div class="ledger-stage">Trial</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2024-005</div>
+        <div><span class="ledger-peril">Hurricane</span></div>
+        <div class="ledger-title">Coastal residential portfolio<small>Wind/water differentiation across thirty-one structures</small></div>
+        <div class="ledger-region">Gulf Coast</div>
+        <div class="ledger-stage">Appraisal</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2023-031</div>
+        <div><span class="ledger-peril">Wildfire</span></div>
+        <div class="ledger-title">Foothills residential, smoke and partial-loss<small>Contents, structure, and contamination scope</small></div>
+        <div class="ledger-region">Colorado</div>
+        <div class="ledger-stage">Deposition</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2023-022</div>
+        <div><span class="ledger-peril">Water</span></div>
+        <div class="ledger-title">Office tower mechanical-room failure<small>Cause, scope, and business-interruption-adjacent damages</small></div>
+        <div class="ledger-region">Houston</div>
+        <div class="ledger-stage">Mediation</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2023-017</div>
+        <div><span class="ledger-peril">Wind</span></div>
+        <div class="ledger-title">Industrial warehouse, roof system loss<small>Standing-seam metal roof, flashing, and parapet damages</small></div>
+        <div class="ledger-region">Oklahoma</div>
+        <div class="ledger-stage">Trial</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2023-008</div>
+        <div><span class="ledger-peril">Hurricane</span></div>
+        <div class="ledger-title">Hospitality property, named-storm rebuttal<small>Rebuttal of opposing Loss Analysis, scope and cost</small></div>
+        <div class="ledger-region">Florida</div>
+        <div class="ledger-stage">Deposition</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+      <div class="ledger-row">
+        <div class="ledger-id">M-2022-024</div>
+        <div><span class="ledger-peril">Defect</span></div>
+        <div class="ledger-title">Stucco residential, peril vs. defect<small>Differentiation between weather damage and original construction defect</small></div>
+        <div class="ledger-region">San Antonio</div>
+        <div class="ledger-stage">Mediation</div>
+        <div class="ledger-arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></div>
+      </div>
+    </div>
+    <div class="fade" style="margin-top: 2rem; text-align: center;">
+      <p style="font-family: ui-monospace, 'SF Mono', monospace; font-size: 0.78rem; color: var(--steel); letter-spacing: 0.08em;">SHOWING 8 OF 400+ &middot; FULL ENGAGEMENT RECORD AVAILABLE UNDER CV</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CINEMATIC QUOTE ========== -->
+<section class="cinematic" data-screen-label="05 Quote">
+  <div class="cinematic__media">
+    <image-slot id="mt-cinematic" placeholder="Cinematic — wide industrial or institutional building"></image-slot>
+  </div>
+  <div class="cinematic__tint"></div>
+  <div class="container">
+    <div class="cinematic__inner fade">
+      <span class="cinematic__eyebrow">The Posture</span>
+      <p class="cinematic__quote">Plaintiff and defense. Insureds and carriers. The position changes; <em>the standard does not.</em></p>
+      <div class="cinematic__attr">— Engagement Posture</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
 <section class="cta">
   <div class="cta__grid"></div>
   <div class="container cta__inner">
     <div>
-      <span class="eyebrow eyebrow--gold">Full Case List</span>
-      <h2 class="h-section" style="margin-top:1rem;">More matters released under engagement letter.</h2>
-      <p>The full case list — including matters not summarized here, jurisdictions of testimony, and prior expert reports — is provided to retaining counsel under engagement letter or NDA. If your matter looks adjacent to one above, send a brief description and we'll respond within one business day.</p>
-      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="contact.html?topic=case-list" class="btn btn--primary">Request Full Case List <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
-        <a href="#" class="btn btn--ghost-light" data-calendly>Book a Case Review</a>
-      </div>
+      <span class="eyebrow eyebrow--gold">Engage an Expert</span>
+      <h2 class="h-section" style="margin-top:1rem;">Have a matter that resembles one of these?</h2>
+      <p>Send a brief description and the relevant peril. We'll respond within one business day with a conflict check and an honest read on fit.</p>
+      <div style="margin-top:2rem;"><a href="contact.html" class="btn btn--primary">Engage an Expert <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
     </div>
-    <div class="cta__box"><span class="eyebrow eyebrow--gold">Direct Contact</span><h3>Counsel inquiries only.</h3><ul class="cta__contact"><li><strong>Intake</strong><span>admin@meridianexperts.com</span></li><li><strong>Phone</strong><span>214.319.8030</span></li></ul></div>
+    <div class="cta__box">
+      <span class="eyebrow eyebrow--gold">Engagement Record</span>
+      <h3>Full engagement list available.</h3>
+      <p style="color: var(--ice-blue); font-size: 0.925rem; line-height: 1.55;">A complete deposition and trial-testimony record, with case-citation index, is provided to engaging counsel under CV.</p>
+      <ul class="cta__contact">
+        <li><strong>Request</strong><span>admin@meridianexperts.com</span></li>
+        <li><strong>Phone</strong><span>214.319.8030</span></li>
+      </ul>
+    </div>
   </div>
 </section>
+
+<!-- ========== FOOTER ========== -->
 <footer style="height: 450px">
   <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Damages Assessment</a></li><li><a href="practice-areas.html#envelope">Repair Scope &amp; Cost</a></li><li><a href="practice-areas.html#insurance">Rebuttal Analysis</a></li><li><a href="practice-areas.html#structural">Mediation &amp; Appraisal</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
       <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
 </footer>
+
+<script src="assets/image-slot.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/v2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
 <script>
-/* Matters filter — practice-area pills + deep-link from Practice Areas */
-(function(){
-  var filter = document.getElementById('mattersFilter');
-  if (!filter) return;
-  var cards = document.querySelectorAll('.matters-grid .matter-card');
-  var pills = filter.querySelectorAll('.matters-filter__pill');
-
-  function apply(key){
-    cards.forEach(function(card){
-      var p = (card.getAttribute('data-practice') || '').split(/\s+/);
-      if (key === 'all' || p.indexOf(key) !== -1) card.classList.remove('is-hidden');
-      else card.classList.add('is-hidden');
-    });
-    pills.forEach(function(pill){
-      pill.classList.toggle('is-active', pill.getAttribute('data-filter') === key);
-    });
-  }
-
-  pills.forEach(function(pill){
-    pill.addEventListener('click', function(){ apply(pill.getAttribute('data-filter')); });
-  });
-
-  /* If URL has #m-... anchor, smooth-scroll and briefly highlight */
-  if (location.hash && location.hash.indexOf('#m-') === 0) {
-    var target = document.querySelector(location.hash);
-    if (target) {
-      setTimeout(function(){
-        target.scrollIntoView({behavior:'smooth', block:'center'});
-        target.style.transition = 'box-shadow 0.4s ease';
-        target.style.boxShadow = '0 0 0 2px var(--horizon)';
-        setTimeout(function(){ target.style.boxShadow = ''; }, 1800);
-      }, 80);
-    }
-  }
-})();
+  (async () => {
+    const svg = document.getElementById('us-map-svg');
+    const g = document.getElementById('us-map-states');
+    if (!svg || !g) return;
+    try {
+      const us = await fetch('https://cdn.jsdelivr.net/npm/us-atlas@3.0.1/states-10m.json').then(r => r.json());
+      const states = topojson.feature(us, us.objects.states);
+      const path = d3.geoPath();
+      const active = new Set(['Oklahoma','Louisiana','Arkansas','New Mexico','Colorado','Florida','Georgia']);
+      const primary = new Set(['Texas']);
+      const NS = 'http://www.w3.org/2000/svg';
+      states.features.forEach(f => {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('d', path(f));
+        let cls = 'state';
+        if (primary.has(f.properties.name)) cls += ' primary';
+        else if (active.has(f.properties.name)) cls += ' active';
+        p.setAttribute('class', cls);
+        g.appendChild(p);
+      });
+      // Position absolute pins relative to the 975x610 viewBox
+      const place = () => {
+        const rect = svg.getBoundingClientRect();
+        const parent = svg.parentElement.getBoundingClientRect();
+        const sx = rect.width / 975, sy = rect.height / 610;
+        const ox = rect.left - parent.left, oy = rect.top - parent.top;
+        document.querySelectorAll('.map-pin--abs').forEach(pin => {
+          const x = +pin.dataset.x, y = +pin.dataset.y;
+          pin.style.left = (ox + x * sx) + 'px';
+          pin.style.top = (oy + y * sy) + 'px';
+        });
+      };
+      place();
+      window.addEventListener('resize', place);
+    } catch (e) { console.warn('US map failed to load', e); }
+  })();
 </script>
 </body>
 </html>

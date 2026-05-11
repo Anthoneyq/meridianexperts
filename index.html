@@ -3,44 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
 <title>Meridian Experts — Independent Building Expert | Litigation Support &amp; Expert Witness Services</title>
-<meta name="description" content="Independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost in first-party property insurance disputes, construction defect, and subrogation matters.">
+<meta name="description" content="Independent building expert retained by counsel for first-party property insurance disputes. Documented, defensible opinions on damages, repair scope, and construction cost — from investigation through trial.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://meridianexperts.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Meridian Experts">
-<meta property="og:title" content="Meridian Experts — Independent Building Expert | Litigation Support &amp; Expert Witness Services">
-<meta property="og:description" content="Independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost in first-party property insurance disputes, construction defect, and subrogation matters.">
-<meta property="og:url" content="https://meridianexperts.com/">
-<meta property="og:image" content="https://meridianexperts.com/assets/og-image.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Meridian Experts — Independent Building Expert | Litigation Support &amp; Expert Witness Services">
-<meta name="twitter:description" content="Independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost in first-party property insurance disputes, construction defect, and subrogation matters.">
-<meta name="twitter:image" content="https://meridianexperts.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/v2.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="alternate icon" href="assets/favicon.ico">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="theme-color" content="#25566E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Meridian Experts",
-  "description": "Independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost in first-party property insurance disputes, construction defect, subrogation, and structural-failure matters.",
-  "url": "https://meridianexperts.com/",
-  "logo": "https://meridianexperts.com/assets/og-image.png",
-  "telephone": "+1-214-319-8030",
-  "email": "admin@meridianexperts.com",
-  "address": { "@type": "PostalAddress", "addressLocality": "The Woodlands", "addressRegion": "TX", "addressCountry": "US" },
-  "areaServed": ["California","Arizona","Nevada","Oregon","Washington","Texas","Colorado","Utah"],
-  "serviceType": ["Expert Witness Services","Litigation Support","First-Party Property Insurance Disputes","Damages Assessment","Repair Scope Analysis","Construction Cost Evaluation","Rebuttal Analysis","Mediation & Appraisal Support","Deposition & Trial Testimony","Construction Defect Analysis","Building Envelope Investigation","Structural Failure Analysis","Code & Standard of Care Review"],
-  "priceRange": "$$$"
-}
-</script>
+<style>
+  /* Page-local refinements */
+  .home-hero h1 { font-size: clamp(2.8rem, 7vw, 6rem); font-weight: 400; }
+  .home-hero h1 em { display: block; font-weight: 300; color: rgba(245,250,245,0.55); }
+  .home-hero__panel-num { color: var(--gold); }
+
+  /* Tagline strip with brand stamps */
+  .stamp-strip {
+    background: var(--charcoal); color: var(--off-white);
+    padding: 1.6rem 0; border-top: 1px solid rgba(196,173,130,0.18);
+    border-bottom: 1px solid rgba(196,173,130,0.18);
+  }
+  .stamp-strip__inner {
+    display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stamp-strip__label {
+    font-family: var(--font-body); font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold);
+  }
+  .stamp-strip__items {
+    display: flex; flex-wrap: wrap; gap: 2.25rem; list-style: none;
+    font-family: var(--font-display); font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase; color: rgba(245,250,245,0.85);
+  }
+  .stamp-strip__items li { position: relative; }
+  .stamp-strip__items li::before {
+    content: ''; position: absolute; left: -1.1rem; top: 50%;
+    width: 3px; height: 3px; background: var(--horizon);
+    transform: translateY(-50%);
+  }
+  .stamp-strip__items li:first-child::before { display: none; }
+
+  /* Specific home callout positions for the diagram */
+  .home-diagram .callout-1 { top: 14%; left: -1rem; }
+  .home-diagram .callout-1 .callout__line { left: 11px; top: 50%; width: 80px; }
+  .home-diagram .callout-2 { top: 38%; left: -2rem; }
+  .home-diagram .callout-2 .callout__line { left: 11px; top: 50%; width: 130px; }
+  .home-diagram .callout-3 { top: 64%; left: -1rem; }
+  .home-diagram .callout-3 .callout__line { left: 11px; top: 50%; width: 95px; }
+  .home-diagram .callout-4 { top: 28%; right: -1rem; flex-direction: row-reverse; }
+  .home-diagram .callout-4 .callout__line { right: 11px; top: 50%; width: 100px; }
+  .home-diagram .callout-5 { top: 56%; right: -2rem; flex-direction: row-reverse; }
+  .home-diagram .callout-5 .callout__line { right: 11px; top: 50%; width: 130px; }
+  @media (max-width: 900px) {
+    .home-diagram [class*="callout-"] { display: none; }
+  }
+
+  /* Stat strip floats */
+  .home-stat__num em { color: var(--gold); }
+
+  /* Section spacing tweaks */
+  .home-section { padding: clamp(5rem, 9vw, 8rem) 0; }
+  .home-section--mist { background: var(--mist); }
+
+  /* The "Distinction" deep-dive — restrained, not the brick wall */
+  .distinction {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+    border: 1px solid var(--silver);
+    background: var(--off-white);
+  }
+  @media (max-width: 900px) { .distinction { grid-template-columns: 1fr; } }
+  .distinction__col {
+    padding: clamp(2.25rem, 4vw, 3.5rem);
+  }
+  .distinction__col + .distinction__col { border-left: 1px solid var(--silver); }
+  @media (max-width: 900px) {
+    .distinction__col + .distinction__col {
+      border-left: 0; border-top: 1px solid var(--silver);
+    }
+  }
+  .distinction__col--us { background: var(--deep-blue); color: var(--off-white); }
+  .distinction__label {
+    font-family: var(--font-body); font-size: 0.7rem; font-weight: 500;
+    letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--steel); margin-bottom: 0.85rem; display: block;
+  }
+  .distinction__col--us .distinction__label { color: var(--gold); }
+  .distinction__col h3 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+    line-height: 1.1; letter-spacing: -0.01em; text-transform: none;
+    color: var(--charcoal); margin-bottom: 1.5rem;
+  }
+  .distinction__col--us h3 { color: var(--off-white); }
+  .distinction__list { list-style: none; padding: 0; margin: 0; }
+  .distinction__list li {
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(96,119,133,0.18);
+    font-size: 0.92rem; line-height: 1.55; font-weight: 300;
+    color: var(--slate);
+    padding-left: 1.5rem; position: relative;
+  }
+  .distinction__col--us .distinction__list li {
+    color: rgba(176,211,223,0.92);
+    border-bottom-color: rgba(176,211,223,0.15);
+  }
+  .distinction__list li:last-child { border-bottom: 0; }
+  .distinction__list li::before {
+    content: '–'; position: absolute; left: 0; top: 0.85rem;
+    color: var(--steel); font-weight: 400;
+  }
+  .distinction__col--us .distinction__list li::before { color: var(--gold); content: '+'; }
+</style>
 </head>
 <body>
 
@@ -48,16 +123,15 @@
 <nav class="nav" data-page="home">
   <div class="nav__inner">
     <a href="index.html" class="wordmark" aria-label="Meridian Experts">
-      <img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px">
+      <img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'">
     </a>
     <ul class="nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
-      <li><a href="approach.html" data-nav="approach">Approach</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
       <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
       <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="#" data-nav="contact" class="nav__cta" data-calendly>Book a Review</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
     </ul>
     <button class="nav__burger" aria-label="Menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -66,208 +140,310 @@
 </nav>
 
 <!-- ========== HERO ========== -->
-<section class="hero">
-  <video class="hero__video" data-src="assets/hero.mp4" autoplay loop muted playsinline preload="auto"
-         poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'><rect fill='%2325566E' width='16' height='9'/></svg>"></video>
-  <div class="hero__tint"></div>
-  <div class="hero__grid"></div>
+<section class="v2-hero home-hero" data-screen-label="01 Hero">
+  <div class="v2-hero__media">
+    <video autoplay loop muted playsinline preload="auto"
+           style="width:100%;height:100%;object-fit:cover;"
+           src="assets/hero.mp4"
+           poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'><rect fill='%2325566E' width='16' height='9'/></svg>"></video>
+  </div>
+  <div class="v2-hero__tint"></div>
+  <div class="v2-hero__grid"></div>
+  <div class="v2-hero__ticks">
+    <span class="v2-hero__tick v2-hero__tick--tl"></span>
+    <span class="v2-hero__tick v2-hero__tick--tr"></span>
+    <span class="v2-hero__tick v2-hero__tick--bl"></span>
+    <span class="v2-hero__tick v2-hero__tick--br"></span>
+  </div>
 
-  <div class="container hero__inner">
-    <div class="hero__copy">
-      <div class="hero__eyebrow">
-        <span class="eyebrow eyebrow--gold">Expert Witness Services &amp; Litigation Support</span>
-      </div>
-      <h1 class="h-display" id="heroHeadline" data-text="When the building&#10;decides the case."></h1>
-      <p class="hero__sub" id="heroSub">
-        Meridian Experts is an independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost — in first-party property insurance disputes, construction defect, and subrogation matters.
-      </p>
-      <div class="hero__ctas" id="heroCtas">
-        <a href="#" class="btn btn--primary" data-calendly>
-          Book a Case Review
-          <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
-        </a>
-        <a href="practice-areas.html" class="btn btn--ghost-light">View Practice Areas</a>
+  <div class="container v2-hero__inner">
+    <div>
+      <span class="v2-hero__eyebrow">First-Party Property Insurance Disputes</span>
+      <h1 class="fade is-visible">When the building<br><em>decides the case.</em></h1>
+      <p class="v2-hero__sub fade fade--delay-1 is-visible">An independent building expert retained by counsel — delivering documented, defensible opinions on damages, repair scope, and construction cost. From investigation through trial.</p>
+      <div class="v2-hero__ctas fade fade--delay-2 is-visible">
+        <a href="contact.html" class="btn btn--primary" style="background:var(--off-white);color:var(--charcoal);border-radius:999px;text-transform:none;letter-spacing:0;font-size:0.9rem;">Engage an Expert <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+        <a href="practice-areas.html" class="btn btn--ghost-light" style="border-radius:999px;text-transform:none;letter-spacing:0;font-size:0.9rem;background:rgba(17,24,33,0.5);backdrop-filter:blur(14px);">View Services</a>
       </div>
     </div>
-    <div class="hero__tag" id="heroTag">
-      <div class="glass-card">
-        <span class="hero__tag-label">Engagement Types</span>
-        <div class="hero__tag-content">Investigation. <em>Opinions.</em> Testimony.</div>
-      </div>
+    <div class="glass v2-hero__panel fade fade--delay-3 is-visible">
+      <span class="v2-hero__panel-label">Engagement Types</span>
+      <ul class="v2-hero__panel-list">
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">01</span><span>Damages Assessment</span></li>
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">02</span><span>Repair Scope &amp; Cost</span></li>
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">03</span><span>Rebuttal Analysis</span></li>
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">04</span><span>Mediation &amp; Appraisal</span></li>
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">05</span><span>Causation Opinions</span></li>
+        <li class="v2-hero__panel-row"><span class="v2-hero__panel-num">06</span><span>Expert Testimony</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ========== TRUST STRIP ========== -->
-<div class="trust">
-  <div class="container trust__inner">
-    <span class="trust__label">Retained By Counsel In</span>
-    <ul class="trust__items">
-      <li>Construction Defect Litigation</li>
-      <li>First-Party Insurance Disputes</li>
-      <li>Subrogation Claims</li>
-      <li>Post-Event Loss Analysis</li>
-      <li>Contract &amp; Code Disputes</li>
+<!-- ========== STAMP STRIP ========== -->
+<div class="stamp-strip">
+  <div class="container stamp-strip__inner">
+    <span class="stamp-strip__label">Retained By Counsel For</span>
+    <ul class="stamp-strip__items">
+      <li>Damages</li>
+      <li>Repair Scope</li>
+      <li>Rebuttal</li>
+      <li>Appraisal</li>
+      <li>Causation</li>
+      <li>Trial</li>
     </ul>
   </div>
 </div>
 
-<!-- ========== DIFFERENTIATION ========== -->
-<section class="diff" id="approach">
+<!-- ========== APPLE-STYLE PRODUCT SECTION 1 — One idea ========== -->
+<section class="product-section home-section" data-screen-label="02 Why Counsel">
   <div class="container">
-    <div class="section-head reveal">
+    <div class="product-section__head fade">
       <span class="eyebrow">The Distinction</span>
-      <h2 class="h-section">Not every consultant is built to testify.</h2>
-      <p class="lede">Inspection and expert analysis are not the same discipline. The difference shows up in deposition — and on the page.</p>
+      <h2>Reviewing documents and surviving<br>cross-examination are not the same craft.</h2>
+      <p>The expert who can write a competent report is not always the expert who can defend it under deposition, in mediation, or at trial. Meridian operates to a single standard — the one your matter will be measured against.</p>
     </div>
 
-    <div class="diff__grid reveal">
-      <div class="diff__col diff__col--them">
-        <span class="diff__label">Typical Consultants</span>
-        <h3>Inspection-Oriented</h3>
-        <ul class="diff__list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg><span>Surface-level condition reports, written for clients — not counsel.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg><span>Observations without traceable methodology or documented standards of care.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg><span>Photos and notes that don't survive chain-of-custody scrutiny.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg><span>Conclusions that collapse under Daubert challenge or opposing cross.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg><span>Limited or no deposition and trial experience.</span></li>
+    <div class="distinction fade">
+      <div class="distinction__col">
+        <span class="distinction__label">Typical Consultants</span>
+        <h3>Document-review oriented.</h3>
+        <ul class="distinction__list">
+          <li>Paper expertise without ground-up construction experience.</li>
+          <li>Repair scopes and cost opinions not grounded in field investigation.</li>
+          <li>Opinions that cannot be defended through cross-examination.</li>
+          <li>Advocacy positioning that erodes credibility under Daubert.</li>
+          <li>Limited preparation for mediation, appraisal, deposition, trial.</li>
         </ul>
       </div>
-      <div class="diff__col diff__col--us">
-        <span class="diff__label">Meridian Experts</span>
-        <h3>Litigation-Oriented</h3>
-        <ul class="diff__list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 12 10 18 20 6"/></svg><span>Reports structured for admissibility — methodology, basis, and opinions clearly separated.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 12 10 18 20 6"/></svg><span>Documented root-cause analysis grounded in published standards and building science.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 12 10 18 20 6"/></svg><span>Chain-of-custody protocols for samples, photographs, and field measurements.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 12 10 18 20 6"/></svg><span>Opinions traceable to physical evidence — built to withstand Daubert inquiry.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 12 10 18 20 6"/></svg><span>Direct deposition and trial experience in construction and insurance matters.</span></li>
+      <div class="distinction__col distinction__col--us">
+        <span class="distinction__label">Meridian Experts</span>
+        <h3>Litigation oriented.</h3>
+        <ul class="distinction__list">
+          <li>20+ years of residential and commercial ground-up construction.</li>
+          <li>Damages, scope, and cost connected to documented field investigation.</li>
+          <li>OEC and Loss Analysis reports built for Rule 26 and Daubert.</li>
+          <li>Rebuttal, mediation, and appraisal as the matter requires.</li>
+          <li>400+ matters supported across deposition, mediation, and trial.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ========== WHEN ATTORNEYS BRING US IN ========== -->
-<section class="when-section">
+<!-- ========== LUXURY CARD GRID — Practice Index ========== -->
+<section class="product-section home-section--mist" data-screen-label="03 Practice">
   <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow eyebrow--gold">Decision Triggers</span>
-      <h2 class="h-section">When attorneys bring us in.</h2>
-      <p class="lede">Counsel typically retains Meridian when one of the following creates risk to the case position — and an independent, defensible expert is required to address it.</p>
+    <div class="product-section__head fade">
+      <span class="eyebrow">Practice</span>
+      <h2>Six engagement types.<br>One evidentiary standard.</h2>
+      <p>Each service delivers an independent opinion documented to the same protocols — built to support claim resolution, mediation, appraisal, deposition, and trial.</p>
     </div>
 
-    <ul class="when-grid reveal">
-      <li class="when-card">
-        <span class="when-card__num">01</span>
-        <h3>Damages are disputed.</h3>
-        <p>Carrier estimates, policyholder estimates, or contractor proposals diverge — and an independent damages assessment is required to support the position.</p>
-      </li>
-      <li class="when-card">
-        <span class="when-card__num">02</span>
-        <h3>Competing expert opinions create uncertainty.</h3>
-        <p>Conflicting reports, weak technical bases, or unsupported conclusions need a structured rebuttal grounded in evidence and methodology.</p>
-      </li>
-      <li class="when-card">
-        <span class="when-card__num">03</span>
-        <h3>Repair scope or cost is challenged.</h3>
-        <p>Scope or cost positions are under attack and require an Opinion of Estimated Costs (OEC) or Loss Analysis (LA) backed by detailed work product.</p>
-      </li>
-      <li class="when-card">
-        <span class="when-card__num">04</span>
-        <h3>A matter is approaching mediation, deposition, or trial.</h3>
-        <p>Disclosure deadlines, expert designation dates, and depositions require an expert prepared to testify under cross — not merely write.</p>
-      </li>
-      <li class="when-card">
-        <span class="when-card__num">05</span>
-        <h3>An independent expert is needed to evaluate or rebut prior reports.</h3>
-        <p>Late-stage rebuttal engagements where the record requires methodology review, alternative-cause analysis, and disciplined opinion structure.</p>
-      </li>
-      <li class="when-card">
-        <span class="when-card__num">06</span>
-        <h3>Causation is contested.</h3>
-        <p>Storm vs. wear, defect vs. maintenance, design vs. installation. Coverage and liability often turn on a clean causation opinion supported by physical evidence.</p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ========== PROCESS ========== -->
-<section class="process" id="process">
-  <div class="container">
-    <div class="process__layout">
-      <div class="section-head reveal" style="margin-bottom:0;">
-        <span class="eyebrow">Engagement Process</span>
-        <h2 class="h-section">A structured, defensible workflow.</h2>
-        <p class="lede">Every stage is documented. Every conclusion is traceable. The process itself is built to hold up in court.</p>
-      </div>
-      <div class="process__steps reveal">
-        <div class="process__step"><span class="process__num">01</span><div><h3>Conflict &amp; Intake Review</h3><p>Confidential case screening, scope definition, and engagement terms — aligned to statute-of-limitations pressure when needed.</p></div></div>
-        <div class="process__step"><span class="process__num">02</span><div><h3>Document Review</h3><p>Plans, specifications, submittals, RFIs, change orders, inspection records, and prior reports — evaluated before the first site visit.</p></div></div>
-        <div class="process__step"><span class="process__num">03</span><div><h3>Field Investigation</h3><p>Non-destructive and destructive testing under documented protocols. Photography, sampling, and measurements preserved under chain-of-custody.</p></div></div>
-        <div class="process__step"><span class="process__num">04</span><div><h3>Root-Cause Analysis</h3><p>Evidence evaluated against building science, published standards, and the applicable standard of care at time of construction.</p></div></div>
-        <div class="process__step"><span class="process__num">05</span><div><h3>Expert Reporting</h3><p>Written opinions structured for clarity and admissibility. Opinions separated from methodology. Basis disclosed. Prepared for Rule 26 disclosure.</p></div></div>
-        <div class="process__step"><span class="process__num">06</span><div><h3>Deposition &amp; Trial Support</h3><p>Ongoing counsel consultation, demonstrative preparation, deposition readiness, and expert testimony through trial.</p></div></div>
-      </div>
+    <div class="lux-grid fade">
+      <a href="practice-areas.html#defects" class="lux-card lux-card--feature">
+        <div class="lux-card__media">
+          <image-slot id="home-lux-feature" placeholder="Damages assessment — site investigation photo, cool overcast"></image-slot>
+        </div>
+        <span class="lux-card__arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+        <span class="lux-card__num">01 — Foundational</span>
+        <h3>Damages Assessment</h3>
+        <p>Documented field investigation that grounds every downstream opinion — causation, scope, cost. Hail, wind, wildfire, freeze, flood. Residential and commercial.</p>
+      </a>
+      <a href="practice-areas.html#envelope" class="lux-card">
+        <div class="lux-card__media">
+          <image-slot id="home-lux-2" placeholder="Roof / envelope detail"></image-slot>
+        </div>
+        <span class="lux-card__arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+        <span class="lux-card__num">02</span>
+        <h3>Repair Scope &amp; Cost</h3>
+        <p>OEC and Loss Analysis built on regional cost data and documented field conditions.</p>
+      </a>
+      <a href="practice-areas.html#insurance" class="lux-card">
+        <div class="lux-card__media">
+          <image-slot id="home-lux-3" placeholder="Document review / report markup"></image-slot>
+        </div>
+        <span class="lux-card__arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+        <span class="lux-card__num">03</span>
+        <h3>Rebuttal Analysis</h3>
+        <p>Structured response to opposing reports, adjuster estimates, and Loss Analysis work product.</p>
+      </a>
+      <a href="practice-areas.html#structural" class="lux-card">
+        <div class="lux-card__media">
+          <image-slot id="home-lux-4" placeholder="Conference / boardroom — mediation setting"></image-slot>
+        </div>
+        <span class="lux-card__arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+        <span class="lux-card__num">04</span>
+        <h3>Mediation &amp; Appraisal</h3>
+        <p>Retained appraiser, umpire services, ADR support, demonstrative exhibits.</p>
+      </a>
+      <a href="practice-areas.html#testimony" class="lux-card">
+        <div class="lux-card__media">
+          <image-slot id="home-lux-5" placeholder="Courthouse / institutional architecture"></image-slot>
+        </div>
+        <span class="lux-card__arrow"><svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>
+        <span class="lux-card__num">06</span>
+        <h3>Expert Testimony</h3>
+        <p>Deposition and trial across plaintiff and defense, state and federal court.</p>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ========== AUTHORITY ========== -->
-<section class="authority">
+<!-- ========== TECHNICAL DIAGRAM SECTION ========== -->
+<section class="product-section" data-screen-label="04 Method">
   <div class="container">
-    <div class="authority__head reveal">
-      <div>
-        <span class="eyebrow eyebrow--gold">The Firm</span>
-        <h2 class="h-section" style="margin-top:1rem;">An independent expert.<br>Retained by counsel.</h2>
+    <div class="product-section__head fade">
+      <span class="eyebrow">Methodology</span>
+      <h2>From site documentation<br>to defensible report.</h2>
+      <p>Every opinion traces back to a documented observation. Every observation is logged under chain-of-custody. The report is the last step, not the first.</p>
+    </div>
+
+    <div class="diagram home-diagram fade">
+      <div class="diagram__intro">
+        <span class="eyebrow">The Anatomy of an Opinion</span>
+        <h2>Built on evidence — not narrative.</h2>
+        <p>The diagram at right shows the five evidentiary layers a Meridian opinion is constructed from. Each layer is independent, traceable, and documented to its own standard. Remove a layer and the opinion no longer survives cross.</p>
+        <a href="process.html" class="btn btn--ghost-dark" style="margin-top:1.5rem;">See Full Process <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
       </div>
-      <p>Meridian Experts is an independent building expert retained by counsel to deliver documented, defensible opinions on damages, repair scope, and construction cost. Our work is structured to support the case position through mediation, appraisal, deposition, and trial — and to withstand scrutiny at each stage. Independent. Impartial. Defensible.</p>
+      <div class="diagram__panel">
+        <image-slot id="home-diagram-photo" placeholder="Building envelope / damage detail — neutral, technical"></image-slot>
+        <div class="diagram__panel-grid"></div>
+        <!-- Callouts -->
+        <div class="callout callout-1">
+          <span class="callout__line"></span>
+          <span class="callout__dot"></span>
+          <span class="callout__pill"><span class="callout__num">01</span>Field Documentation</span>
+        </div>
+        <div class="callout callout-2">
+          <span class="callout__line"></span>
+          <span class="callout__dot"></span>
+          <span class="callout__pill"><span class="callout__num">02</span>Sample &amp; Chain-of-Custody</span>
+        </div>
+        <div class="callout callout-3">
+          <span class="callout__line"></span>
+          <span class="callout__dot"></span>
+          <span class="callout__pill"><span class="callout__num">03</span>Building Standard</span>
+        </div>
+        <div class="callout callout-4">
+          <span class="callout__line"></span>
+          <span class="callout__dot"></span>
+          <span class="callout__pill"><span class="callout__num">04</span>Causation Matrix</span>
+        </div>
+        <div class="callout callout-5">
+          <span class="callout__line"></span>
+          <span class="callout__dot"></span>
+          <span class="callout__pill"><span class="callout__num">05</span>Repair Scope &amp; Cost</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STAT STRIP ========== -->
+<section class="product-section--dark home-section" style="background:var(--charcoal);" data-screen-label="05 Stats">
+  <div class="container">
+    <div class="product-section__head fade" style="margin-bottom:3rem;">
+      <span class="eyebrow eyebrow--gold">By the Numbers</span>
+      <h2 style="color:var(--off-white);">Two decades of construction.<br>Hundreds of matters supported.</h2>
+    </div>
+    <div class="stat-strip fade">
+      <div class="stat-strip__cell">
+        <div class="stat-strip__num"><em>20</em>+</div>
+        <div class="stat-strip__label">Years construction experience</div>
+      </div>
+      <div class="stat-strip__cell">
+        <div class="stat-strip__num"><em>400</em>+</div>
+        <div class="stat-strip__label">Matters supported</div>
+      </div>
+      <div class="stat-strip__cell">
+        <div class="stat-strip__num"><em>8</em></div>
+        <div class="stat-strip__label">States of active service</div>
+      </div>
+      <div class="stat-strip__cell">
+        <div class="stat-strip__num"><em>1</em><span style="color:rgba(245,250,245,0.5);font-weight:300;">bd</span></div>
+        <div class="stat-strip__label">Business-day response</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CINEMATIC QUOTE DIVIDER ========== -->
+<section class="cinematic" data-screen-label="06 Quote">
+  <div class="cinematic__media">
+    <image-slot id="home-cinematic" placeholder="Cinematic exterior — modern building, dramatic light, calm sky"></image-slot>
+  </div>
+  <div class="cinematic__tint"></div>
+  <div class="container">
+    <div class="cinematic__inner fade">
+      <span class="cinematic__eyebrow">The Standard</span>
+      <p class="cinematic__quote">Clear opinions. Traceable methodology. <em>Courtroom-ready documentation.</em> Every engagement is built for the day it has to hold up under cross.</p>
+      <div class="cinematic__attr">— The Meridian Standard</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS FLOW MAP ========== -->
+<section class="product-section home-section" data-screen-label="07 Process">
+  <div class="container">
+    <div class="product-section__head fade">
+      <span class="eyebrow">Engagement Process</span>
+      <h2>Claim file → Inspection → Scope → Report → Testimony.</h2>
+      <p>Five stages. Documented at every step. The same workflow whether the matter resolves at mediation or proceeds to trial.</p>
     </div>
 
-    <div class="authority-panel authority-panel--words reveal">
-      <div class="authority-panel__eyebrow">How Our Work Is Structured</div>
-      <ul class="authority-panel__list">
-        <li class="authority-panel__row">
-          <span class="authority-panel__num">Documented</span>
-          <span class="authority-panel__label">Chain-of-custody for every sample, photo, and measurement</span>
-        </li>
-        <li class="authority-panel__row">
-          <span class="authority-panel__num">Traceable</span>
-          <span class="authority-panel__label">Every opinion cites the evidence and standard it rests on</span>
-        </li>
-        <li class="authority-panel__row">
-          <span class="authority-panel__num">Independent</span>
-          <span class="authority-panel__label">Retained by plaintiff and defense; same evidentiary standard</span>
-        </li>
-        <li class="authority-panel__row">
-          <span class="authority-panel__num">Defensible</span>
-          <span class="authority-panel__label">Reports built for Rule 26 disclosure and Daubert inquiry</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="reveal" style="margin-top:3rem;">
-      <a href="credentials.html" class="btn btn--ghost-light">Full Credentials <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+    <div class="flowmap fade">
+      <div class="flowmap__rail">
+        <div class="flowmap__node fade">
+          <span class="flowmap__node-num">01</span>
+          <h3>Intake &amp; Conflict</h3>
+          <p>Confidential case screening, scope definition, and engagement terms.</p>
+          <span class="flowmap__node-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 5h8m0 0L5 1m4 4L5 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span>
+        </div>
+        <div class="flowmap__node fade">
+          <span class="flowmap__node-num">02</span>
+          <h3>Document Review</h3>
+          <p>Plans, specs, prior reports, claim file — evaluated before the first site visit.</p>
+          <span class="flowmap__node-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 5h8m0 0L5 1m4 4L5 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span>
+        </div>
+        <div class="flowmap__node fade">
+          <span class="flowmap__node-num">03</span>
+          <h3>Field Investigation</h3>
+          <p>Documented protocols. Photography, sampling, measurements under chain-of-custody.</p>
+          <span class="flowmap__node-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 5h8m0 0L5 1m4 4L5 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span>
+        </div>
+        <div class="flowmap__node fade">
+          <span class="flowmap__node-num">04</span>
+          <h3>Expert Report</h3>
+          <p>Opinions separated from methodology. Basis disclosed. Built for Rule 26.</p>
+          <span class="flowmap__node-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 5h8m0 0L5 1m4 4L5 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg></span>
+        </div>
+        <div class="flowmap__node fade">
+          <span class="flowmap__node-num">05</span>
+          <h3>Deposition &amp; Trial</h3>
+          <p>Counsel consultation, demonstrative prep, deposition readiness, testimony.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ========== CTA ========== -->
-<section class="cta">
+<section class="cta" data-screen-label="08 CTA">
   <div class="cta__grid"></div>
   <div class="container cta__inner">
     <div>
-      <span class="eyebrow eyebrow--gold">Book a Case Review</span>
-      <h2 class="h-section" style="margin-top:1rem;">Have a matter that depends on the building?</h2>
-      <p>Send us a brief description of the case. We'll respond within one business day with a conflict check and an honest read on fit — before any engagement is discussed.</p>
+      <span class="eyebrow eyebrow--gold">Engage an Expert</span>
+      <h2 class="h-section" style="margin-top:1rem;">Have a first-party dispute that depends on the building?</h2>
+      <p>Send a brief description of the matter. We'll respond within one business day with a conflict check and an honest read on fit — before any engagement is discussed.</p>
       <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="#" class="btn btn--primary" data-calendly>Book a Case Review <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
+        <a href="contact.html" class="btn btn--primary">Engage an Expert <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a>
       </div>
     </div>
     <div class="cta__box">
       <span class="eyebrow eyebrow--gold">Direct Contact</span>
       <h3>For counsel with time-sensitive matters.</h3>
-      <p style="color: var(--ice-blue); font-size: 0.925rem; line-height: 1.55;">Rush engagements accommodated for statute-of-limitations pressure, pre-suit investigation, and inspection deadlines.</p>
+      <p style="color: var(--ice-blue); font-size: 0.925rem; line-height: 1.55;">Rush engagements accommodated for statute-of-limitations pressure, disclosure deadlines, appraisal panels, and inspection windows.</p>
       <ul class="cta__contact">
         <li><strong>Intake</strong><span>admin@meridianexperts.com</span></li>
         <li><strong>Phone</strong><span>214.319.8030</span></li>
@@ -282,55 +458,16 @@
   <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
   <div class="container">
     <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="approach.html">Approach</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="Insights.html">Insights</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Construction Defects</a></li><li><a href="practice-areas.html#envelope">Water &amp; Envelope</a></li><li><a href="practice-areas.html#insurance">Insurance &amp; Cat Loss</a></li><li><a href="practice-areas.html#structural">Structural Failures</a></li><li><a href="practice-areas.html#code">Code &amp; Standard of Care</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
+      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
+      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Damages Assessment</a></li><li><a href="practice-areas.html#envelope">Repair Scope &amp; Cost</a></li><li><a href="practice-areas.html#insurance">Rebuttal Analysis</a></li><li><a href="practice-areas.html#structural">Mediation &amp; Appraisal</a></li><li><a href="practice-areas.html#code">Causation Opinions</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
       <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
     </div>
     <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
   </div>
 </footer>
 
+<script src="assets/image-slot.js"></script>
 <script src="assets/site.js"></script>
-<script>
-  (function heroReveal() {
-    const headline = document.getElementById('heroHeadline');
-    const sub = document.getElementById('heroSub');
-    const ctas = document.getElementById('heroCtas');
-    const tag = document.getElementById('heroTag');
-    if (!headline) return;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const text = headline.dataset.text || '';
-    const lines = text.split('\n');
-    const wordDelay = 110, initialDelay = 200, spans = [];
-    headline.innerHTML = '';
-    lines.forEach(line => {
-      const lineEl = document.createElement('span');
-      lineEl.className = 'hero__line';
-      const words = line.split(' ').filter(Boolean);
-      words.forEach((word, i) => {
-        const span = document.createElement('span');
-        span.className = 'hero__word';
-        span.textContent = word;
-        lineEl.appendChild(span);
-        spans.push(span);
-        if (i < words.length - 1) lineEl.appendChild(document.createTextNode(' '));
-      });
-      headline.appendChild(lineEl);
-    });
-    if (prefersReducedMotion) {
-      spans.forEach(s => s.classList.add('is-lit'));
-      sub && sub.classList.add('is-lit');
-      ctas && ctas.classList.add('is-lit');
-      tag && tag.classList.add('is-lit');
-      return;
-    }
-    spans.forEach((span, i) => setTimeout(() => span.classList.add('is-lit'), initialDelay + i * wordDelay));
-    const d = initialDelay + spans.length * wordDelay;
-    setTimeout(() => sub && sub.classList.add('is-lit'), d + 100);
-    setTimeout(() => ctas && ctas.classList.add('is-lit'), d + 300);
-    setTimeout(() => tag && tag.classList.add('is-lit'), d + 500);
-  })();
-
-</script>
+<script src="assets/v2.js"></script>
 </body>
 </html>
