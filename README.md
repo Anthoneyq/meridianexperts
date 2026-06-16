@@ -1,40 +1,28 @@
-# Meridian Experts Website
+# Meridian Experts — Website
 
-Current static website installed on 2026-06-16 from `/Users/anthoney/Downloads/Meridian Pages`.
+Static multi-page site. Deploy by uploading the contents of this folder to any static host (Vercel, Netlify, GitHub Pages, S3, etc.).
 
-## Design Direction
+**Final design direction (2026-06, per brand kit + 6/12 call):** Montserrat caps display (Proxima Nova stand-in) + DM Sans + Georgia italic quotes, Horizon as the only interactive color, gold/bronze premium accents on dark panels only, full-width translucent glass nav anchored to the top, hero media fading into sections below, GSAP motion + gold cursor glow, Matters absorbed into Credentials, no map, Scope IQ as an engagement path.
 
-Montserrat caps display, DM Sans body copy, Georgia italic accents, Horizon as the interactive color, gold/bronze premium accents on dark panels, glass navigation, hero media that fades into the page, GSAP enhancement, and a restrained litigation-support tone.
+## Pages
+- `index.html` — Home
+- `practice-areas.html` — Practice (nav label "Practice")
+- `process.html` — Process
+- `credentials.html` — Credentials (absorbs former Matters proof)
+- `contact.html` — Confidential matter intake
 
-## Active Pages
+## Shared assets
+- `assets/meridian.css` — design system (type, color tokens, components)
+- `assets/meridian.js` — GSAP motion (reveals, blueprint tracing, rail progress, parallax), nav, Calendly, intake helpers
+- `assets/*.mp4` — cinemagraph loops (`matters-hero.mp4` and `coverage-bg.mp4` are no longer referenced)
 
-- `index.html` - Home
-- `practice-areas.html` - Practice
-- `process.html` - Process
-- `credentials.html` - Credentials
-- `contact.html` - Confidential matter intake
+## Legacy (do not deploy as-is)
+- `Meridian Experts.html`, `index-print.html`, `assets/styles.css`, `assets/v2.css`, `assets/site.js`, `assets/v2.js` — previous design generation. `index-print.html` still contains banned copy ("forensic", Montserrat) and needs regeneration before public use.
 
-`matters.html` is no longer active; representative proof was absorbed into the current pages.
+## Open decisions for Dan
+- Final public name for Scope IQ / SIQ and launch timing (currently presented as "Scope IQ — File Review" engagement path)
+- Exact representative matter numbers / dollar ranges (none published beyond 23+ yrs / 400+ matters)
+- Whether Calendly remains the preferred intake action (currently kept as "Schedule a Call" on Contact)
 
-## Active Assets
-
-- `assets/meridian.css` - design system, layout, components
-- `assets/meridian.js` - shared motion, nav, video loading, intake helpers
-- `assets/image-slot.js` - image slot support
-- `assets/exhibit-viewer.js` - exhibit interaction support
-- `assets/*.mp4` - active hero videos
-- `assets/img/` - active exhibit imagery
-
-## Archived/Omitted From Active Site
-
-The old `styles.css`/`v2.css` generation, old loose pages, `matters.html`, `index-print.html`, screenshots, uploads, and source handoff files are preserved in `../Archive/2026-06-16_website_refresh/`.
-
-## Open Decisions
-
-- Final public name and launch timing for Scope IQ / SIQ, currently presented as "Scope IQ - File Review."
-- Exact representative matter numbers or dollar ranges, if Dan wants anything beyond 23+ years / 400+ matters.
-- Whether Calendly remains the preferred intake action on Contact.
-
-## Deploy
-
-No build step. Deploy the contents of this `Website/` folder to a static host. `vercel.json` enables clean URLs, so `/contact` works as well as `/contact.html`.
+## Vercel
+No build step. `vercel.json` enables clean URLs (so `/contact` works as well as `/contact.html`).
