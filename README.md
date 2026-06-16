@@ -16,9 +16,6 @@ Static multi-page site. Deploy by uploading the contents of this folder to any s
 - `assets/meridian.js` — GSAP motion (reveals, blueprint tracing, rail progress, parallax), nav, Calendly, intake helpers
 - `assets/*.mp4` — cinemagraph loops (`matters-hero.mp4` and `coverage-bg.mp4` are no longer referenced)
 
-## Legacy (do not deploy as-is)
-- `Meridian Experts.html`, `index-print.html`, `assets/styles.css`, `assets/v2.css`, `assets/site.js`, `assets/v2.js` — previous design generation. `index-print.html` still contains banned copy ("forensic", Montserrat) and needs regeneration before public use.
-
 ## Open decisions for Dan
 - Final public name for Scope IQ / SIQ and launch timing (currently presented as "Scope IQ — File Review" engagement path)
 - Exact representative matter numbers / dollar ranges (none published beyond 23+ yrs / 400+ matters)
