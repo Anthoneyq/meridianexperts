@@ -3,465 +3,346 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Practice Areas — Meridian Experts</title>
-<meta name="description" content="Six engagement types — damages, repair scope, rebuttal, appraisal, causation, expert testimony — for first-party property insurance disputes.">
+<title>Practice — Meridian Experts | Property Damage, Repair Scope &amp; Cost</title>
+<meta name="description" content="Meridian Experts identifies what is damaged, what repair is supported, where estimates differ, why costs move, and what the documents actually show.">
+<link rel="canonical" href="https://meridianexperts.com/practice-areas.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian Experts">
+<meta property="og:title" content="Practice — Meridian Experts">
+<meta property="og:description" content="What is damaged, what repair is supported, where estimates differ, why costs move, and what the documents actually show.">
+<meta property="og:url" content="https://meridianexperts.com/practice-areas.html">
+<meta property="og:image" content="https://meridianexperts.com/assets/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://meridianexperts.com/assets/og-default.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://meridianexperts.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Practice", "item": "https://meridianexperts.com/practice-areas.html" }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="assets/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/meridian.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="theme-color" content="#111821">
 <style>
-  .pa-hero { min-height: 70vh; }
-  .pa-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4.6rem); font-weight: 400; }
-  .pa-hero h1 em { font-weight: 300; color: rgba(245,250,245,0.55); }
-
-  /* Service deep-dive sections — alternating image/diagram + content */
-  .service { padding: clamp(5rem, 8vw, 8rem) 0; border-top: 1px solid var(--silver); scroll-margin-top: 100px; }
-  .service:nth-child(odd) { background: var(--off-white); }
-  .service:nth-child(even) { background: var(--mist); }
-  .service__inner {
-    display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2.5rem, 5vw, 5rem);
-    align-items: center;
+  :root { --page-tint: #1C4258; }
+  .svc-group__head {
+    display: flex; align-items: baseline; gap: 1.25rem;
+    margin-bottom: 0.5rem;
   }
-  @media (max-width: 900px) { .service__inner { grid-template-columns: 1fr; } }
-  .service__inner--reverse > :first-child { order: 2; }
-  @media (max-width: 900px) { .service__inner--reverse > :first-child { order: 0; } }
-
-  .service__num {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.85rem;
-  }
-  .service__num::before {
-    content: ''; width: 36px; height: 1px; background: var(--gold); display: inline-block;
-  }
-  .service h2 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: clamp(1.85rem, 3.5vw, 2.85rem); line-height: 1.05;
-    letter-spacing: -0.015em; color: var(--charcoal); margin-bottom: 1.5rem;
-    text-transform: none;
-  }
-  .service__lede {
+  .svc-group__head .label { padding-bottom: 1rem; }
+  .keyline {
     font-family: var(--font-body); font-weight: 300;
-    font-size: clamp(1.05rem, 1.4vw, 1.2rem); line-height: 1.55;
-    color: var(--slate); max-width: 56ch; margin-bottom: 2rem;
+    font-size: clamp(1.35rem, 2.4vw, 2rem); line-height: 1.5;
+    color: var(--txt-dim); max-width: 38ch; text-wrap: pretty;
+  }
+  .keyline em { font-style: normal; color: var(--off-white); }
+  .xlink-strip {
+    background: linear-gradient(165deg, var(--deep) 0%, var(--navy) 100%);
+    color: var(--off-white);
+    border-top: 1px solid var(--rule-gold);
+    padding: clamp(2.5rem, 5vw, 4rem) 0;
+  }
+  .xlink-strip__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 2rem; flex-wrap: wrap;
+  }
+  .xlink-strip h3 {
+    font-family: var(--font-display); font-weight: 800; text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-size: clamp(1.25rem, 2.2vw, 1.8rem); color: var(--off-white); margin-bottom: 0.4rem;
+  }
+  .xlink-strip p { color: rgba(245,250,245,0.8); font-size: 0.95rem; max-width: 52ch; }
+
+  /* ---- Interactive exhibit: photograph ⇄ blueprint compare ---- */
+  @property --split { syntax: '<percentage>'; inherits: true; initial-value: 55%; }
+  .xviewer {
+    --split: 55%;
+    position: relative; overflow: hidden;
+    aspect-ratio: 4/3; background: #0e1a23;
+    touch-action: none; user-select: none;
+  }
+  .xviewer.is-anim { transition: --split 0.5s cubic-bezier(0.4, 0, 0.1, 1); }
+  .xviewer.is-dragging { cursor: ew-resize; }
+  .xviewer__layer { position: absolute; inset: 0; }
+  /* reveal layer = blueprint, kept only to the RIGHT of the divider */
+  .xviewer__layer--reveal { clip-path: inset(0 0 0 var(--split)); }
+  .xviewer__layer image-slot { width: 100%; height: 100%; display: block; }
+  .xviewer image-slot::part(frame) { background: transparent; }
+  .xviewer image-slot::part(empty) { opacity: 0; }
+  .xviewer image-slot::part(ring) { display: none; }
+
+  /* empty-state captions (hidden once a slot is filled) */
+  .xviewer__ph {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 0.5rem;
+    text-align: center; padding: 1.5rem; pointer-events: none;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(196,173,130,0.6);
+    background-image: repeating-linear-gradient(135deg, rgba(176,211,223,0.035) 0 10px, transparent 10px 20px);
+  }
+  .xviewer__layer--photo .xviewer__ph { align-items: flex-start; text-align: left; padding-left: 13%; }
+  .xviewer__layer--reveal .xviewer__ph { align-items: flex-end; text-align: right; padding-right: 13%; }
+  .xviewer__ph strong { color: rgba(245,250,245,0.7); font-weight: 500; letter-spacing: 0.24em; }
+  .xviewer__ph small { font-size: 0.56rem; letter-spacing: 0.1em; color: rgba(176,211,223,0.4); text-transform: none; }
+  .xviewer__layer image-slot[data-filled] ~ .xviewer__ph { display: none; }
+
+  /* divider + handle */
+  .xviewer__divider {
+    position: absolute; top: 0; bottom: 0; left: var(--split);
+    width: 1px; background: var(--rule-gold);
+    transform: translateX(-0.5px); pointer-events: none; z-index: 4;
+  }
+  .xviewer__handle {
+    position: absolute; top: 50%; left: var(--split);
+    transform: translate(-50%, -50%); z-index: 5;
+    width: 40px; height: 40px; padding: 0; cursor: ew-resize;
+    display: grid; place-items: center;
+    background: rgba(8,15,20,0.55); color: var(--gold);
+    border: 1px solid var(--rule-gold); border-radius: 0;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  .xviewer__handle:hover, .xviewer__handle:focus-visible { background: rgba(8,15,20,0.8); color: var(--ice); outline: none; }
+  .xviewer__handle svg { display: block; }
+
+  /* corner mode badges */
+  .xviewer__badge {
+    position: absolute; bottom: 0.85rem; z-index: 4; pointer-events: none;
+    font-family: var(--font-body); font-weight: 400;
+    font-size: 0.56rem; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--off-white); padding: 0.3rem 0.6rem;
+    background: rgba(8,15,20,0.55); backdrop-filter: blur(4px);
+  }
+  .xviewer__badge--l { left: 0.85rem; }
+  .xviewer__badge--r { right: 0.85rem; }
+
+  /* mode toggle bar */
+  .xviewer__modes { display: flex; gap: 0; margin-top: 0.85rem; border: 1px solid var(--rule-l); }
+  .xviewer__modes button {
+    flex: 1; appearance: none; cursor: pointer;
+    background: transparent; color: var(--steel);
+    border: 0; border-right: 1px solid var(--rule-l);
+    padding: 0.7rem 0.5rem;
+    font-family: var(--font-body); font-weight: 500;
+    font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  .xviewer__modes button:last-child { border-right: 0; }
+  .xviewer__modes button:hover { color: var(--deep); }
+  .xviewer__modes button.is-active { background: var(--deep); color: var(--off-white); }
+  .xviewer__hint {
+    margin-top: 0.6rem; font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 0.58rem; letter-spacing: 0.06em; color: var(--silver);
   }
 
-  .service__list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--silver); }
-  .service__list li {
-    padding: 1rem 0; border-bottom: 1px solid var(--silver);
-    display: grid; grid-template-columns: 36px 1fr; gap: 1rem;
-    align-items: baseline;
-  }
-  .service__list li span {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 0.7rem; letter-spacing: 0.18em; color: var(--steel);
-  }
-  .service__list li p {
-    font-size: 0.93rem; color: var(--slate); line-height: 1.5;
-    margin: 0;
-  }
-
-  .service__media {
-    position: relative; aspect-ratio: 4/5;
-    border: 1px solid var(--silver);
-    overflow: hidden; background: var(--off-white);
-  }
-  .service__media image-slot { width: 100%; height: 100%; }
-  .service__media-tag {
-    position: absolute; top: 1.5rem; left: 1.5rem; z-index: 3;
-    background: var(--charcoal); color: var(--gold);
-    font-family: var(--font-display); font-size: 0.68rem;
-    letter-spacing: 0.22em; text-transform: uppercase;
-    padding: 0.55rem 0.9rem;
-  }
-
-  /* Annotated report mockup for first service */
-  .report-mock {
-    aspect-ratio: 8.5/11; max-width: 540px; margin: 0 auto; position: relative;
-    background: var(--off-white); border: 1px solid var(--silver);
-    box-shadow: 0 30px 60px -30px rgba(0,0,0,0.18);
-    padding: 2rem 2.25rem;
-    display: flex; flex-direction: column; gap: 0.85rem;
-  }
-  .report-mock__head {
-    border-bottom: 1px solid var(--charcoal); padding-bottom: 0.65rem;
-    display: flex; justify-content: space-between; align-items: baseline;
-  }
-  .report-mock__head .t-eyebrow { color: var(--gold); }
-  .report-mock__head h4 {
-    font-family: var(--font-display); font-weight: 500; font-size: 0.95rem;
-    color: var(--charcoal); text-transform: none; letter-spacing: 0;
-  }
-  .report-mock__title {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: 1.4rem; color: var(--charcoal); line-height: 1.1;
-    margin: 0.25rem 0 0.5rem;
-  }
-  .report-mock__lines {
-    display: flex; flex-direction: column; gap: 0.45rem;
-  }
-  .report-mock__line { height: 6px; background: var(--silver); border-radius: 1px; }
-  .report-mock__line--short { width: 65%; }
-  .report-mock__line--mid { width: 85%; }
-  .report-mock__line--accent { background: var(--steel); width: 40%; }
-  .report-mock__chunk {
-    border-left: 2px solid var(--gold); padding-left: 0.85rem; margin: 0.35rem 0;
-  }
-  .report-mock__chunk h5 {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--charcoal); margin-bottom: 0.5rem;
-  }
-  .report-mock__photo-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.5rem 0;
-  }
-  .report-mock__photo {
-    aspect-ratio: 4/3; background: var(--steel);
-    background-image: linear-gradient(135deg, var(--steel) 25%, transparent 25%, transparent 50%, var(--steel) 50%, var(--steel) 75%, transparent 75%);
-    background-size: 8px 8px;
-    opacity: 0.55;
-  }
-  .report-mock__foot {
-    margin-top: auto; display: flex; justify-content: space-between;
-    border-top: 1px solid var(--silver); padding-top: 0.6rem;
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 0.65rem; color: var(--steel); letter-spacing: 0.08em;
-  }
-
-  /* Report callouts wrapping the mock */
-  .report-frame {
-    position: relative; padding: 3.5rem;
-  }
-  .report-frame .callout-r1 { top: 12%; left: -1rem; }
-  .report-frame .callout-r1 .callout__line { left: 11px; top: 50%; width: 60px; }
-  .report-frame .callout-r2 { top: 38%; left: -1.5rem; }
-  .report-frame .callout-r2 .callout__line { left: 11px; top: 50%; width: 90px; }
-  .report-frame .callout-r3 { top: 64%; left: -1rem; }
-  .report-frame .callout-r3 .callout__line { left: 11px; top: 50%; width: 60px; }
-  .report-frame .callout-r4 { top: 22%; right: -1rem; flex-direction: row-reverse; }
-  .report-frame .callout-r4 .callout__line { right: 11px; top: 50%; width: 70px; }
-  .report-frame .callout-r5 { top: 56%; right: -1.5rem; flex-direction: row-reverse; }
-  .report-frame .callout-r5 .callout__line { right: 11px; top: 50%; width: 100px; }
-  @media (max-width: 1100px) { .report-frame [class*="callout-"] { display: none; } .report-frame { padding: 0; } }
-
-  /* Six service nav strip at top of page */
-  .pa-index {
-    background: var(--off-white); border-top: 1px solid var(--silver);
-    border-bottom: 1px solid var(--silver);
-    padding: 1.5rem 0;
-  }
-  .pa-index__inner {
-    display: flex; flex-wrap: wrap; gap: 0;
-    align-items: stretch; justify-content: space-between;
-  }
-  .pa-index__item {
-    display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;
-    padding: 0 1.25rem; flex: 1; min-width: 140px;
-    border-right: 1px solid var(--silver);
-    color: var(--charcoal); text-decoration: none;
-    transition: background 200ms;
-  }
-  .pa-index__item:last-child { border-right: 0; }
-  .pa-index__item:hover { background: var(--mist); }
-  .pa-index__item-num {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 0.65rem; letter-spacing: 0.22em; color: var(--gold);
-  }
-  .pa-index__item-name {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.92rem; color: var(--charcoal); line-height: 1.2;
-  }
-  @media (max-width: 800px) {
-    .pa-index__item { min-width: 50%; flex: 0 0 50%; padding: 0.6rem 1rem; border-bottom: 1px solid var(--silver); }
-    .pa-index__item:nth-child(2n) { border-right: 0; }
+  /* Soften the practice hero footage so any text in it reads as texture, not words */
+  .pagehead__media video {
+    filter: saturate(0.6) brightness(1) blur(5px);
+    transform: scale(1.06);
   }
 </style>
 </head>
 <body>
 
-<!-- ========== NAV ========== -->
-<nav class="nav" data-page="practice">
-  <div class="nav__inner">
-    <a href="index.html" class="wordmark" aria-label="Meridian Experts">
-      <img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'">
-    </a>
-    <ul class="nav__links">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-nav" data-page="practice">
+  <div class="site-nav__inner">
+    <a href="index.html" class="site-nav__brand" aria-label="Meridian Experts — Home"><img src="assets/logo-white.png" alt="Meridian Experts"></a>
+    <ul class="site-nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
-      <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
-      <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
+      <li><a href="tel:+12143198030">214.319.8030</a></li>
+      <li><a href="contact.html" data-nav="contact" class="btn btn--solid">Start a Matter Review</a></li>
     </ul>
+    <button class="site-nav__burger" aria-label="Menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+    </button>
   </div>
-</nav>
+</header>
 
-<!-- ========== HERO ========== -->
-<section class="v2-hero pa-hero" data-screen-label="01 Hero">
-  <div class="v2-hero__media">
-    <image-slot id="pa-hero" placeholder="Cinematic — building under examination, calm overcast, technical"></image-slot>
+<!-- ========== PAGE HEAD ========== -->
+<section class="pagehead" id="main" tabindex="-1" data-screen-label="01 Page Head">
+  <div class="pagehead__media">
+    <video data-src="assets/practice-hero.mp4" autoplay loop muted playsinline aria-hidden="true" tabindex="-1"></video>
   </div>
-  <div class="v2-hero__tint"></div>
-  <div class="v2-hero__grid"></div>
-  <div class="v2-hero__ticks">
-    <span class="v2-hero__tick v2-hero__tick--tl"></span>
-    <span class="v2-hero__tick v2-hero__tick--tr"></span>
-    <span class="v2-hero__tick v2-hero__tick--bl"></span>
-    <span class="v2-hero__tick v2-hero__tick--br"></span>
-  </div>
-  <div class="container v2-hero__inner" style="grid-template-columns: 1fr;">
-    <div style="max-width: 880px;">
-      <span class="v2-hero__eyebrow">Practice Areas</span>
-      <h1 class="fade is-visible">Six engagement types.<br><em>One evidentiary standard.</em></h1>
-      <p class="v2-hero__sub fade fade--delay-1 is-visible">Each service delivers an independent opinion documented to the same protocols — built to support claim resolution, mediation, appraisal, deposition, and trial.</p>
-    </div>
+  <div class="pagehead__tint" style="opacity: 1"></div>
+  <div class="container pagehead__inner">
+    <span class="label">Practice</span>
+    <h1>What Meridian <em>actually does.</em></h1>
+    <p class="pagehead__sub">Independent building consulting for property damage, repair scope, and cost — for counsel and stakeholders in complex property matters.</p>
   </div>
 </section>
 
-<!-- ========== INDEX STRIP ========== -->
-<div class="pa-index">
-  <div class="container pa-index__inner">
-    <a href="#defects" class="pa-index__item"><span class="pa-index__item-num">01</span><span class="pa-index__item-name">Damages Assessment</span></a>
-    <a href="#envelope" class="pa-index__item"><span class="pa-index__item-num">02</span><span class="pa-index__item-name">Repair Scope &amp; Cost</span></a>
-    <a href="#insurance" class="pa-index__item"><span class="pa-index__item-num">03</span><span class="pa-index__item-name">Rebuttal Analysis</span></a>
-    <a href="#structural" class="pa-index__item"><span class="pa-index__item-num">04</span><span class="pa-index__item-name">Mediation &amp; Appraisal</span></a>
-    <a href="#code" class="pa-index__item"><span class="pa-index__item-num">05</span><span class="pa-index__item-name">Causation Opinions</span></a>
-    <a href="#testimony" class="pa-index__item"><span class="pa-index__item-num">06</span><span class="pa-index__item-name">Expert Testimony</span></a>
-  </div>
-</div>
-
-<!-- ========== 01 — DAMAGES — with annotated report mock ========== -->
-<section id="defects" class="service" data-screen-label="02 Damages">
+<!-- ========== KEY IDEA ========== -->
+<section class="section section--fade" data-screen-label="02 Key Idea">
   <div class="container">
-    <div class="service__inner">
-      <div class="fade">
-        <div class="service__num">01 Foundational</div>
-        <h2>Damages assessment.</h2>
-        <p class="service__lede">Documented field investigation that grounds every downstream opinion. Hail, wind, wildfire, freeze, water and flood, fire, hurricane and named-storm — residential and commercial.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Site investigation under documented protocols — photography, sampling, measurements.</p></li>
-          <li><span>B.</span><p>Damage classification by peril, building system, and date of loss.</p></li>
-          <li><span>C.</span><p>Pre-existing condition analysis and wear-and-tear differentiation.</p></li>
-          <li><span>D.</span><p>Chain-of-custody documentation supporting every observation.</p></li>
-          <li><span>E.</span><p>Output: OEC report and Loss Analysis suitable for claim, ADR, or litigation.</p></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <div class="report-frame">
-          <div class="report-mock">
-            <div class="report-mock__head">
-              <span class="t-eyebrow">Loss Analysis</span>
-              <h4>Section 04 / 12</h4>
-            </div>
-            <h3 class="report-mock__title">Causation &amp; Scope</h3>
-            <div class="report-mock__lines">
-              <div class="report-mock__line report-mock__line--mid"></div>
-              <div class="report-mock__line"></div>
-              <div class="report-mock__line report-mock__line--short"></div>
-            </div>
-            <div class="report-mock__chunk">
-              <h5>4.2 — Roof Field</h5>
-              <div class="report-mock__lines">
-                <div class="report-mock__line report-mock__line--mid"></div>
-                <div class="report-mock__line"></div>
-                <div class="report-mock__line report-mock__line--accent"></div>
-              </div>
-            </div>
-            <div class="report-mock__photo-grid">
-              <div class="report-mock__photo"></div>
-              <div class="report-mock__photo"></div>
-            </div>
-            <div class="report-mock__lines">
-              <div class="report-mock__line report-mock__line--short"></div>
-              <div class="report-mock__line"></div>
-            </div>
-            <div class="report-mock__foot">
-              <span>MERIDIAN-EXPERTS</span>
-              <span>RPT.04.2026.LA.014</span>
-              <span>P. 18</span>
-            </div>
+    <div class="sec-rule">
+      <span class="sec-rule__num">01</span>
+      <span class="sec-rule__label label">The Work</span>
+      <span class="sec-rule__note">Eight disciplines</span>
+    </div>
+    <div class="split">
+      <p class="keyline" data-reveal>Meridian identifies <em>what is damaged,</em> what repair is supported, <em>where estimates differ,</em> why costs move, and <em>what the documents actually show.</em></p>
+      <figure class="exhibit" data-reveal>
+        <div class="exhibit__frame xviewer" id="xviewer" style="--split:55%;">
+          <div class="xviewer__layer xviewer__layer--photo">
+            <image-slot id="me-building-photo" fit="cover" placeholder="Building photograph"></image-slot>
+            <div class="xviewer__ph"><strong>Photograph</strong><span>Real building</span><small>Drop an iGuide still</small></div>
           </div>
-          <div class="callout callout-r1"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">A</span>Section header</span></div>
-          <div class="callout callout-r2"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">B</span>Causation paragraph</span></div>
-          <div class="callout callout-r3"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">C</span>Field photographs</span></div>
-          <div class="callout callout-r4"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">D</span>Building standard cite</span></div>
-          <div class="callout callout-r5"><span class="callout__line"></span><span class="callout__dot"></span><span class="callout__pill"><span class="callout__num">E</span>Report identifier</span></div>
+          <div class="xviewer__layer xviewer__layer--reveal">
+            <image-slot id="me-building-blueprint" fit="cover" placeholder="Blueprint"></image-slot>
+            <div class="xviewer__ph"><strong>Blueprint</strong><span>Same building</span><small>Drop the matching plan</small></div>
+          </div>
+          <span class="xviewer__badge xviewer__badge--l">Photograph</span>
+          <span class="xviewer__badge xviewer__badge--r">Blueprint</span>
+          <div class="xviewer__divider"></div>
+          <button class="xviewer__handle" id="xhandle" type="button" aria-label="Drag to compare photograph and blueprint">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M5 2 1 6l4 4M11 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"></path></svg>
+          </button>
         </div>
-      </div>
+        <div class="xviewer__modes" role="group" aria-label="View mode">
+          <button type="button" data-xmode="photo">Photograph</button>
+          <button type="button" data-xmode="split" class="is-active">Compare</button>
+          <button type="button" data-xmode="blueprint">Blueprint</button>
+        </div>
+        <figcaption class="exhibit__caption">
+          <span class="exhibit__caption-label">Exhibit B — Building &amp; Blueprint</span>
+          <span class="exhibit__caption-ref">IGUIDE-CAPTURE</span>
+        </figcaption>
+        <p class="xviewer__hint">Drag the divider to compare · or pick a view above.</p>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- ========== 02 — REPAIR SCOPE ========== -->
-<section id="envelope" class="service" data-screen-label="03 Repair Scope">
+<!-- ========== SERVICE INDEX ========== -->
+<section class="section section--paper" data-screen-label="03 Core Analysis">
   <div class="container">
-    <div class="service__inner service__inner--reverse">
-      <div class="fade">
-        <div class="service__num">02</div>
-        <h2>Repair scope &amp; construction cost.</h2>
-        <p class="service__lede">OEC and Loss Analysis built on regional cost data, line-item documentation, and field-verified conditions. Twenty years of ground-up construction informs every line.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Line-item repair scope tied to specific damaged assemblies.</p></li>
-          <li><span>B.</span><p>Regional construction cost analysis — labor, materials, equipment, indirect.</p></li>
-          <li><span>C.</span><p>Like-kind-and-quality matching analysis where required.</p></li>
-          <li><span>D.</span><p>Differentiation of policy-covered, betterment, and pre-loss work.</p></li>
-          <li><span>E.</span><p>Output: defensible Loss Analysis stage-built for adjustment, appraisal, or trial.</p></li>
-        </ul>
+
+    <div class="svc-group">
+      <div class="svc-group__head"><span class="label">Core Analysis</span></div>
+
+      <div class="svc" id="damage" data-reveal>
+        <span class="svc__num">01</span>
+        <h3>Property Damage Assessment</h3>
+        <p>Assessment of building damage as it actually presents — what was damaged, how, and what the conditions support. Documented with photographs, measurements, and notes that hold up in the record.</p>
       </div>
-      <div class="fade">
-        <div class="service__media">
-          <span class="service__media-tag">Field — Repair Scope</span>
-          <image-slot id="pa-2" placeholder="Detail of repair-scope construction work in progress"></image-slot>
-        </div>
+      <div class="svc" id="scope" data-reveal>
+        <span class="svc__num">02</span>
+        <h3>Repair Scope Analysis</h3>
+        <p>What repair the building requires, grounded in construction experience — and where competing scopes diverge from the observed and documented conditions.</p>
+      </div>
+      <div class="svc" id="estimate" data-reveal>
+        <span class="svc__num">03</span>
+        <h3>Estimate Review</h3>
+        <p>Line-level review of the estimates in the file: quantities, methods, pricing assumptions, omissions, and the specific differences that drive the dispute.</p>
+      </div>
+      <div class="svc" id="cost" data-reveal>
+        <span class="svc__num">04</span>
+        <h3>Cost Evaluation</h3>
+        <p>Why the numbers move: pricing data, market conditions, scope dependencies, and cost exposure across the positions in the matter.</p>
       </div>
     </div>
+
+    <div class="svc-group" data-screen-label="04 Documentation">
+      <div class="svc-group__head"><span class="label">Documentation &amp; Reporting</span></div>
+
+      <div class="svc" id="reporting" data-reveal>
+        <span class="svc__num">05</span>
+        <h3>Technical Reporting</h3>
+        <p>Findings organized into a concise technical report — observed, documented, compared, and supported. Written for counsel preparing for mediation, negotiation, or deeper engagement.</p>
+      </div>
+      <div class="svc" id="observation" data-reveal>
+        <span class="svc__num">06</span>
+        <h3>Construction Observation &amp; Documentation</h3>
+        <p>Observation and documentation of building conditions and repair progress where the matter calls for an ongoing, organized record.</p>
+      </div>
+      <div class="svc" id="aerial" data-reveal>
+        <span class="svc__num">07</span>
+        <h3>Aerial &amp; Building Documentation</h3>
+        <p>Aerial and building documentation when warranted by access, scale, or roof conditions — in service of the analysis, never as the product itself.</p>
+      </div>
+    </div>
+
+    <div class="svc-group" data-screen-label="05 When Required">
+      <div class="svc-group__head"><span class="label">When the Matter Requires It</span></div>
+
+      <div class="svc" id="litigation" data-reveal>
+        <span class="svc__num">08</span>
+        <h3>Litigation Support &amp; Expert Witness Services</h3>
+        <p>Where a matter proceeds: support through discovery, deposition, and testimony. Most matters resolve earlier — the work is built so that they can.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ========== 03 — REBUTTAL ========== -->
-<section id="insurance" class="service" data-screen-label="04 Rebuttal">
-  <div class="container">
-    <div class="service__inner">
-      <div class="fade">
-        <div class="service__num">03</div>
-        <h2>Rebuttal analysis.</h2>
-        <p class="service__lede">Structured response to opposing reports, adjuster estimates, and Loss Analysis work product. Issues identified, methodology evaluated, conclusions tested.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Section-by-section evaluation of opposing methodology and basis.</p></li>
-          <li><span>B.</span><p>Identification of unsupported assumptions, missing investigation, scope omissions.</p></li>
-          <li><span>C.</span><p>Independent re-investigation where the opposing record is incomplete.</p></li>
-          <li><span>D.</span><p>Daubert-conscious framing — facts, methods, and reasoning kept separable.</p></li>
-          <li><span>E.</span><p>Output: written rebuttal report and deposition support materials.</p></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <div class="service__media">
-          <span class="service__media-tag">Document — Rebuttal</span>
-          <image-slot id="pa-3" placeholder="Marked-up document review on a desk, calm light"></image-slot>
-        </div>
-      </div>
+<!-- ========== SCOPE IQ CROSS-LINK ========== -->
+<section class="xlink-strip" data-screen-label="06 Scope IQ">
+  <div class="container xlink-strip__inner">
+    <div data-reveal>
+      <span class="label label--on-dark" style="display:block; margin-bottom: 0.75rem;">Scope IQ — File Review</span>
+      <h3>Need the file understood before anything else?</h3>
+      <p>A focused desk review of existing estimates, photographs, reports, and claim documents — major scope and pricing differences, organized into a concise technical summary. No site inspection. Not geographically limited.</p>
     </div>
-  </div>
-</section>
-
-<!-- ========== 04 — MEDIATION & APPRAISAL ========== -->
-<section id="structural" class="service" data-screen-label="05 Mediation">
-  <div class="container">
-    <div class="service__inner service__inner--reverse">
-      <div class="fade">
-        <div class="service__num">04</div>
-        <h2>Mediation &amp; appraisal.</h2>
-        <p class="service__lede">Retained appraiser, umpire services, ADR support, and demonstrative materials. Built to bring matters to resolution where the file supports it.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Service as a party-appointed appraiser under standard policy provisions.</p></li>
-          <li><span>B.</span><p>Umpire services where both parties agree.</p></li>
-          <li><span>C.</span><p>Demonstrative exhibits, mediation summaries, settlement-position support.</p></li>
-          <li><span>D.</span><p>Pre-mediation joint document review and rebuttal preparation.</p></li>
-          <li><span>E.</span><p>Output: appraisal award, signed report, or mediation-ready binder.</p></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <div class="service__media">
-          <span class="service__media-tag">Conference — Mediation</span>
-          <image-slot id="pa-4" placeholder="Boardroom or mediation table — calm professional setting"></image-slot>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 05 — CAUSATION ========== -->
-<section id="code" class="service" data-screen-label="06 Causation">
-  <div class="container">
-    <div class="service__inner">
-      <div class="fade">
-        <div class="service__num">05</div>
-        <h2>Causation opinions.</h2>
-        <p class="service__lede">When the question is which peril caused which damage, the answer must trace back to documented evidence — not narrative. Differentiation by date of loss, peril, and building system.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Multi-peril differentiation — prior storms, new losses, ongoing failures.</p></li>
-          <li><span>B.</span><p>Construction defect vs. weather peril analysis.</p></li>
-          <li><span>C.</span><p>Wear-and-tear, maintenance, and pre-existing condition treatment.</p></li>
-          <li><span>D.</span><p>Coordination with metallurgical, meteorological, and structural specialists.</p></li>
-          <li><span>E.</span><p>Output: causation matrix and supporting opinion section in Loss Analysis.</p></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <div class="service__media">
-          <span class="service__media-tag">Forensic — Causation</span>
-          <image-slot id="pa-5" placeholder="Roof or envelope detail — close, technical, no people"></image-slot>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 06 — TESTIMONY ========== -->
-<section id="testimony" class="service" data-screen-label="07 Testimony">
-  <div class="container">
-    <div class="service__inner service__inner--reverse">
-      <div class="fade">
-        <div class="service__num">06</div>
-        <h2>Expert testimony.</h2>
-        <p class="service__lede">Deposition and trial across plaintiff and defense, state and federal court. The opinion held the day it was written; it should still hold under cross.</p>
-        <ul class="service__list">
-          <li><span>A.</span><p>Rule 26 disclosures and engagement-record preparation.</p></li>
-          <li><span>B.</span><p>Pre-deposition counsel consultation and document preparation.</p></li>
-          <li><span>C.</span><p>Demonstrative exhibits — photo boards, diagram callouts, scope tables.</p></li>
-          <li><span>D.</span><p>Daubert and qualification challenge response support.</p></li>
-          <li><span>E.</span><p>Output: deposition transcript record, trial testimony, exhibit set.</p></li>
-        </ul>
-      </div>
-      <div class="fade">
-        <div class="service__media">
-          <span class="service__media-tag">Court — Testimony</span>
-          <image-slot id="pa-6" placeholder="Courthouse architecture / institutional interior"></image-slot>
-        </div>
-      </div>
-    </div>
+    <a href="contact.html?need=file-review" class="btn btn--solid" data-reveal>Send a File for Review <svg width="15" height="11" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path></svg></a>
   </div>
 </section>
 
 <!-- ========== CTA ========== -->
-<section class="cta">
-  <div class="cta__grid"></div>
-  <div class="container cta__inner">
-    <div>
-      <span class="eyebrow eyebrow--gold">Engage an Expert</span>
-      <h2 class="h-section" style="margin-top:1rem;">Have a matter that fits one of these engagements?</h2>
-      <p>Send a brief description. We'll respond within one business day with a conflict check and an honest read on fit.</p>
-      <div style="margin-top:2rem;"><a href="contact.html" class="btn btn--primary">Engage an Expert <svg class="arrow" width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></a></div>
+<section class="cta-final" data-screen-label="07 CTA">
+  <div class="container cta-final__grid">
+    <div data-reveal>
+      <span class="label label--on-dark">Next</span>
+      <h2>Discuss a <em>building matter.</em></h2>
+      <p>Send a brief description of the matter — property, peril, and posture. We respond within one business day, beginning with a conflict check and an honest read on fit.</p>
+      <div style="margin-top: 2.25rem;">
+        <a href="contact.html" class="btn btn--solid">Start a Matter Review <svg width="15" height="11" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path></svg></a>
+      </div>
     </div>
-    <div class="cta__box">
-      <span class="eyebrow eyebrow--gold">Process</span>
-      <h3>How an engagement begins.</h3>
-      <ul class="cta__contact">
-        <li><strong>Step 1</strong><span>Conflict check &amp; case summary review</span></li>
-        <li><strong>Step 2</strong><span>Engagement letter &amp; document intake</span></li>
-        <li><strong>Step 3</strong><span>Scope of work agreed in writing</span></li>
-        <li><strong>Then</strong><span>Field investigation begins</span></li>
+    <div class="direct" data-reveal>
+      <span class="label direct__label">Direct</span>
+      <ul>
+        <li><strong>Intake</strong><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li>
+        <li><strong>Phone</strong><a href="tel:+12143198030">214.319.8030</a></li>
+        <li><strong>Hours</strong><span>Monday–Friday · Response within 1 business day</span></li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
-<footer style="height: 450px">
-  <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="#defects">Damages Assessment</a></li><li><a href="#envelope">Repair Scope &amp; Cost</a></li><li><a href="#insurance">Rebuttal Analysis</a></li><li><a href="#structural">Mediation &amp; Appraisal</a></li><li><a href="#code">Causation Opinions</a></li><li><a href="#testimony">Expert Testimony</a></li></ul></div>
-      <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo-white.png" alt="Meridian Experts">
+        <p>Independent building consulting for property damage, repair scope, and cost.</p>
+      </div>
+      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice</a></li><li><a href="process.html">Process</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Practice</h4><ul><li><a href="practice-areas.html#damage">Damage Assessment</a></li><li><a href="practice-areas.html#scope">Repair Scope Analysis</a></li><li><a href="practice-areas.html#estimate">Estimate Review</a></li><li><a href="practice-areas.html#cost">Cost Evaluation</a></li><li><a href="practice-areas.html#reporting">Technical Reporting</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li>Woodlands, Texas</li></ul></div>
     </div>
-    <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
+    <div class="site-footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Independent analysis · Confidential intake</div></div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="assets/image-slot.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/v2.js"></script>
+<script src="assets/exhibit-viewer.js"></script>
+<script src="assets/meridian.js"></script>
 </body>
 </html>

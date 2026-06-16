@@ -3,486 +3,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Engage an Expert — Meridian Experts</title>
-<meta name="description" content="Begin a confidential engagement. Conflict check, scope of work, and engagement letter — typically within one business day.">
+<title>Contact — Meridian Experts | Start a Matter Review</title>
+<meta name="description" content="Confidential matter intake. Response within one business day, beginning with a conflict check.">
+<link rel="canonical" href="https://meridianexperts.com/contact.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridian Experts">
+<meta property="og:title" content="Contact — Meridian Experts">
+<meta property="og:description" content="Confidential matter intake. Response within one business day, beginning with a conflict check.">
+<meta property="og:url" content="https://meridianexperts.com/contact.html">
+<meta property="og:image" content="https://meridianexperts.com/assets/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://meridianexperts.com/assets/og-default.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://meridianexperts.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://meridianexperts.com/contact.html" }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
-<link rel="stylesheet" href="assets/v2.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/meridian.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="theme-color" content="#111821">
 <style>
-  /* === Cinematic split hero — form on glass over media === */
-  .ct-hero {
-    position: relative; min-height: 100vh;
-    background: var(--off-black); color: var(--off-white);
-    overflow: hidden;
-    padding: 8rem 0 5rem;
+  :root { --page-tint: #14333F; }
+  /* Compact head so the intake card is visible without scrolling */
+  .pagehead--quiet {
+    min-height: auto;
+    padding-top: calc(var(--nav-h) + clamp(2rem, 6vh, 4rem));
+    padding-bottom: clamp(1.5rem, 4vh, 2.5rem);
+    background: var(--abyss);
   }
-  .ct-hero__media {
-    position: absolute; inset: 0; z-index: 0;
+  .pagehead--quiet .pagehead__sub { max-width: 60ch; }
+  /* Flipped gradient — solid dark behind the fixed header (no seam),
+     then a cool lift below the nav, easing down into the deep base */
+  .pagehead--quiet .pagehead__tint {
+    background: linear-gradient(180deg,
+      var(--abyss) 0,
+      var(--abyss) var(--nav-h),
+      rgba(37,86,110,0.18) calc(var(--nav-h) + 16px),
+      rgba(20,51,63,0.05) 40%,
+      rgba(11,20,26,0) 64%,
+      var(--abyss) 100%);
   }
-  .ct-hero__media image-slot { width: 100%; height: 100%; }
-  .ct-hero__tint {
-    position: absolute; inset: 0; z-index: 1;
-    background:
-      linear-gradient(115deg, rgba(15,32,46,0.92) 0%, rgba(15,32,46,0.65) 45%, rgba(15,32,46,0.4) 100%),
-      radial-gradient(ellipse at 80% 50%, transparent 0%, rgba(15,32,46,0.7) 100%);
-  }
-  .ct-hero__grid {
-    position: absolute; inset: 0; z-index: 1; opacity: 0.18;
-    background-image:
-      linear-gradient(to right, rgba(245,250,245,0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(245,250,245,0.06) 1px, transparent 1px);
-    background-size: 80px 80px;
-  }
-
-  .ct-hero__inner {
-    position: relative; z-index: 5;
-    display: grid; grid-template-columns: 1fr 480px; gap: clamp(2rem, 5vw, 5rem);
-    align-items: center;
-  }
-  @media (max-width: 1000px) { .ct-hero__inner { grid-template-columns: 1fr; gap: 3rem; } }
-
-  .ct-hero h1 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: clamp(2.4rem, 5vw, 4.6rem); line-height: 1.0;
-    letter-spacing: -0.025em; color: var(--off-white);
-    margin-bottom: 2rem;
-  }
-  .ct-hero h1 em {
-    font-weight: 300; color: rgba(245,250,245,0.55); font-style: normal;
-    display: block;
-  }
-  .ct-hero__sub {
-    font-family: var(--font-body); font-weight: 300;
-    font-size: 1.05rem; line-height: 1.6; color: var(--ice-blue);
-    max-width: 52ch; margin-bottom: 2.5rem;
-  }
-  .ct-hero__direct {
-    margin-top: 2rem; padding-top: 1.5rem;
-    border-top: 1px solid rgba(196,173,130,0.25);
-  }
-  .ct-hero__direct-label {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
-    color: var(--gold);
-  }
-  .ct-hero__direct-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
-    margin-top: 1.25rem;
-  }
-  .ct-hero__direct-item strong {
-    display: block;
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 1.1rem; color: var(--off-white);
-    margin-bottom: 0.2rem;
-  }
-  .ct-hero__direct-item span {
-    font-family: var(--font-body); font-size: 0.85rem; color: var(--ice-blue);
+  .intake-section {
+    padding-top: clamp(1.75rem, 4vh, 3rem);
+    background: linear-gradient(180deg, var(--abyss) 0%, var(--pit) 100%);
   }
 
-  /* === Glass form panel === */
-  .ct-form {
-    background: rgba(245,250,245,0.06);
-    backdrop-filter: blur(28px) saturate(140%);
-    -webkit-backdrop-filter: blur(28px) saturate(140%);
-    border: 1px solid rgba(245,250,245,0.18);
-    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(196,173,130,0.12) inset;
-    padding: clamp(2rem, 3vw, 2.5rem);
-    color: var(--off-white);
-  }
-  .ct-form__head {
-    margin-bottom: 1.75rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid rgba(196,173,130,0.25);
-    display: flex; justify-content: space-between; align-items: end;
-  }
-  .ct-form__head-eyebrow {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase;
-    color: var(--gold);
-  }
-  .ct-form__head h2 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: 1.35rem; color: var(--off-white); margin-top: 0.4rem;
-    text-transform: none; letter-spacing: -0.01em;
-  }
-  .ct-form__step {
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 0.7rem; color: var(--ice-blue); letter-spacing: 0.08em;
-  }
-
-  .ct-field {
-    margin-bottom: 1.1rem;
-  }
-  .ct-field label {
-    display: block;
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-    color: var(--ice-blue); margin-bottom: 0.5rem;
-  }
-  .ct-field input,
-  .ct-field select,
-  .ct-field textarea {
-    width: 100%;
-    background: rgba(15,32,46,0.4);
-    border: 1px solid rgba(245,250,245,0.18);
-    color: var(--off-white);
-    font-family: var(--font-body); font-size: 0.95rem;
-    padding: 0.85rem 1rem;
-    border-radius: 0;
-    transition: border-color 200ms, background 200ms;
-  }
-  .ct-field input:focus,
-  .ct-field select:focus,
-  .ct-field textarea:focus {
-    outline: none;
-    border-color: var(--gold);
-    background: rgba(15,32,46,0.6);
-  }
-  .ct-field textarea { min-height: 100px; resize: vertical; }
-  .ct-field--row {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-  }
-  .ct-field--row .ct-field { margin-bottom: 0; }
-
-  .ct-form__submit {
-    margin-top: 1.25rem;
-    width: 100%;
-    background: var(--gold); color: var(--charcoal);
-    border: 1px solid var(--gold);
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
-    padding: 1.05rem 1.5rem;
+  /* Drag & drop dropzone */
+  .field__opt { color: var(--steel); font-weight: 400; letter-spacing: 0; text-transform: none; }
+  .dropzone {
+    position: relative;
+    border: 1.5px dashed var(--rule-gold);
+    background: #FBFAF6;
+    padding: 1.85rem 1.5rem;
+    text-align: center;
     cursor: pointer;
-    display: flex; align-items: center; justify-content: center; gap: 0.85rem;
-    transition: background 200ms, color 200ms;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
   }
-  .ct-form__submit:hover {
-    background: var(--off-white); border-color: var(--off-white);
+  .dropzone:hover { border-color: var(--bronze); background: #fff; }
+  .dropzone:focus-within { outline: 2px solid var(--deep); outline-offset: 2px; }
+  .dropzone.is-drag { border-style: solid; border-color: var(--gold); background: #fff; }
+  .dropzone__input {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    opacity: 0; cursor: pointer;
   }
-  .ct-form__legal {
-    margin-top: 1.25rem;
-    font-family: var(--font-body); font-size: 0.75rem;
-    color: var(--ice-blue); line-height: 1.55; opacity: 0.7;
+  .dropzone svg { color: var(--bronze); margin-bottom: 0.55rem; }
+  .dropzone__lead {
+    font-family: var(--font-display); font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; font-size: 0.82rem; color: var(--charcoal);
   }
-
-  /* === What happens next strip === */
-  .next-strip {
-    background: var(--off-white);
-    padding: clamp(4rem, 7vw, 6rem) 0;
-    border-top: 1px solid var(--silver);
+  .dropzone__sub { font-size: 0.78rem; color: var(--steel); margin-top: 0.3rem; }
+  .dropzone__browse { color: var(--deep); text-decoration: underline; text-underline-offset: 2px; }
+  .dropzone__list { list-style: none; margin: 0.85rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .dropzone__list li {
+    display: flex; align-items: center; gap: 0.65rem;
+    padding: 0.6rem 0.55rem 0.6rem 0.8rem;
+    border: 1px solid var(--rule-l); background: #fff;
+    font-size: 0.8rem; color: var(--charcoal);
   }
-  .next-strip__head {
-    max-width: 720px; margin-bottom: 3rem;
+  .dropzone__list svg { color: var(--bronze); flex: none; margin: 0; }
+  .dropzone__list .fname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .dropzone__list .fsize { color: var(--steel); font-variant-numeric: tabular-nums; flex: none; white-space: nowrap; }
+  .dropzone__remove {
+    flex: none; border: 0; background: none; cursor: pointer; padding: 0.25rem;
+    color: var(--steel); line-height: 0; transition: color 0.15s ease;
   }
-  .next-strip__head .eyebrow { color: var(--steel); }
-  .next-strip__head h2 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: clamp(1.75rem, 3.4vw, 2.6rem); line-height: 1.05;
-    letter-spacing: -0.015em; color: var(--charcoal); text-transform: none;
+  .dropzone__remove:hover { color: var(--charcoal); }
+  .next-list { list-style: none; counter-reset: nx; margin-top: 1.5rem; }
+  .next-list li {
+    counter-increment: nx;
+    display: grid; grid-template-columns: 2.4rem 1fr; gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--rule-d);
+    font-size: 0.9rem; color: var(--txt-dim); line-height: 1.65;
   }
-
-  .next-flow {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
-    border: 1px solid var(--silver);
-    background: var(--off-white);
+  .next-list li::before {
+    content: counter(nx, decimal-leading-zero);
+    font-size: 0.66rem; font-weight: 400; letter-spacing: 0.2em;
+    color: var(--gold); padding-top: 0.3rem;
   }
-  @media (max-width: 900px) { .next-flow { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 500px) { .next-flow { grid-template-columns: 1fr; } }
-  .next-flow__cell {
-    padding: 2rem 1.5rem;
-    border-right: 1px solid var(--silver);
-    position: relative;
-    display: flex; flex-direction: column; gap: 0.85rem;
-  }
-  .next-flow__cell:last-child { border-right: 0; }
-  @media (max-width: 900px) {
-    .next-flow__cell:nth-child(2n) { border-right: 0; }
-    .next-flow__cell:nth-child(-n+2) { border-bottom: 1px solid var(--silver); }
-  }
-  @media (max-width: 500px) {
-    .next-flow__cell { border-right: 0; border-bottom: 1px solid var(--silver); }
-    .next-flow__cell:last-child { border-bottom: 0; }
-  }
-  .next-flow__num {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 0.65rem; letter-spacing: 0.24em; color: var(--gold);
-  }
-  .next-flow__title {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 1.1rem; color: var(--charcoal); line-height: 1.2;
-  }
-  .next-flow__detail {
-    font-family: var(--font-body); font-weight: 300;
-    font-size: 0.88rem; color: var(--slate); line-height: 1.55;
-  }
-  .next-flow__time {
-    margin-top: auto; padding-top: 0.5rem;
-    border-top: 1px solid var(--silver);
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 0.7rem; color: var(--steel); letter-spacing: 0.08em;
-  }
-
-  /* === Office card === */
-  .office-block {
-    padding: clamp(5rem, 7vw, 7rem) 0;
-    background: var(--mist);
-    border-top: 1px solid var(--silver);
-  }
-  .office-grid {
-    display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 4vw, 4rem);
-    align-items: stretch;
-  }
-  @media (max-width: 900px) { .office-grid { grid-template-columns: 1fr; } }
-
-  .office-card {
-    background: var(--charcoal); color: var(--off-white);
-    padding: clamp(2rem, 4vw, 3rem);
-    display: flex; flex-direction: column;
-    border: 1px solid rgba(196,173,130,0.25);
-  }
-  .office-card .eyebrow { color: var(--gold); margin-bottom: 1rem; }
-  .office-card h3 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--off-white);
-    margin-bottom: 1.5rem; line-height: 1.05;
-    text-transform: none;
-  }
-  .office-list {
-    list-style: none; padding: 0; margin: 0;
-    border-top: 1px solid rgba(196,173,130,0.2);
-  }
-  .office-list li {
-    padding: 1.1rem 0;
-    border-bottom: 1px solid rgba(196,173,130,0.15);
-    display: grid; grid-template-columns: 130px 1fr; gap: 1rem;
-    align-items: baseline;
-  }
-  .office-list li strong {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--gold);
-  }
-  .office-list li span {
-    font-family: var(--font-body); font-size: 0.95rem; color: var(--off-white);
-    line-height: 1.5;
-  }
-  .office-list li span small {
-    display: block;
-    font-size: 0.82rem; color: var(--ice-blue); margin-top: 0.2rem;
-  }
-
-  .office-photo {
-    aspect-ratio: 4/5; min-height: 100%;
-    border: 1px solid var(--silver); overflow: hidden;
-    position: relative;
-  }
-  .office-photo image-slot { width: 100%; height: 100%; }
-  .office-photo__tag {
-    position: absolute; top: 1.25rem; left: 1.25rem; z-index: 3;
-    background: var(--charcoal); color: var(--gold);
-    font-family: var(--font-display); font-size: 0.65rem;
-    letter-spacing: 0.22em; text-transform: uppercase;
-    padding: 0.45rem 0.8rem;
-  }
+  .sidebar-card { border: 1px solid var(--rule-gold); background: var(--pit); color: var(--off-white); padding: clamp(1.75rem, 3vw, 2.5rem); }
+  .sidebar-card + .sidebar-card { margin-top: 1.25rem; }
+  .sidebar-card h3 { color: var(--off-white); font-size: 1.5rem; margin: 0.5rem 0 0.75rem; }
+  .sidebar-card > p { font-size: 0.9rem; color: var(--txt-dim); line-height: 1.65; }
 </style>
 </head>
 <body>
 
-<!-- ========== NAV ========== -->
-<nav class="nav nav--dark" data-page="contact">
-  <div class="nav__inner">
-    <a href="index.html" class="wordmark"><img src="assets/logo-white.png" alt="Meridian Experts" style="height: 38px" onerror="this.outerHTML='<span style=\'height:38px;width:148px;display:inline-flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,rgba(196,173,130,.12),rgba(196,173,130,.12) 6px,rgba(196,173,130,.04) 6px,rgba(196,173,130,.04) 12px);border:1px dashed rgba(196,173,130,.4);color:var(--gold);font-family:ui-monospace,monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;\'>MERIDIAN</span>'"></a>
-    <ul class="nav__links">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-nav" data-page="contact">
+  <div class="site-nav__inner">
+    <a href="index.html" class="site-nav__brand" aria-label="Meridian Experts — Home"><img src="assets/logo-white.png" alt="Meridian Experts"></a>
+    <ul class="site-nav__links">
       <li><a href="practice-areas.html" data-nav="practice">Practice</a></li>
       <li><a href="process.html" data-nav="process">Process</a></li>
-      <li><a href="matters.html" data-nav="matters">Matters</a></li>
       <li><a href="credentials.html" data-nav="credentials">Credentials</a></li>
-      <li><a href="tel:+12143198030" class="nav__phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg><span>214.319.8030</span></a></li>
-      <li><a href="contact.html" data-nav="contact" class="nav__cta">Engage an Expert</a></li>
+      <li><a href="tel:+12143198030">214.319.8030</a></li>
+      <li><a href="contact.html" data-nav="contact" class="btn btn--solid">Start a Matter Review</a></li>
     </ul>
+    <button class="site-nav__burger" aria-label="Menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+    </button>
   </div>
-</nav>
+</header>
 
-<!-- ========== HERO + GLASS FORM ========== -->
-<section class="ct-hero" data-screen-label="01 Hero + Form">
-  <div class="ct-hero__media">
-    <image-slot id="ct-hero" placeholder="Cinematic — institutional architecture, calm dusk light"></image-slot>
+<!-- ========== PAGE HEAD (quiet, no media) ========== -->
+<section class="pagehead pagehead--quiet" id="main" tabindex="-1" data-screen-label="01 Page Head">
+  <div class="pagehead__tint"></div>
+  <div class="container pagehead__inner">
+    <span class="label">Confidential Intake</span>
+    <h1>Start a <em>matter review.</em></h1>
+    <p class="pagehead__sub">Send a brief description of the matter — property, peril, and posture. We respond within one business day, beginning with a conflict check and an honest read on fit.</p>
   </div>
-  <div class="ct-hero__tint"></div>
-  <div class="ct-hero__grid"></div>
+</section>
 
-  <div class="container ct-hero__inner">
-    <div>
-      <span class="cr-hero__eyebrow" style="color: var(--gold); font-family: var(--font-display); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 2rem; display: block;">Engage an Expert</span>
-      <h1 class="fade is-visible">Begin a confidential<br><em>engagement.</em></h1>
-      <p class="ct-hero__sub fade fade--delay-1 is-visible">Send a brief description of the matter — names, parties, peril, and posture. We'll respond within one business day with a conflict check and an honest read on fit before any engagement is discussed.</p>
+<!-- ========== INTAKE ========== -->
+<section class="section section--fade intake-section" data-screen-label="02 Intake Form">
+  <div class="container intake-grid">
 
-      <div class="ct-hero__direct fade fade--delay-2 is-visible">
-        <span class="ct-hero__direct-label">Direct Contact</span>
-        <div class="ct-hero__direct-grid">
-          <div class="ct-hero__direct-item">
-            <strong>214.319.8030</strong>
-            <span>Mon–Fri · Time-sensitive matters answered same-day</span>
-          </div>
-          <div class="ct-hero__direct-item">
-            <strong>admin@meridianexperts.com</strong>
-            <span>For document intake under engagement letter</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <form class="ct-form fade fade--delay-1 is-visible" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Submitted — response within 1 business day'; this.querySelector('button').disabled=true;">
-      <div class="ct-form__head">
-        <div>
-          <span class="ct-form__head-eyebrow">Confidential Intake</span>
-          <h2>Case Summary</h2>
-        </div>
-        <span class="ct-form__step">FORM-INTAKE-01</span>
+    <form class="intake" id="intake-form" data-reveal>
+      <div class="intake__head">
+        <h2>Matter intake</h2>
+        <span class="intake__ref">INTAKE / CONFIDENTIAL</span>
       </div>
 
-      <div class="ct-field--row">
-        <div class="ct-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+      <div class="field--row">
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name">
         </div>
-        <div class="ct-field">
-          <label for="firm">Firm</label>
-          <input type="text" id="firm" name="firm" placeholder="Doe &amp; Associates" required>
+        <div class="field">
+          <label for="f-firm">Firm / Organization</label>
+          <input id="f-firm" name="firm" type="text" autocomplete="organization">
         </div>
       </div>
 
-      <div class="ct-field--row">
-        <div class="ct-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="counsel@firm.com" required>
+      <div class="field--row" style="margin-top: 1.4rem;">
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
         </div>
-        <div class="ct-field">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="(214) 555-0100">
+        <div class="field">
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel">
         </div>
       </div>
 
-      <div class="ct-field--row">
-        <div class="ct-field">
-          <label for="role">Posture</label>
-          <select id="role" name="role" required>
-            <option value="">— Select —</option>
-            <option>Plaintiff counsel</option>
-            <option>Defense counsel</option>
-            <option>Insured / public adjuster</option>
-            <option>Carrier / claim</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="ct-field">
-          <label for="peril">Peril / Loss Type</label>
-          <select id="peril" name="peril">
-            <option value="">— Select —</option>
-            <option>Hail / wind</option>
-            <option>Hurricane / named storm</option>
-            <option>Water / flood</option>
-            <option>Fire / smoke / wildfire</option>
+      <div class="field--row" style="margin-top: 1.4rem;">
+        <div class="field">
+          <label for="f-matter">Matter Type</label>
+          <select id="f-matter" name="matter">
+            <option value="">Select…</option>
+            <option>Hail</option>
+            <option>Wind</option>
+            <option>Water</option>
+            <option>Fire</option>
             <option>Freeze</option>
-            <option>Construction defect</option>
+            <option>Flood</option>
             <option>Multi-peril</option>
             <option>Other</option>
           </select>
         </div>
+        <div class="field">
+          <label for="f-location">Property Location</label>
+          <input id="f-location" name="location" type="text" placeholder="City, State">
+        </div>
       </div>
 
-      <div class="ct-field">
-        <label for="summary">Case Summary</label>
-        <textarea id="summary" name="summary" placeholder="Brief description: parties, jurisdiction, posture, key dates, and what kind of opinion you need." required></textarea>
+      <div class="field" style="margin-top: 1.4rem;">
+        <label for="f-need">What Do You Need?</label>
+        <select id="f-need" name="need">
+          <option value="">Select…</option>
+          <option value="full-consulting">Full building consulting</option>
+          <option value="file-review">File review / Scope IQ</option>
+          <option value="report-review">Report review</option>
+          <option value="cost-evaluation">Cost evaluation</option>
+          <option value="unsure">Not sure yet</option>
+        </select>
       </div>
 
-      <button type="submit" class="ct-form__submit">
-        Send for Conflict Check
-        <svg width="14" height="10" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
-      </button>
-      <p class="ct-form__legal">Submission does not create an engagement, attorney-expert privilege, or representation. A conflict check and engagement letter precede any work.</p>
+      <div class="field">
+        <label for="f-desc">Brief Matter Description</label>
+        <textarea id="f-desc" name="description" placeholder="Property, peril, current posture, and what you need to understand."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="f-files">Documents <span class="field__opt">— optional</span></label>
+        <div class="dropzone" id="dropzone">
+          <input id="f-files" name="files" type="file" multiple class="dropzone__input" accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.jpg,.jpeg,.png,.heic,.zip" aria-label="Drag and drop files, or browse to upload">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5l5 5" stroke-linecap="square"></path><path d="M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" stroke-linecap="square"></path></svg>
+          <p class="dropzone__lead">Drag &amp; drop files here</p>
+          <p class="dropzone__sub">or <span class="dropzone__browse">browse to upload</span> · estimates, reports, photos, PDFs</p>
+        </div>
+        <ul class="dropzone__list" id="file-list" aria-live="polite"></ul>
+        <p class="field__hint">Large or sensitive files can also be transferred securely after the conflict check.</p>
+      </div>
+
+      <button type="submit" class="btn btn--solid intake__submit">Send for Conflict Check <svg width="15" height="11" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0L10 1m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path></svg></button>
+      <p class="intake__legal" id="post-submit" style="display:none;">Sent. Prefer to talk it through? <a href="#" data-calendly>Schedule a call with Meridian</a>.</p>
+      <p class="intake__legal">Submission does not create an engagement. A conflict check and engagement terms precede any work. All intake material is treated as confidential.</p>
     </form>
-  </div>
-</section>
 
-<!-- ========== WHAT HAPPENS NEXT ========== -->
-<section class="next-strip" data-screen-label="02 Next">
-  <div class="container">
-    <div class="next-strip__head fade">
-      <span class="eyebrow">What Happens Next</span>
-      <h2>From submission to engagement letter, in four steps.</h2>
-    </div>
-    <div class="next-flow fade">
-      <div class="next-flow__cell">
-        <span class="next-flow__num">Step 01</span>
-        <div class="next-flow__title">Submission Received</div>
-        <p class="next-flow__detail">Inquiry routed to principal. No documents accepted yet — this is an exchange of summary only.</p>
-        <span class="next-flow__time">IMMEDIATE</span>
+    <aside>
+      <div class="sidebar-card" data-reveal>
+        <span class="label label--on-dark">Direct</span>
+        <h3>Reach Meridian directly.</h3>
+        <ul class="next-list" style="counter-reset: none; margin-top: 1rem;">
+          <li style="grid-template-columns: 1fr;"><span><strong style="display:block; font-weight:500; font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:0.2rem;">Intake</strong><a href="mailto:admin@meridianexperts.com" style="color:var(--ice); text-decoration:none;">admin@meridianexperts.com</a></span></li>
+          <li style="grid-template-columns: 1fr;"><span><strong style="display:block; font-weight:500; font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:0.2rem;">Phone</strong><a href="tel:+12143198030" style="color:var(--ice); text-decoration:none;">214.319.8030</a></span></li>
+        </ul>
+        <div style="margin-top: 1.75rem;">
+          <a href="#" data-calendly class="btn btn--ghost" style="width:100%; justify-content:center;">Schedule a Call</a>
+        </div>
       </div>
-      <div class="next-flow__cell">
-        <span class="next-flow__num">Step 02</span>
-        <div class="next-flow__title">Conflict Check</div>
-        <p class="next-flow__detail">Names, parties, and matter screened against active and historical engagement record.</p>
-        <span class="next-flow__time">~ 1 BUSINESS DAY</span>
-      </div>
-      <div class="next-flow__cell">
-        <span class="next-flow__num">Step 03</span>
-        <div class="next-flow__title">Counsel Call</div>
-        <p class="next-flow__detail">Confidential conversation: fit, scope, posture, timeline, fee structure.</p>
-        <span class="next-flow__time">SCHEDULED</span>
-      </div>
-      <div class="next-flow__cell">
-        <span class="next-flow__num">Step 04</span>
-        <div class="next-flow__title">Engagement Letter</div>
-        <p class="next-flow__detail">Scope of work, fee schedule, document protocol — signed before file intake.</p>
-        <span class="next-flow__time">~ 2–3 DAYS</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ========== OFFICE / DIRECT ========== -->
-<section class="office-block" data-screen-label="03 Office">
-  <div class="container">
-    <div class="office-grid fade">
-      <div class="office-card">
-        <span class="eyebrow eyebrow--gold">The Office</span>
-        <h3>Woodlands, Texas.</h3>
-        <ul class="office-list">
-          <li><strong>Address</strong><span>Woodlands, Texas<small>Full address provided to engaging counsel under retention</small></span></li>
-          <li><strong>Phone</strong><span>214.319.8030<small>Mon–Fri · After-hours for time-sensitive matters</small></span></li>
-          <li><strong>Email</strong><span>admin@meridianexperts.com<small>Document intake handled under engagement letter</small></span></li>
-          <li><strong>Hours</strong><span>Monday — Friday<small>Response to inquiries within 1 business day</small></span></li>
-          <li><strong>Coverage</strong><span>National — primary in TX, OK, LA, AR, NM, CO, FL, GA<small>Travel accommodated for the right matter</small></span></li>
-          <li><strong>Rush</strong><span>Time-sensitive matters accommodated<small>Statute deadlines, disclosure cutoffs, weather windows</small></span></li>
+      <div class="sidebar-card" data-reveal>
+        <span class="label label--on-dark">What Happens Next</span>
+        <ul class="next-list">
+          <li>Conflict check against parties and counsel in the matter.</li>
+          <li>A brief call or written response on fit — within one business day.</li>
+          <li>Engagement terms, then file transfer instructions.</li>
+          <li>Review begins. No conclusions before the file is understood.</li>
         </ul>
       </div>
-      <div class="office-photo">
-        <span class="office-photo__tag">Office — Woodlands</span>
-        <image-slot id="ct-office" placeholder="Office interior — calm modern professional, soft daylight"></image-slot>
-      </div>
-    </div>
+    </aside>
+
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
-<footer style="height: 450px">
-  <div class="footer__bg"><video data-src="assets/logo-footer.mp4" autoplay muted loop playsinline aria-label="Meridian Experts"></video></div>
+<footer class="site-footer">
   <div class="container">
-    <div class="footer__top">
-      <div class="footer__col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice Areas</a></li><li><a href="process.html">Process</a></li><li><a href="matters.html">Representative Matters</a></li><li><a href="credentials.html">Credentials</a></li></ul></div>
-      <div class="footer__col"><h4>Practice</h4><ul><li><a href="practice-areas.html#defects">Damages Assessment</a></li><li><a href="practice-areas.html#envelope">Repair Scope &amp; Cost</a></li><li><a href="practice-areas.html#insurance">Rebuttal Analysis</a></li><li><a href="practice-areas.html#structural">Mediation &amp; Appraisal</a></li><li><a href="practice-areas.html#testimony">Expert Testimony</a></li></ul></div>
-      <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li style="color: var(--ice-blue); font-size: 0.875rem; padding: 0.3rem 0;">Woodlands, Texas</li></ul></div>
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo-white.png" alt="Meridian Experts">
+        <p>Independent building consulting for property damage, repair scope, and cost.</p>
+      </div>
+      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="practice-areas.html">Practice</a></li><li><a href="process.html">Process</a></li><li><a href="credentials.html">Credentials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Practice</h4><ul><li><a href="practice-areas.html#damage">Damage Assessment</a></li><li><a href="practice-areas.html#scope">Repair Scope Analysis</a></li><li><a href="practice-areas.html#estimate">Estimate Review</a></li><li><a href="practice-areas.html#cost">Cost Evaluation</a></li><li><a href="practice-areas.html#reporting">Technical Reporting</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:admin@meridianexperts.com">admin@meridianexperts.com</a></li><li><a href="tel:+12143198030">214.319.8030</a></li><li>Woodlands, Texas</li></ul></div>
     </div>
-    <div class="footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Privacy &middot; Terms &middot; Conflict Policy</div></div>
+    <div class="site-footer__bottom"><div>© <span id="year">2026</span> Meridian Experts. All rights reserved.</div><div>Independent analysis · Confidential intake</div></div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="assets/image-slot.js"></script>
-<script src="assets/site.js"></script>
-<script src="assets/v2.js"></script>
+<script src="assets/meridian.js"></script>
+<script>
+  // Prefill need type from ?need= param (e.g. links from Scope IQ CTAs)
+  (function () {
+    var need = new URLSearchParams(location.search).get('need');
+    var sel = document.getElementById('f-need');
+    if (need && sel && sel.querySelector('option[value="' + need + '"]')) sel.value = need;
+  })();
+
+  // Drag & drop dropzone (static site — files are listed now, manifest goes in the
+  // intake email; the <input type=file> is ready to wire to a backend later)
+  var picked = [];
+  (function () {
+    var zone = document.getElementById('dropzone');
+    var input = document.getElementById('f-files');
+    var list = document.getElementById('file-list');
+    if (!zone || !input || !list) return;
+
+    function fmt(bytes) {
+      if (bytes < 1024) return bytes + ' B';
+      if (bytes < 1048576) return (bytes / 1024).toFixed(0) + ' KB';
+      return (bytes / 1048576).toFixed(1) + ' MB';
+    }
+    function key(f) { return f.name + ':' + f.size; }
+    function render() {
+      list.innerHTML = '';
+      picked.forEach(function (f, i) {
+        var li = document.createElement('li');
+        var icon = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 3H7a1 1 0 00-1 1v16a1 1 0 001 1h10a1 1 0 001-1V7l-4-4z" stroke-linejoin="round"/><path d="M14 3v4h4"/></svg>';
+        li.innerHTML = icon +
+          '<span class="fname">' + f.name.replace(/</g, '&lt;') + '</span>' +
+          '<span class="fsize">' + fmt(f.size) + '</span>' +
+          '<button type="button" class="dropzone__remove" aria-label="Remove ' + f.name.replace(/"/g, '') + '">' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="square"/></svg></button>';
+        li.querySelector('button').addEventListener('click', function () {
+          picked.splice(i, 1); render();
+        });
+        list.appendChild(li);
+      });
+    }
+    function add(files) {
+      Array.prototype.forEach.call(files, function (f) {
+        if (!picked.some(function (p) { return key(p) === key(f); })) picked.push(f);
+      });
+      render();
+    }
+
+    input.addEventListener('change', function () { add(input.files); input.value = ''; });
+    ['dragenter', 'dragover'].forEach(function (ev) {
+      zone.addEventListener(ev, function (e) { e.preventDefault(); zone.classList.add('is-drag'); });
+    });
+    ['dragleave', 'drop'].forEach(function (ev) {
+      zone.addEventListener(ev, function (e) {
+        e.preventDefault();
+        if (ev === 'dragleave' && zone.contains(e.relatedTarget)) return;
+        zone.classList.remove('is-drag');
+      });
+    });
+    zone.addEventListener('drop', function (e) {
+      if (e.dataTransfer && e.dataTransfer.files) add(e.dataTransfer.files);
+    });
+  })();
+
+  // Compose an intake email on submit (static site — no backend)
+  document.getElementById('intake-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = this;
+    var get = function (id) { return (document.getElementById(id) || {}).value || '—'; };
+    var needSel = document.getElementById('f-need');
+    var needText = needSel.value ? needSel.options[needSel.selectedIndex].text : '—';
+    var lines = [
+      'MATTER INTAKE — meridianexperts.com',
+      '',
+      'Name: ' + get('f-name'),
+      'Firm / Organization: ' + get('f-firm'),
+      'Email: ' + get('f-email'),
+      'Phone: ' + get('f-phone'),
+      'Matter type: ' + get('f-matter'),
+      'Property location: ' + get('f-location'),
+      'Need: ' + needText,
+      '',
+      'Description:',
+      get('f-desc')
+    ];
+    if (picked.length) {
+      lines.push('', 'Documents to transfer (' + picked.length + '):');
+      picked.forEach(function (file) { lines.push('  • ' + file.name); });
+      lines.push('(Attach these to this email, or send after the conflict check.)');
+    }
+    var body = lines.join('\n');
+    location.href = 'mailto:admin@meridianexperts.com?subject=' +
+      encodeURIComponent('Matter Review Request — ' + (get('f-firm') !== '—' ? get('f-firm') : get('f-name'))) +
+      '&body=' + encodeURIComponent(body);
+    var btn = f.querySelector('button[type="submit"]');
+    btn.firstChild.textContent = 'Opening your email client… ';
+    var post = document.getElementById('post-submit');
+    if (post) post.style.display = 'block';
+  });
+</script>
 </body>
 </html>
