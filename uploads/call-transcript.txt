@@ -1,0 +1,526 @@
+Call with Dan and 1 other-20260612_101638-Meeting Recording
+June 12, 2026, 3:16PM
+1h 37m 15s
+Anthoney Quebedeaux started transcription
+Anthoney Quebedeaux   0:03O, you saw the homepage.
+Dan L. Kessinger, HCI, WRT   0:09Yeah, that&apos;s solid with the automation. I think there was one comment that we had, maybe that bar at the top, but didn&apos;t we have a comment about the bar, why like when you scroll down, doesn&apos;t the bar stay there? Yeah.
+Anthoney Quebedeaux   0:27Yeah.
+Dan L. Kessinger, HCI, WRT   0:27And.
+Wyatt Blome   0:28Yeah, it just kind of looks weird how it&apos;s like, like how there&apos;s a floating space above it.
+Dan L. Kessinger, HCI, WRT   0:32Yeah, see it looks.
+Anthoney Quebedeaux   0:36Okay.
+Dan L. Kessinger, HCI, WRT   0:36Well, it looks bad like when you...
+Wyatt Blome   0:37So, like, you can read that text behind it right now.
+Dan L. Kessinger, HCI, WRT   0:40Yeah.
+Anthoney Quebedeaux   0:41You can read the text behind it.
+Dan L. Kessinger, HCI, WRT   0:45Well, you can&apos;t see it behind it, but it covers up.
+Wyatt Blome   0:46It goes like over it.
+Dan L. Kessinger, HCI, WRT   0:48Yeah.
+Wyatt Blome   0:49Yeah.
+Dan L. Kessinger, HCI, WRT   0:51Most web pages don&apos;t do that, do they?
+Anthoney Quebedeaux   0:51Okay.Most crappy websites don&apos;t.
+Dan L. Kessinger, HCI, WRT   0:56Yeah.
+Anthoney Quebedeaux   0:58Let&apos;s go with, let me just reference a website.Since they&apos;re about to get an IPO, or I guess they did go IPO today.Top mind, right?
+Dan L. Kessinger, HCI, WRT   1:13Mhm.
+Anthoney Quebedeaux   1:13So this bar top and then just goes away. Do you like that style or do you like the...
+Dan L. Kessinger, HCI, WRT   1:18Yeah.
+Anthoney Quebedeaux   1:23I mean, there&apos;s other websites that y&apos;all can think of, or this style where it just stays up at the top and it removes the...
+Dan L. Kessinger, HCI, WRT   1:28Oh yeah, the nav stays there.
+Anthoney Quebedeaux   1:31Yeah, it just stays at the top, so there&apos;s no...
+Wyatt Blome   1:33I&apos;m okay.
+Anthoney Quebedeaux   1:36Um...So I see what you&apos;re saying. Whenever you scroll down, it almost feels like...
+Wyatt Blome   1:43Yeah, it&apos;s weird.
+Anthoney Quebedeaux   1:43Your.You&apos;re not able to read what&apos;s in here.
+Wyatt Blome   1:45It&apos;s okay.
+Dan L. Kessinger, HCI, WRT   1:47You&apos;re covering up the content of the page. I don&apos;t know that I have a preference either way between the two sites you just showed us, but I don&apos;t like this because then it covers up the text that&apos;s underneath it.
+Wyatt Blome   1:47Well, it...
+Anthoney Quebedeaux   2:01Yeah, same thing happens whenever it goes full screen. I mean, you still can&apos;t read what&apos;s underneath the text, but right here you can just see that there&apos;s stuff above it. So, I mean, it&apos;s doing the same thing, right? If you go to...
+Dan L. Kessinger, HCI, WRT   2:09Yeah.Yeah, yeah, so that would need to be like with like with Apple site, it&apos;s one bar that goes all the way across and then the page scrolls underneath that bar.
+Anthoney Quebedeaux   2:21Okay, just so there&apos;s no gap up here. So you don&apos;t want a gap up here and you want it to go full screen whenever the header is at the very top.
+Dan L. Kessinger, HCI, WRT   2:23Yeah.Yeah, I mean, why do you have a preference one way or the other?
+Wyatt Blome   2:30I mean, I probably like the one that disappears better, but even when it pops up, there still can&apos;t be text the way it&apos;s showing.
+Anthoney Quebedeaux   2:41There&apos;s a website like...
+Dan L. Kessinger, HCI, WRT   2:46That disappears.
+Anthoney Quebedeaux   2:50This one? Yeah, it just stays at the top.
+Dan L. Kessinger, HCI, WRT   2:51Yeah.Do what?
+Anthoney Quebedeaux   2:54It just stays at the top, trying to find.
+Dan L. Kessinger, HCI, WRT   2:57Well, when you scroll down, it disappeared.
+Anthoney Quebedeaux   3:01So, something.
+Wyatt Blome   3:01I like, I like that it reappears on like SpaceX&apos;s when they stop, but you would still need whenever you stop and it reappears. You can&apos;t have it showing that text the funky way it is.
+Dan L. Kessinger, HCI, WRT   3:17Ohh, when you stop it, it comes back.
+Wyatt Blome   3:20Oh, maybe not. I thought I did. Never mind.
+Dan L. Kessinger, HCI, WRT   3:21No.
+Anthoney Quebedeaux   3:23Oh, okay, so whenever you scroll down, if you scroll up a little bit, it comes back.
+Wyatt Blome   3:27Yeah, yeah.That&apos;s cool.
+Anthoney Quebedeaux   3:32Do you like it the way there&apos;s basically a gradient at the top of?Here, so it&apos;s not a full bar.
+Dan L. Kessinger, HCI, WRT   3:40Well, that&apos;s because their whole pages, all their pages are dark though, like we&apos;ve got some lighter pages.
+Anthoney Quebedeaux   3:48Yeah, they still have like a gradient basically from black to clear.
+Dan L. Kessinger, HCI, WRT   3:51Yeah, but it goes with all their darker pages, like we go into some of the lighter blues, but we start dark, so I don&apos;t know how you could make that look right.
+Wyatt Blome   4:01It would have to, yeah, I think it&apos;s going to have to be in like a fixed bar. I mean, the bar could have a gradient, but...It&apos;s not going to be able to just show through to the background. Yeah.
+Dan L. Kessinger, HCI, WRT   4:09Like, like apples.Yeah, it needs to, yeah.
+Wyatt Blome   4:13Big.It doesn&apos;t have to just be a white bar, but...
+Anthoney Quebedeaux   4:26K.Any other ideas on the bar that you don&apos;t like? Do you like it sitting up there like that, or do you want it?All the time, a bar all the way across.
+Dan L. Kessinger, HCI, WRT   4:44I mean, that actually looks really clean on that page like that. So maybe when you scroll down, it just needs to go away.
+Wyatt Blome   4:45No.
+Anthoney Quebedeaux   4:55How do you want people to navigate back to the top if they&apos;re down here?
+Dan L. Kessinger, HCI, WRT   4:59Yeah, great question.I mean, but...
+Anthoney Quebedeaux   5:02Because the thing that what I&apos;m looking at here is...This bar design, I know that&apos;s kind of tripping you up because you can&apos;t read what&apos;s back here, but ideally you&apos;re looking at what&apos;s at the middle of the page. So whenever I&apos;m looking, I&apos;m not looking up here anymore. I&apos;m seeing what&apos;s coming down here as I&apos;m scrolling down.
+Dan L. Kessinger, HCI, WRT   5:19Yeah.
+Anthoney Quebedeaux   5:20So, but I understand that that&apos;s a distraction if you are trying to look at it, but normally you&apos;re reading.distinction review, like I&apos;m all, I&apos;m like in this area here, not up here. But what we can do is say, once we get down to this point, bar goes all the way across.
+Dan L. Kessinger, HCI, WRT   5:34Yeah.
+Anthoney Quebedeaux   5:42And then it feels like what the other ages are doing.And then that way it&apos;s...
+Wyatt Blome   5:46Yeah.
+Dan L. Kessinger, HCI, WRT   5:47I would say that when you go down to the blue, like it needs to be unique through that image. And then when you start there with that bluish green color, then it just goes all the way across. So can it be dynamic and be two different things?
+Anthoney Quebedeaux   5:59Yeah.
+Dan L. Kessinger, HCI, WRT   6:00Okay.
+Anthoney Quebedeaux   6:00And that&apos;s basically what&apos;s going on here. You have pill-shaped, translucent. See, you can see like the stuff going on here.
+Dan L. Kessinger, HCI, WRT   6:06Yeah, that looks amazing right there on that page.
+Anthoney Quebedeaux   6:10Yeah.So that&apos;s kind of how it&apos;s set up on most of the pages, translucent.And then, whenever we scroll down...It maintains some translucence, but then it blurs it out more.
+Dan L. Kessinger, HCI, WRT   6:26Yes, and we&apos;re talking about when it goes down to that lighter color being more static like the apple bar, where it just goes all the way across and just stays at the top of the page.
+Wyatt Blome   6:26Yeah.
+Anthoney Quebedeaux   6:32ME.Yeah.
+Dan L. Kessinger, HCI, WRT   6:36I get what you&apos;re doing with it. I think people may look at it and say, oh, they made a mistake. That&apos;s sloppy. Look, it&apos;s got, it&apos;s got design behind the graphic. So by the bar.
+Wyatt Blome   6:48Well, like the SpaceX one, it doesn&apos;t have that container. So it&apos;s just like text over the image and that kind of works, I think. But with the container, then it really makes it obvious.
+Anthoney Quebedeaux   7:11Trying to find, I saw one.Through here.Try the dentist one since it&apos;s a service.So like that style where it&apos;s just always static up there.Not that big, though.
+Dan L. Kessinger, HCI, WRT   7:36I think, yeah, once you get to the, once you get to the lighter color.
+Anthoney Quebedeaux   7:42Okay.
+Dan L. Kessinger, HCI, WRT   7:47I mean, you could go something pretty clean like Apple has.
+Anthoney Quebedeaux   7:51Trying to find something that&apos;s a little more, because a lot of these are like design heavy. We&apos;re not going for like super design heavy.Like, you&apos;re not an artist.
+Dan L. Kessinger, HCI, WRT   8:04Right.
+Anthoney Quebedeaux   8:08Because a lot of these are, yeah, like as I&apos;m scrolling down, it&apos;s telling me all this stuff.Guess there&apos;s more inspiration from a...Architectural website.Potentially.
+Dan L. Kessinger, HCI, WRT   8:34Maybe.
+Anthoney Quebedeaux   8:36Header U here, as you get down, it goes away.
+Wyatt Blome   8:41What if you just changed the shape of that container so it filled to the top of the page so you couldn&apos;t see behind it?
+Anthoney Quebedeaux   8:49Do that.
+Wyatt Blome   8:54Because it&apos;s cool the way that it&apos;s like translucent already and like all that you&apos;ve built into it, it&apos;s the only thing we don&apos;t like about it is that you can see it kind of behind it.
+Dan L. Kessinger, HCI, WRT   9:03And what about if it was a little bit lighter color on, because it&apos;s all those pages under that are...You like it being that dark on top of the contrast being that dark on there is great. I don&apos;t want to make any changes there on that piece, but when you.
+Anthoney Quebedeaux   9:21So whenever you scroll to the very top, it&apos;s translucent. So if we took this and kept it that way so it doesn&apos;t change and it&apos;s always like that on every page.
+Dan L. Kessinger, HCI, WRT   9:30Mhm.
+Anthoney Quebedeaux   9:31Would you want to like that?But then once it gets to, so instead of going from translucent glass-like to here, we could have it expand the whole page.and go up so there&apos;s no room up there, but then it&apos;s still translucent all the way down. So that way you still have access to it, but it&apos;s a thin bar.
+Dan L. Kessinger, HCI, WRT   9:47Bye.
+Wyatt Blome   9:53I think that, yeah, I think that&apos;s right.
+Dan L. Kessinger, HCI, WRT   9:54Yeah, I think that&apos;s the solution.
+Anthoney Quebedeaux   9:56Okay.All right, I&apos;ll come up with two design styles for that and see what y&apos;all think.But as far as the homepage header at the very top, you like the way that looks. If it goes all the way across, we lose this pill shape.Sam.
+Wyatt Blome   10:16That&apos;s fine.
+Anthoney Quebedeaux   10:17Okay.As far as...There&apos;s some small features in here that, let&apos;s see, is it working?Can you all see that? Has the mouse hovered around the gold background? Or is it too faint?
+Wyatt Blome   10:30Yeah. Oh, no.No, I can&apos;t see that.
+Anthoney Quebedeaux   10:41Well, let me go to...Go to my website and show you.See this?The mouse is moving.
+Wyatt Blome   11:01Yeah.
+Anthoney Quebedeaux   11:03Do you like that style or no? On y&apos;all&apos;s website, it&apos;s set up where on the blue, on the background, it&apos;s like a smaller radius than this.And it&apos;s a slight gold color.Mm.Just to give the website only on the darker color, so just to give the website a...interactive fill that&apos;s not too wild.
+Wyatt Blome   11:36Yeah, I think it&apos;s fine.
+Anthoney Quebedeaux   11:39Okay.How do you feel about the different web page titles?Is that too abstract or because I was trying to go with the idea that if an attorney is looking at this, we&apos;re using their language, not a building consultant&apos;s language. I told Dan that before. My goal is this isn&apos;t a website for y&apos;all. It&apos;s a website for attorneys to hire y&apos;all. So we want to use theirlanguage or common language where it would be easy to find, but sometimes saying something like practice, process, matters all sound like the same thing.
+Wyatt Blome   12:23Right.
+Dan L. Kessinger, HCI, WRT   12:25Yeah, I don&apos;t think Wyatt seen those pages, so let&apos;s scroll through those and see if any of that can actually be consolidated.
+Anthoney Quebedeaux   12:39Oh, Claude.
+Dan L. Kessinger, HCI, WRT   12:43You have the tokens again?
+Anthoney Quebedeaux   12:45Yeah, always out of tokens.Better image in the background on a continual loop, kind of showing how y&apos;all go through the process.I blurred it out so you can&apos;t really see what&apos;s going on, but it&apos;s like here, basically taking a picture.Now you&apos;re writing reports that has like that back to that emotional connection without really being super apparent.Whenever we get down here, I would need to know y&apos;all&apos;s process, but the way I wrote it all out was if damage assessment.prepare and then images would fit inside these boxes.This is how you assess the damage. This is how you look at the construction cost.Here&apos;s how you do rebuttals.Here&apos;s kind of y&apos;all&apos;s workflow. So that way if they hire you, they see like, what am I going to expect and why are, why is Meridian Experts different than other companies? We&apos;re showing you what you&apos;re going to get whenever you come to us.
+Wyatt Blome   13:58Yeah.I do think that part&apos;s a lot better than most BC websites.
+Anthoney Quebedeaux   14:05Yeah, most websites I&apos;ve seen so far are...Here&apos;s a bunch of stuff. Now figure out what to do with it.
+Wyatt Blome   14:13Yeah, we basically we have a website with a lot of information and stock images.
+Anthoney Quebedeaux   14:17Yeah.All these what?
+Wyatt Blome   14:23I like the way you did that because so many of the websites just look like a, like, oh, we pulled a stock image from the internet. Like even if these are stock videos, they have something more to them that makes them.
+Dan L. Kessinger, HCI, WRT   14:36Well, I&apos;d be really interested to see, like, I know you use AI for these, like, I wonder.
+Wyatt Blome   14:37That looks pretty cool.
+Dan L. Kessinger, HCI, WRT   14:42Like, could you test one and have a Fable run it again and see if it comes up with something even more, more lifelike? Like, have you experimented with Fable with any images yet?
+Anthoney Quebedeaux   14:53I don&apos;t want to do anything yet until I get, because Fable costs so much to run. I don&apos;t want to run stuff and then rerun stuff. So like that comment that you just made through transcription is going to come back and say, hey, we need to like, here&apos;s a checklist, like let&apos;s rerun process, the page of process, how the background kind of fades in to the, I think there&apos;s a gradient here, so it feels like a.
+Dan L. Kessinger, HCI, WRT   14:58Right.Bye.
+Anthoney Quebedeaux   15:14blends in, I think is what Wyatt is saying. And then, yeah, recreating this so it looks more realistic.This wasn&apos;t done with Fable though. This was done with Seed Dance. So I don&apos;t know if Fable&apos;s going to be better than Seed Dance for video creation, but it could be.
+Wyatt Blome   15:32This is pretty dang good, I think. I like the videos.
+Anthoney Quebedeaux   15:37Yeah, my goal was hurricane.Kind of the, I forgot what you&apos;ll call it.Matterport, whatever the new Matterport word is.
+Wyatt Blome   15:47Bo.
+Dan L. Kessinger, HCI, WRT   15:48I got.
+Anthoney Quebedeaux   15:49iGuide, so it&apos;s kind of like damage iGuide.
+Wyatt Blome   15:54Modeling, yeah.
+Anthoney Quebedeaux   15:55Stuff happens to paperwork to now let&apos;s resolve the issue and have a clean house whenever everything&apos;s said and done.
+Wyatt Blome   16:04Yeah.I need to go.
+Anthoney Quebedeaux   16:07So everything I&apos;m doing is kind of allowing people, if they wanted to sit here, they can see what the process looks like, but then they can also learn what the process looks like. So I was saying like practice, process, and matters, all kind of the same. I wanted three different designs to show y&apos;all what I&apos;ve come up with so far to see if y&apos;all like a have a preference.So this is kind of the same thing, right? The intake, document review, field investigation, report, and trial.
+Dan L. Kessinger, HCI, WRT   16:35So we may only need one or two of those actual pages, but you&apos;ve given us three designs to choose from.
+Anthoney Quebedeaux   16:41Yeah.
+Dan L. Kessinger, HCI, WRT   16:42Yeah.
+Anthoney Quebedeaux   16:43So instead of the back and forth, it&apos;s like you have up here stage one.Stage 2, Stage 3.So we can like see what&apos;s going on as we&apos;re going through. So R is process and practice different. We look at damage assessment to expert testimony.versus intake.from the attorney to trial.similar, a little different. You can keep both of them. It&apos;s just giving them more information to go with. Or we can say, this is how we practice, and then this is the process you are going to get. So if you want to run it that way, I just don&apos;t have enough information from you all to know what you do and then how you hand it off, where those could be individual pages.But I&apos;m just limited on what specifically you are doing other than the document you gave me.the questions you pulled out.So is there a difference between the process that y&apos;all do internally that y&apos;all would want to put on a website and then what the process or practice would be from the outside looking to hire you?Like process could be we take intake your files, figure out the conflict, review it. We go out and do the field investigation, then like basically this stuff. And then the practice internally would be we have to assess like it would be.The...Document review to the expert report would be the practice, right? Like they don&apos;t need to know again that they&apos;re intaking, but you&apos;re doing the damage assessment, you&apos;re looking at everything, you&apos;re doing all these things.remove expert testimony, you know, like you&apos;re doing analysis, you&apos;re doing all this stuff, then you&apos;re preparing for any testimony. So I can see it even broken up that way too, or it&apos;s like, here&apos;s the whole process, 30,000 foot view, here&apos;s what we do internally, so you know that we&apos;re crossing our T&apos;s and dotting our I&apos;s.
+Wyatt Blome   18:38Yeah.Yeah, in my mind, we kind of, you almost need to differentiate like, here&apos;s all the service. Like the homepage almost feels like, here&apos;s the services we offer. The process is like, here&apos;s how we actually complete the services.
+Anthoney Quebedeaux   19:05The idea of a homepage, I guess I can kind of break that down.
+Wyatt Blome   19:08Or that, that, that seems like kind of how it&apos;s laid out, I guess, more so.
+Anthoney Quebedeaux   19:11Yeah, homepage should be all of these pages up here on the homepage. So for search engine optimization and AI engine optimization, the homepage is a longer page that summarizes all the other stuff up here.So as we scroll down, it&apos;s like you&apos;re getting a little bit of practice, a little bit of process, a little bit of matters, a little bit of credentials.This is like us, right? Like we have this many years and this is how many things we&apos;ve done.That way.Can you see this? That&apos;s a little more apparent with the gold. Okay.
+Wyatt Blome   19:45Yeah, yeah, that shows.
+Anthoney Quebedeaux   19:51Everything on the homepage is like a summarized version. So if they just want to go to the homepage, they can scroll all the way down and kind of see what you&apos;ll have to offer. And then they click on here to go into more depth.
+Dan L. Kessinger, HCI, WRT   20:07Yeah, that makes sense.
+Anthoney Quebedeaux   20:12Next page.
+Wyatt Blome   20:13So right now we have 5 pages that you&apos;re showing us. We have a homepage and then practice process matters credentials or is practice the homepage.
+Anthoney Quebedeaux   20:20Yeah.You have a homepage, practice page, process page, all five different pages.
+Wyatt Blome   20:25Okay.Yeah, so practice is more like, here&apos;s the services, processes, here&apos;s the detail behind that.
+Anthoney Quebedeaux   20:36Yeah, and I&apos;m fine to change the words. That&apos;s AI that came up with these words based on what y&apos;all talked about before, trying to make it attorney friendly. But as I was going through it, I&apos;m like, they all kind of feel the same. And I don&apos;t know if, I don&apos;t love the idea of a normal homepage where it&apos;s like home, shop.
+Wyatt Blome   20:45Yeah.Yeah, yeah. To me, matters would go within practice, probably where we&apos;re calling that like services, or that&apos;s how I&apos;m referring to it right now. I think matters could be consolidated into that page and then processes your deeper dive of that.
+Anthoney Quebedeaux   20:55Services.Okay.Dan and I did talk about, because I...Created this map through After Effects, so I just kind of put it in there for reference.I think we might keep a map that looks like this of all the places we work on, right, Dan?
+Dan L. Kessinger, HCI, WRT   21:32Mm-hmm.
+Anthoney Quebedeaux   21:32So instead of putting like all the individual dots of like where you actually work, it goes back to the just the front part where it&apos;s a map and then here&apos;s the states you currently work in. But this is a...
+Dan L. Kessinger, HCI, WRT   21:42Right.
+Anthoney Quebedeaux   21:44That&apos;s just a generated, like I found that online. I was like, oh, that&apos;s kind of cool. All the different dot points for whatever.
+Dan L. Kessinger, HCI, WRT   21:49Yeah.Yeah, I think we just decided to, you have that conversation recorded, I think. I think we did, one I remember is we were just going to simplify that and just highlight all the states we&apos;re currently working in. Yeah. But like we couldn&apos;t do,
+Anthoney Quebedeaux   22:04Just like that.
+Dan L. Kessinger, HCI, WRT   22:10like number of cases because it may show that we&apos;ve done no cases in South Carolina, but we want to advertise that we work there. So we needed to take that feature off of it is what I remember.
+Anthoney Quebedeaux   22:20Yeah, basically, make it once it gets to the...Make the loop. Yeah, so instead of having a video streaming like this, it will be...It&apos;ll be this section here. Remove some of this stuff here. So it won&apos;t be a, it&apos;ll be an image that pops up, say whatever it needs to say over here, and then all of these will be the same color.
+Dan L. Kessinger, HCI, WRT   22:45Yeah.Yeah, and then you can do the number of states.
+Anthoney Quebedeaux   22:52And then more.Yeah, active states here, no numbers for cases we&apos;ve done, but like those are where you work. And then all the cases turn into like process here.
+Dan L. Kessinger, HCI, WRT   22:57Yeah.Yeah.
+Anthoney Quebedeaux   23:09If they want to see how many cases you&apos;ve worked on.Sorry, that Tom page.Notice how many cases you&apos;ve worked on; they would see that here.
+Dan L. Kessinger, HCI, WRT   23:18Yeah.
+Anthoney Quebedeaux   23:19So then it&apos;s like, oh, they&apos;ve done X amount of cases. Cool. They&apos;re not saying specifically where most people&apos;s brains aren&apos;t connecting. Where did they do these cases? It&apos;s like, you did cases and you work in these places. Like that&apos;s all the brain needs to know that you can do stuff.
+Dan L. Kessinger, HCI, WRT   23:31Yeah.Yeah.Yeah, it&apos;s irrelevant that we haven&apos;t worked in North Carolina. If we can do a job in Florida, we can do a job in North Carolina. We don&apos;t want to disqualify someone from making a buying decision from choosing us because we haven&apos;t done work there. So they just need to know we&apos;ve done this work. So.
+Anthoney Quebedeaux   23:41Yeah.Yep. Yeah, I&apos;ve done 400 plus things. Yeah, like, what&apos;s the difference between a hurricane destroying...
+Dan L. Kessinger, HCI, WRT   23:54Yeah.
+Anthoney Quebedeaux   24:01South Texas versus Florida.
+Dan L. Kessinger, HCI, WRT   24:04Yeah, exactly. Building code, you research the building code. Yeah, that&apos;s it. So, and so like, I keep coming back to like the Carolina specifically, those are states that we could work in. They&apos;re similar construction types to the south, but we&apos;ve done no jobs there technically. So we wouldn&apos;t want to disqualify an attorney from hiring us there simply because we&apos;ve mainly worked in
+Anthoney Quebedeaux   24:05It&apos;s like it&apos;s the same thing, it&apos;s...Building code, yeah. Yeah.
+Dan L. Kessinger, HCI, WRT   24:27Texas, Louisiana, Alabama, and Florida.
+Anthoney Quebedeaux   24:31What required you to work in South Carolina or the Carolinas? Just getting a certification or a licensure?
+Dan L. Kessinger, HCI, WRT   24:37Nothing. Nothing. There&apos;s nothing that prohibits us from working in any of these states. It&apos;s not like the engineers where they have to get licensed per state. We could technically work in all 50 states. It&apos;s just, I don&apos;t know, I was saying those are the states in the south. Those are the states that are typically prone to hurricanes.And we&apos;ve done work in some of them, and if not, we&apos;d like to work in those states more, so...
+Anthoney Quebedeaux   25:01Let&apos;s do this then.Could we have a filter that says, like...It&apos;s going to be kind of ridiculous. But all the states that have hurricane activity have a map of that and say, here&apos;s states we can work in that have hurricane activity, basically from Texas to New York, or whatever states you want to work. Since you can work anywhere.
+Dan L. Kessinger, HCI, WRT   25:21Yeah.Texas to North Carolina is where I&apos;d limit it to. So that&apos;s where we&apos;d actually, we&apos;d want to work. They don&apos;t typically get hurricanes. Like, I mean, they&apos;re very rare, but they don&apos;t typically get hurricanes north. Yeah.
+Anthoney Quebedeaux   25:26you wouldn&apos;t want to go higher.It doesn&apos;t matter if you get it, if your map looks better. It&apos;s like a psychological figure.
+Dan L. Kessinger, HCI, WRT   25:38Yeah, but I don&apos;t want to work in New York. There&apos;s certain, like, I don&apos;t want to work above North Carolina.
+Anthoney Quebedeaux   25:44Okay.OK.And then do you do anything else like hell in other states, Oklahoma?
+Dan L. Kessinger, HCI, WRT   25:52Yeah, we do it all, so.
+Anthoney Quebedeaux   25:54So could you have, I guess where my brain is going, would you want to say like you work in Oklahoma, like you work in all these places for every situation or have a...mapping showing like, here&apos;s all the jobs we can work in, here&apos;s all the states we work in for everything.
+Dan L. Kessinger, HCI, WRT   26:11I don&apos;t know that you want to like get attorneys thinking about it that way. Attorneys are more like, hey, I have this issue. I need help with a cost estimate. They&apos;re not qualifying us. Like, have you ever worked on this before? Like, that&apos;s not a conversation I would typically have with the client. So I don&apos;t necessarily.
+Anthoney Quebedeaux   26:26I&apos;m looking at this for search engine optimization.
+Dan L. Kessinger, HCI, WRT   26:29Okay, yeah.
+Anthoney Quebedeaux   26:30So like if I say Meridian Experts can work in all these places, you&apos;re a building consultant. So if they say building consultant for Oklahoma, Meridian Experts pops up. If they say building consultant, health specialty in Oklahoma, then it pops up.
+Dan L. Kessinger, HCI, WRT   26:45I see what you&apos;re saying.
+Anthoney Quebedeaux   26:46That&apos;s, so I&apos;m looking at it not as a telling them that you do this thing, rather, if they&apos;re trying to search for you and you just say, we work in all these states with no limitations, then it&apos;s like, well, how do they find you if you do hell?versus flooding versus hurricane, right? Flooding and hurricane are similar, but...
+Dan L. Kessinger, HCI, WRT   27:04Right.
+Anthoney Quebedeaux   27:10flooding by a river is also not a hurricane. So then it&apos;s...Two different, you know, job points, so that&apos;s search engine optimization over.Just letting people know what you can do. So that&apos;s what I&apos;m trying to balance like what.
+Dan L. Kessinger, HCI, WRT   27:23Yeah, I see, I see what you&apos;re saying, yeah.
+Anthoney Quebedeaux   27:26Okay.
+Dan L. Kessinger, HCI, WRT   27:30What do you think, Wyatt?And then what would the dropdowns be? Hurricanes would be all of the states from Texas to North Carolina. And then essentially all other matters would be all other states. So you could do like hurricanes, wind and hail,
+Anthoney Quebedeaux   27:40Ohh.
+Wyatt Blome   27:50Fire.
+Dan L. Kessinger, HCI, WRT   27:51Fire and water. I mean, I get where you&apos;re going with it. Also, I don&apos;t know. I don&apos;t want it to confuse a client where they disqualify us. So.
+Anthoney Quebedeaux   28:00Yeah.
+Dan L. Kessinger, HCI, WRT   28:02Thoughts, Wyatt.
+Anthoney Quebedeaux   28:02Mason.
+Wyatt Blome   28:04Yeah, I mean, I think from the attorney&apos;s point of view, broader is better.Like, I don&apos;t think they&apos;re going to be thinking that deeply unless we leave them to think that deeply, which then, like you said, is probably more of a negative than a positive. But for search optimization,
+Dan L. Kessinger, HCI, WRT   28:19Yeah, why don&apos;t we just on the homepage?
+Wyatt Blome   28:23Yeah, and I mean, I think an attorney, like if they were searching for like a word optimization, it&apos;d be more like...Do they do building defect, then do they do wind and hail?It&apos;s more like a practice type than a causation type.
+Dan L. Kessinger, HCI, WRT   28:39Why can&apos;t we just get all those keywords in on the web on the homepage, like hurricane, wind, hail, water, flood, fire?
+Anthoney Quebedeaux   28:47There&apos;s multiple ways to put SEO on there. So like I can put the map up and on the map I can put.20 tags on an image, so you don&apos;t even see the words, but they&apos;re populating for the website.
+Dan L. Kessinger, HCI, WRT   29:00Okay.
+Anthoney Quebedeaux   29:02So I can do that too. So like all the, what Wyatt just said, I can drop that on the tags for the image. And that way you don&apos;t see the words, but if they type in...Not the cause, but the practice, then, or whatever he said.
+Dan L. Kessinger, HCI, WRT   29:18Yeah.
+Anthoney Quebedeaux   29:19We can do that too. And that way it&apos;s like, yeah, we work basically from...
+Dan L. Kessinger, HCI, WRT   29:19Okay. Okay.
+Anthoney Quebedeaux   29:23What?Colorado, New Mexico, all the way over to North Carolina.
+Dan L. Kessinger, HCI, WRT   29:30Yeah, so the states that I&apos;ve given you were Colorado, Texas, Oklahoma, Louisiana, Arkansas, Mississippi, Alabama, Georgia, Florida, Tennessee, and the Carolinas.
+Anthoney Quebedeaux   29:46Okay.Two.
+Dan L. Kessinger, HCI, WRT   29:57So that&apos;s where I want the map to start with, and then we can see how it looks and then determine where we go from there.But not the rainbow map, that&apos;s too colorful.Oh.
+Anthoney Quebedeaux   30:13It&apos;s Pride Month, right?
+Wyatt Blome   30:17Something like that.
+Anthoney Quebedeaux   30:24Yeah.So that&apos;s what I put down here.So we would change the on matters page, the property loss types, wouldn&apos;t be by.what you do because you don&apos;t want people to know that this is the percentages you do, rather that you can do them. So should the website ever have a place that says like you do these things?
+Dan L. Kessinger, HCI, WRT   30:45Yeah, exactly.
+Wyatt Blome   30:47Five percent.
+Dan L. Kessinger, HCI, WRT   30:52Do what?
+Anthoney Quebedeaux   30:52Just so if they, should there ever be somewhere in the website that says like you do hell and wind, you do hurricane, like you do that, that&apos;s like further into the website?
+Wyatt Blome   31:03I mean...Yeah, I think it&apos;s good to have in there, but I think it should be pretty discreet.
+Anthoney Quebedeaux   31:10Okay.
+Wyatt Blome   31:10Like it shouldn&apos;t be that major sticking point, just more like, yeah, we will work on all these things, but construction defect.Isn&apos;t, well, I mean, this is a bad example because you&apos;re just using generic stuff, but construction defect would be more be a practice than probably in with the perils, I think.
+Anthoney Quebedeaux   31:29Okay.The idea with the naming conventions would be, like I said, homepage covers all your summaries. They should be able to see the homepage and then not have to look at the rest. But thinking about an attorney, are they just going to look at one page or are they going to really figure out who you are and what you&apos;re all about? So they&apos;re going to want to go through every single page and see what&apos;s going on.See if you made a mistake somewhere. Because they&apos;re looking at it more like, did you mess up and should I hire this person? Can I trust them?
+Wyatt Blome   32:02Yeah.
+Anthoney Quebedeaux   32:03So that&apos;s, I&apos;m kind of designing everything around like, yes, luxury fill.
+Dan L. Kessinger, HCI, WRT   32:03Hmm.
+Anthoney Quebedeaux   32:09We work with.high-end attorney issues, not just whoever wants to throw money at us.
+Wyatt Blome   32:18Yeah, 100%.
+Dan L. Kessinger, HCI, WRT   32:20Yeah, we want to say boutique without using the word boutique.
+Anthoney Quebedeaux   32:20And...Yeah. Because that&apos;s the, you know, like big companies can have whoever, because it&apos;s like, okay, you want to pay us 2 grand to go do this, cool. Meridian Experts is like,
+Wyatt Blome   32:34We&apos;ll just not do anything, yeah.
+Anthoney Quebedeaux   32:37Yeah, we&apos;re going to pay us 2 grand and we&apos;re going to give you 2 pages and the second page is just going to be a header or a footer with our email.
+Dan L. Kessinger, HCI, WRT   32:37Oh.
+Wyatt Blome   32:45Yeah, title page.
+Anthoney Quebedeaux   32:47Here&apos;s 20 pages.
+Dan L. Kessinger, HCI, WRT   32:51for two grand.
+Anthoney Quebedeaux   32:51One picture per page.
+Dan L. Kessinger, HCI, WRT   32:53Ohh.
+Anthoney Quebedeaux   32:53Um...Ridiculous.My issue is, I&apos;m coming at it from a like working with Jeff Gish for so long. It&apos;s like everything I&apos;m looking at is like...We can&apos;t say certain things.because we can&apos;t prove anything. So Dan has to reel me back a little bit on that. It&apos;s like, yeah, like we&apos;re not an engineering firm.
+Dan L. Kessinger, HCI, WRT   33:16Yeah, I mean, we have no state license. We don&apos;t have to be licensed in any of the states to do. I mean, it&apos;s really the wild west. We can just do and say on this site whatever we want. Nobody&apos;s, there&apos;s no one for someone to call. Do what?
+Anthoney Quebedeaux   33:30What if someone from New Mexico? What if someone from New Mexico wanted to hire you? Would you work there?
+Dan L. Kessinger, HCI, WRT   33:36Sure.
+Anthoney Quebedeaux   33:37Okay. So should that...Should there be somewhere on the website, whether it&apos;s contact us or hidden somewhere in context saying like we can do work wherever?but you need to contact us to figure it out. And then for all front-facing website search, it&apos;s like we work here.
+Wyatt Blome   33:58Yeah, it&apos;s like the map really needs to be like, these are where we primarily work. Not this is a limitation to where we will work. This is, it&apos;s just where we currently work the most. Especially like from
+Dan L. Kessinger, HCI, WRT   34:09Yeah.
+Anthoney Quebedeaux   34:11Should we get rid of the map completely?
+Wyatt Blome   34:13What&apos;s that?
+Anthoney Quebedeaux   34:14Should we get rid of the map completely so there&apos;s not even any mental thought of like, this is the places that they&apos;re working? Because sometimes if you say, we work from Texas to North Carolina, and all the states kind of...
+Wyatt Blome   34:24Yeah, that stops somebody, especially like from the context of SIQ where we may want to work. Like those are all desk assignments, so they could come from anywhere. We don&apos;t care.
+Anthoney Quebedeaux   34:26Yeah.Yeah.
+Wyatt Blome   34:37There&apos;s no travel involved.
+Anthoney Quebedeaux   34:39This is good stuff.
+Dan L. Kessinger, HCI, WRT   34:39Yeah.
+Anthoney Quebedeaux   34:43So now that&apos;s what BSC did, right? They said, here&apos;s...Like we can work in all these states. I think they didn&apos;t have work in Washington.Oregon, and then all the states in the Northeast.just because of the political nightmare of trying to get in there.
+Dan L. Kessinger, HCI, WRT   35:07Yeah.
+Anthoney Quebedeaux   35:09But then everywhere else is like blue. And it&apos;s like Texas was orange because they had a home office there. Florida was orange because they had a home office there. I think Colorado and Louisiana were orange because they had offices there. Basically a principal living, a principal or someone living in those places where they considered it an office.So a job could be done within 24 hours versus the blue states that they labeled it was like, just give us 48 hours to get there. But then the whole map was basically blue except the northeast.
+Dan L. Kessinger, HCI, WRT   35:43Well, I think we could show, okay, here&apos;s an important caveat. We kind of glossed over it, but this is important.So the states that I was telling you about that we just went through on the list are the states that were saying, hey, we&apos;ll do full building consulting assignments. We&apos;ll wider out, travel there, and we can do start to finish.But we have a new product coming out and it&apos;s going to be called Scope IQ or something similar to that. And that&apos;s our desk review product. And that&apos;s all 50 states. It doesn&apos;t matter where that comes from. So maybe the map says, hey, we&apos;re doing, we offer full building consulting here.And then we have this other product for everywhere, because we don&apos;t have to travel there. Does that make sense? I think that we kind of glossed over it, but I think we need to just go ahead, because we know we&apos;re going to be rolling that out here very soon. So we should probably just go ahead and address that now in the website.
+Wyatt Blome   36:43I think conceptually, I actually think we need to get rid of that map at this point. I think it creates noise because like you&apos;re trying to say, well, we&apos;ll do this here, but not this. Well, then maybe you&apos;re thinking even from a desk point, oh, maybe there are limitations because I see this map. When text says otherwise, it just becomes too much to sort through possibly.
+Dan L. Kessinger, HCI, WRT   36:43So maybe the map says, maybe the...Yeah, I was gonna say...
+Wyatt Blome   37:07We can just not take an assignment if somebody calls us from Minnesota. I mean, we would have went up there for Justin, so...
+Dan L. Kessinger, HCI, WRT   37:11If you...Yeah.
+Wyatt Blome   37:16With, I mean, with how we can fly, everything&apos;s...basically a single flight away anyway, so there&apos;s really nowhere we wouldn&apos;t go.
+Dan L. Kessinger, HCI, WRT   37:25Yeah.
+Wyatt Blome   37:26To begin with.Maybe like BFE Missouri, but...For the most part.
+Anthoney Quebedeaux   37:34Yeah, that&apos;s kind of what I was thinking, getting rid of the map completely because...If someone contacts you, it&apos;s like, well, where do you work? But then the idea with the map would be like, where do you work? Right? It&apos;s answering the question without having to figure out. So Dan&apos;s point, if you want to do both.Use the darker blue in all the states that you currently travel in and work on for the caseload. And then like the lighter blue, like here.or all the other states, like, do y&apos;all want to do a desk review from New York?
+Dan L. Kessinger, HCI, WRT   38:06Absolutely, but I don&apos;t want to go there and work, so...
+Anthoney Quebedeaux   38:08Okay.Okay.So my thought is like looking at what both of you are saying. I was kind of thinking what Wyatt was saying is like get rid of the map completely and just say like we, US, but then having a visual map shows people like you can work all these places. Dark blue would be, here&apos;s the places we currently do most of our work. Here&apos;s all the places we.can slash and do work, so contact us. But then if the whole map is light blue and dark blue, then what&apos;s the point of the map? Because you work everywhere.
+Wyatt Blome   38:36Because.Yeah, and we don&apos;t want to turn somebody off like in Indiana that has a high-rise building that they want us to come do a $100,000 project on because it&apos;s not turned blue. Like, do we want to go out there and do a house? No. But would we turn down a big commercial job virtually anywhere? Also, no.
+Dan L. Kessinger, HCI, WRT   38:41Yeah.
+Anthoney Quebedeaux   38:58It&apos;s also, I mean, they like contact you. Hey, I have this small two-story house, like...
+Wyatt Blome   39:03Yeah.
+Anthoney Quebedeaux   39:05Well, what does that mean? Oh, well, this is a $5 million or $10 million home. Okay, well, that changes the story potentially. Is this a mobile home? Like, yeah, we&apos;re not going to come out there and do a mobile home for you.
+Dan L. Kessinger, HCI, WRT   39:15Yeah.You&apos;re not going to Georgia for a mobile home, right? So, but do when I go to California, would we go to California for a $10 million house? Yeah, we would.
+Anthoney Quebedeaux   39:19Yeah.
+Wyatt Blome   39:21Yeah, even though it&apos;s not blue.
+Anthoney Quebedeaux   39:31Dang it.Okay, so...As we went further down, I did put some more mock-up stuff.Of like, what you like, what&apos;s potential? What do we get rid of this? Showing like, this is you did a event here to show almost like a...
+Wyatt Blome   40:01Almost like a box CV.
+Anthoney Quebedeaux   40:03Yeah, like a business CV.
+Dan L. Kessinger, HCI, WRT   40:03Yeah, that we actually have that. We actually have that section on our CVs. So I mean, we could come up with a really, I think, I think we could come up with some really nice stuff for that. What do you think, Wyatt?
+Wyatt Blome   40:14I think we actually want that because even if we group things and said we did this many high-rise apartments and the valuation was $500 million, and then you went to the next section, it&apos;s like, oh, they&apos;re doing a lot of these. Their average loss on these isreally, really big. Like I think that you could, I think you could use that to your advantage. I don&apos;t think you want to use a single building per line, but I think you could like.We could aggregate everything together and make that scene properly.
+Dan L. Kessinger, HCI, WRT   40:45Oh, you&apos;re saying combine them and make the numbers really big?
+Wyatt Blome   40:48Yeah, like, oh, we did 50 of these commercial retail spaces and the total valuation of the losses worth 500 million. Well, by the time you look at that whole table, you&apos;re like, oh, they did $10 billion worth of whatever, that&apos;s it made up. But
+Dan L. Kessinger, HCI, WRT   41:03Yeah, so you can get rid of get rid of matter and we want to put a dollar amount on there.
+Anthoney Quebedeaux   41:11Okay.
+Wyatt Blome   41:11Yeah.
+Anthoney Quebedeaux   41:13So.
+Wyatt Blome   41:13And it might quantify how many jobs or something.
+Anthoney Quebedeaux   41:17So we do matter, so on the matters page on the section.
+Wyatt Blome   41:24And we may just, we may want to move. That actually would probably fit better like under practice. So we, I don&apos;t know what else we have on Matter that we&apos;re keeping, but this could easily be moved to a different page.
+Anthoney Quebedeaux   41:25Select the record.Go.
+Dan L. Kessinger, HCI, WRT   41:40Is that all that&apos;s on Matters?
+Anthoney Quebedeaux   41:43Yeah.
+Dan L. Kessinger, HCI, WRT   41:44Because we could, we could combine that into either, we could either come.
+Anthoney Quebedeaux   41:48Because would you put it in practice or credentials?Right now, credentials is set up for...Because we don&apos;t want to be, we don&apos;t want Meridian Experts to be Dan to business and Dan&apos;s the only one. We want it to be.Meridian does this. So I have the credentials set up kind of in this way, where it&apos;s like, here&apos;s all the stuff, so maybe move that to credentials. Here&apos;s all the stuff we&apos;ve worked on.
+Wyatt Blome   42:10Right.
+Dan L. Kessinger, HCI, WRT   42:17Yeah.Do you like experience or credentials better?
+Wyatt Blome   42:25Credentials.
+Dan L. Kessinger, HCI, WRT   42:28Yeah, matters can go away and then it can fall under credentials. And then what we need to decide why it is, do we group that by, go back to matters.Do we group that by?The wait, was there something else above that table on matters?Is that it?We got rid of the, we got rid of the.
+Wyatt Blome   43:00Sam.
+Dan L. Kessinger, HCI, WRT   43:01The map, didn&apos;t we?OK, so, so we get rid of, we got rid of the map anyways, and then I&apos;ll go down to the next section.
+Wyatt Blome   43:03Yeah.
+Anthoney Quebedeaux   43:08So we are getting rid of the map.
+Wyatt Blome   43:10Yeah, I think so.
+Dan L. Kessinger, HCI, WRT   43:11Yeah.
+Anthoney Quebedeaux   43:12Do you want to do a six thinking hats analysis on it?
+Dan L. Kessinger, HCI, WRT   43:17Ha ha ha!
+Anthoney Quebedeaux   43:18Up to you.
+Dan L. Kessinger, HCI, WRT   43:19Ohh.
+Anthoney Quebedeaux   43:21for decision making.Hear me.
+Wyatt Blome   43:24I don&apos;t think we want it.
+Anthoney Quebedeaux   43:27No map.
+Wyatt Blome   43:28Concretely.
+Dan L. Kessinger, HCI, WRT   43:31Property loss types could theoretically go somewhere else, and then the...
+Wyatt Blome   43:35I think, yeah.I can go to practice.
+Dan L. Kessinger, HCI, WRT   43:39Yeah.And then on that we get rid of matter and then we either group it by peril and we say like hail and add up all of our hail losses or we come up with the building types, commercial, residential, flat, pitch, whatever it may be. We&apos;ll sort it either by peril or building and scope and then put a dollar amount on it.
+Wyatt Blome   43:41And this goes to prevention.Agreed. I think it needs to be about building and scope because then somebody can see, oh, they did a higher, they&apos;ve done this many high-rise contents, we can use them, probably done these big shopping centers, we can use them. They don&apos;t really care what, why you were hired to do those so much as.
+Dan L. Kessinger, HCI, WRT   44:07Bo.OK.
+Wyatt Blome   44:22You can&apos;t do that.
+Dan L. Kessinger, HCI, WRT   44:24Yeah.
+Wyatt Blome   44:25I have a loss, they can do handle this.
+Anthoney Quebedeaux   44:28Are you looking at?Jobs that y&apos;all have reviewed or actually worked on, or can we put all of it in there?
+Wyatt Blome   44:40I think if we touched it, we would put it in there.
+Anthoney Quebedeaux   44:43Okay.
+Dan L. Kessinger, HCI, WRT   44:43Yeah, if it has a job number, we&apos;re going to count it. Like I&apos;m going to go through our archive and total number of jobs, like even the stuff that, like even where Meridian was hired to do Finney inspections for BSC back from Hurricane Sally, I&apos;m going to add all that. So our number of assignments will be pretty high.
+Anthoney Quebedeaux   44:59Yeah.Cool. That&apos;s what I was, that&apos;s what I wanted to go to. Like that idea of like, if you touched it at all, yeah. Any job that you went to is gonna have a job number, right? Like, did you ever...
+Dan L. Kessinger, HCI, WRT   45:05Yeah.It.If it has a job number, if it has a job number and it doesn&apos;t say cancelled, it&apos;s going to be included in this.
+Anthoney Quebedeaux   45:19Okay.What about places that don&apos;t have job numbers or that have been canceled?
+Dan L. Kessinger, HCI, WRT   45:23In fact, and...
+Anthoney Quebedeaux   45:28Did you just not even, did you not do any analysis on it at all?
+Dan L. Kessinger, HCI, WRT   45:35I mean, yeah, if it was canceled, we didn&apos;t.
+Anthoney Quebedeaux   45:37Okay. I just don&apos;t know, like, if you started looking into something for two days and they&apos;re like, oh, we&apos;re going to cancel it because it went through.deposition and then they just decided to settle after you already did two days of work on it. But I guess at that point it would have a job number.I just don&apos;t know what your, I don&apos;t know what your, what is your flow look like? Tell me that. Let&apos;s.
+Dan L. Kessinger, HCI, WRT   45:54Well, if I send in it, how about this? If I send a, if I send an invoice for it, we&apos;re going to counter it as a job. So.
+Anthoney Quebedeaux   46:02Okay, what does your flow look like? Explain that so then the transcript can...Go through like what it looks like from the outsider looking in.
+Dan L. Kessinger, HCI, WRT   46:11What do you mean? So like when we receive a new assignment?
+Anthoney Quebedeaux   46:14Attorney calls you and says, hey, I heard I need to hire you for this job. What do I need to do? What do you tell them?
+Dan L. Kessinger, HCI, WRT   46:19Mmh.Yeah, so they would typically send an email or a phone. So the engagement starts with a phone call or an email. Hey, somebody in my firm recommended that I use you. I&apos;ve got this house fire and we&apos;re having trouble settling it.And can you have you worked on something similar? Can you take this on? We would accept that and then schedule an onsite inspection. Then after the onsite inspection, we would prepare an estimate, if asked, and then a written report and then submit that to the client.
+Wyatt Blome   46:41Yeah.
+Anthoney Quebedeaux   47:02And then, after that...If they approve.
+Dan L. Kessinger, HCI, WRT   47:08Well, that that was from beginning to end.
+Anthoney Quebedeaux   47:10Oh, that is assuming they are approving. Okay.
+Dan L. Kessinger, HCI, WRT   47:13Yeah, that&apos;s yeah, exactly. And then after that, potentially, if the client is not able to settle it, then there&apos;s going to be a deposition and I&apos;ll be deposed and then potentially a trial and then where I would testify at trial. So that&apos;s
+Anthoney Quebedeaux   47:29Why should they use you over someone else?
+Dan L. Kessinger, HCI, WRT   47:35Great question.
+Wyatt Blome   47:37Yeah.
+Dan L. Kessinger, HCI, WRT   47:38Because, because we are Meridian experts.
+Anthoney Quebedeaux   47:43That&apos;s the worst answer ever.
+Wyatt Blome   47:47But...
+Anthoney Quebedeaux   47:47AI will fix it, but...
+Dan L. Kessinger, HCI, WRT   47:47Ah.Yeah, so...
+Wyatt Blome   47:51Yeah.
+Anthoney Quebedeaux   47:51Generally speaking, what do people, I guess, let&apos;s inverse the questioning.What do other people do that you don&apos;t like the way they do it?
+Dan L. Kessinger, HCI, WRT   48:02So, one of the things that I really pride myself on and Meridian experts is that we have actual construction experience. A lot of building consultants in this industry are really consultants in name only. They wereMaybe they work for a mitigation company or they were an adjuster, and really they&apos;re just being promoted to their highest level of incompetency. And they&apos;re like, oh, well, I was an adjuster. I didn&apos;t write an estimate. Now I&apos;m going to become a building consultant. And that&apos;s not really the role. The building consultant should have an intimate knowledge of construction.Specifically, I have residential and commercial experience from ground up construction. And so that&apos;s one of the things that I pride that both Wyatt and I have construction experience. And then, you know, when it comes tothe analysis. We&apos;ve, over the years, we&apos;ve figured out a system in which we do a deep dive analysis on the numbers. We can really dial in an estimate that a client gives to us and say, hey, look, you know, the adjustment is this.the other side, the public adjuster or the contractor is asking for this. These are the things that are maybe your adjuster got a little, they&apos;re wrong, or these are just the things that they&apos;re asking too much for. And then we put together really nice deliverables. That&apos;s a good word.for attorneys is deliverables. What are your deliverables? Well, we can compare these estimates. We can tell you, you know, where our estimate high, low. And then we also provide really detailed reports that our clients can use in the mediation.Process.
+Wyatt Blome   50:00Yeah, I think, I think that the biggest, I mean, I think the ground, the construction experience is a big deal, but I think the selling point to the attorneys is the analysis and reporting. Most building consultants go out, evaluate, write an estimate, they&apos;re done. No analysis of the other side.
+Dan L. Kessinger, HCI, WRT   50:01Six.
+Wyatt Blome   50:20no lengthy report, where I would say the least important thing we do most of the time is write an estimate. The most important thing we do is analyze where you were, where we&apos;re at now.where and what you&apos;re up against from the other side and give you...extreme detail into why you have differences and opinions and backup to support why you should or shouldn&apos;t negotiate in those areas, why they estimated these, why that&apos;s just a duplicative copy and paste scope.whatever it is, it&apos;s that deep dive analysis that we do that I think is 100% different than anybody else we&apos;ve seen in the building consulting line. So we can really take an engineer&apos;s findings and get it to a place where you understand it conceptually from a scope perspective.but also from a cost perspective. I don&apos;t think that&apos;s what anybody else offers.
+Dan L. Kessinger, HCI, WRT   51:23The other thing is, is I want to be able to sell this and AI can help us with, I want to say this without saying it, but there&apos;s a term trusted advisor. I don&apos;t want to actually say that. I think it&apos;s cliche-ish, but what we&apos;ve got enough experience in doing this is that an attorney could have a file where they&apos;ve got a large demand from the other side.In most of the things that we look at, the demands are not in the hundreds of thousands of dollars. They&apos;re in the multi-millions of dollars. For example, we have an assignment right now in Florida, in Orlando, where the adjustment is below deductible, meaning that our client, the carrier, wrote no check. They paid no money.Yet the other side, they have a public adjuster that&apos;s written an estimate that&apos;s north of $16 million. And so what we, the other thing that we can sell is the fact that you could send us all your documents, do a data dump, and we can look at it and then say, hey, look, here&apos;s our strong points, here&apos;s our weak points.These are the other experts that we need to bring in. And so I really, not all building consultants at this level are selling that or even offering that. So we need to figure out a way to say that without using the term trusted advisor. But hey, you can give us your documents if you&apos;re struggling with the case or you need direction on other experts.we can review it and then say, hey, look, we need to bring in an engineer. We need to bring in a specialist that does this. We need to bring in a roofing consultant and all those other things. And so I really want to sell that. And that may not be something that we&apos;ve even talked about.
+Wyatt Blome   53:07Yeah. Well, a lot of times that, like, there&apos;s the thing Dan skipped over in the process is after that first call, there&apos;s usually a deep document review between there and any site inspection. So before we ever step foot on site, we know what the issue as far as a litigation or what&apos;s being claimed. We know what that is.why they&apos;re claiming it. So a lot of these, if they&apos;re just a fenestration issue, we know there&apos;s not a big roofing dispute. We don&apos;t have to spend a lot of time on the roof or this is a fenney issue. They have a lot of exteriors, but it&apos;s all tied to the fenestration. So that kind of ties back into the construction methodology, butAll that say, we can limit other experts scope or who they&apos;re needing to hire at times and save them money that way, not that saving, I don&apos;t like the term saving money, but we can expedite that process and streamline it down to exactly what
+Dan L. Kessinger, HCI, WRT   53:59Oh.
+Wyatt Blome   54:08we&apos;re looking at. And that&apos;s kind of the idea of SIQ is you can get a lot of that just from that desk review without ever stepping foot on site. The onsite inspection is more a confirmation or just the fuel to actually rebut whatIs being claimed, so.
+Dan L. Kessinger, HCI, WRT   54:31Yeah, we really need to sell. I&apos;ve never thought about it this way, but we really need to sell that we&apos;re the first call. You have a loss, and you&apos;re going to call Meridian Experts first, and we&apos;ll help walk through the process with all the other, we&apos;ll engage our network that we&apos;ve built over the years and helpHelp in this process.
+Wyatt Blome   54:53Well, and from the from the mediation lens to, I think, and this is exactly what you&apos;re saying, but.
+Dan L. Kessinger, HCI, WRT   54:54So.
+Wyatt Blome   55:01Building consultants, I already said that they&apos;re notorious for, they go out, they look at something, they write an estimate, they want to be done. That&apos;s adjustment work, essentially. We have no interest in just taking these small assignments, seeing how fast we can do them, and throwing out whatever product may or may not stick to the wall.That&apos;s the kind of stuff that we&apos;re coming in to fix. So not that we won&apos;t do front end work, but the entire business is predicated on being an attorney driven litigation mediation type company.
+Anthoney Quebedeaux   55:41OK, a couple of things here.Instead of saying you&apos;re saving money, we could say something along the lines of...My coaching example works really well here. People come to me who have already spent $50,000 on stuff over the years.they can come to me and pay a $5,000 fee to start working with me. That $5,000 fee to start fitness stuff is really expensive. It&apos;s high end. But it&apos;s like you either pay now or you pay later. So looking at the concept of you&apos;re not paying usWe&apos;re charging more for our services, but you&apos;re also not paying more because now you don&apos;t have to accumulate 30 different experts. You&apos;re getting kind of 1 expert in the realm. So either pay now or pay later mindset without saying that, like Dan saying. The website on the trusted advisor portion, I&apos;m trying to create the website. So you&apos;re creating thatTrusted advisor, but a better word for it, whatever that may be.
+Dan L. Kessinger, HCI, WRT   56:41Yeah, without saying it, yeah.
+Anthoney Quebedeaux   56:43without saying it, and like the website&apos;s doing that for us. It&apos;s carrying the, look, this website has so much stuff, like we trust them and we don&apos;t even know them yet.
+Wyatt Blome   56:52Yeah, well, and I think even like to the point that we could come up with like a one page flyer pamphlet type deal that not not for the website, but that kind of reinforces that like a mailer. I think, I mean, that&apos;s something I think that you could also utilize.
+Anthoney Quebedeaux   56:52Um...
+Dan L. Kessinger, HCI, WRT   57:07Yeah.
+Wyatt Blome   57:12They go hand in hand.
+Anthoney Quebedeaux   57:17What is an example of a bad report? So you&apos;ve said a lot of what y&apos;all do.What do other reports do that would make, that y&apos;all wouldn&apos;t consider doing because it&apos;s bad? So that way we can define, because AI works better whenever we&apos;re doing this. Here&apos;s what we do do, right? Here&apos;s the things that are good. But if we don&apos;t give it the things we don&apos;t do or that are bad, it&apos;s just going to say, oh, we&apos;re going to do all this stuff then.So now let&apos;s look at, like, what is a bad report or what is a bad outcome?
+Wyatt Blome   57:43Yeah, so...Well, yeah, so from a building consultant, the typical expectation is that you may not get a report at all. You just get an estimate. Hey, it&apos;s this much money. And an estimate is great, but an Xactimate estimate can be thousands of line items. Well, an attorney doesn&apos;t even know how to read it.
+Dan L. Kessinger, HCI, WRT   57:57Yeah.
+Wyatt Blome   58:09actually even know what they&apos;re paying. So that&apos;s when the analysis comes in and says, hey.categorically, locationally, whatever, this is what your money&apos;s actually going to. So that estimate, it doesn&apos;t really provide context. It just gives you a way to give the client money, essentially.
+Anthoney Quebedeaux   58:32Is that like with the SIQ or SQI, whatever y&apos;all called it, where you&apos;re basically taking complex data numbers stuff and saying, yeah, here&apos;s 500 pages of stuff. Let&apos;s organize it for you so it makes sense.
+Wyatt Blome   58:32If they...Yeah, here you can look at it in 15 minutes and understand we have a difference between all of our differences in roofing. 70% of our differences is in fenestrations, whatever. And here&apos;s exactly what&apos;s driving it. Is it a scope issue where they didn&apos;t, we just disagree on what&apos;s damaged or is this a pricing issue?
+Dan L. Kessinger, HCI, WRT   58:51Yeah.
+Wyatt Blome   59:09You know, you have it priced at $10 a square foot, they have it at 1000 type of thing. Yeah, that&apos;s the concept of SIQ. And that&apos;s ultimately where every expert&apos;s engagement actually starts as well, is that same analysis. The difference is you go out and back it up.in an expert engagement or a full engagement. You go out and back it up with site data and you can offer conclusions because you&apos;ve seen it, you&apos;ve validated, you&apos;ve done all these things. Where SIQ is really just, we can&apos;t offer you opinions necessarily because we haven&apos;t seen it.But I can still conceptually tell you this is your issue. These are the facts without offering an opinion. So.
+Dan L. Kessinger, HCI, WRT   59:56So clarification, Anthoney, we&apos;re talking about two different work products, not so we don&apos;t confuse the transcript. Meridian experts is what we&apos;ve historically done is a full building consulting assignment would be on-site inspection, reporting the analysis.What we&apos;ve come up with is right now we named it SIQ, Scope IQ. We will likely change that name. But what that is, is it&apos;s a product that is not limited by geography, meaning we could roll this product out,because we&apos;re not offering to do an on-site inspection. We&apos;re offering for you to send us all your documents. We&apos;ll review them and then produce a two to five page report, no estimate, but a two to five page report with numbers, graphs, charts, an analysis and some commentary on, hey, these are the deltas. This is wherewhere you&apos;re potentially, you know, exposed, and then this is where the other side is asking for too much. And so that product is available in all states. We&apos;re working on, it&apos;s not currently available, but it&apos;s a desk review only. It&apos;s not the full consulting assignment. That&apos;s where.I think we&apos;ve decided to eliminate the map, but that&apos;s where I was saying, hey, look, those 13, 14 states, that&apos;s where I&apos;m willing to travel and do a full building consulting assignment.So does that distinction make sense between the two product types and what we offer?
+Anthoney Quebedeaux   1:01:33Yes.
+Dan L. Kessinger, HCI, WRT   1:01:34Okay.
+Anthoney Quebedeaux   1:01:36On just a touch on the.It&apos;s like you, right?
+Dan L. Kessinger, HCI, WRT   1:01:41Yes.
+Anthoney Quebedeaux   1:01:42Um...How does an attorney review things? Is that going through my head as you&apos;re telling me that?I don&apos;t know if you&apos;ve thought about this with...how SIQ works, but generally speaking, and if it doesn&apos;t, cool.Going through educational processes, you have to look at studies. The structure of a study is normally like title, big picture of like, what are we looking at, abstract, a short summary of the whole thing, which is kind of what SIQ is doing. Like here&apos;s, you can access all the data. Here&apos;s all your like 50 pages of stuff that don&apos;t make sense that we organized for you.The abstract would say, like, here&apos;s...all the findings that we found, here&apos;s the conclusion, here&apos;s the methods, like all in one thing, summarized. And then you have like, you&apos;re introducing what&apos;s going on. You have the methods, the results, the discussion, limitations and conclusions. I don&apos;t know if you&apos;re taking that same approach, like the scientific method of writing a scholarly article approach to SIQ.But thinking about what the website&apos;s doing, I&apos;m kind of looking at it in that way, like...The title would be...practice or process or credentials, right? Since we&apos;re getting rid of matters. The abstract would be like the first thing you see up here. This section here would be like, what is this page about without me having to go further into it? Like this section. Of course, it&apos;s not the same, but because the process kind of works on this.
+Wyatt Blome   1:03:02JJ.
+Anthoney Quebedeaux   1:03:15hierarchical abstract&apos;s not telling me everything, but it&apos;s telling me what&apos;s going on, then we can start going down deeper. So then we have...Here&apos;s the methods we&apos;re using.And then it kind of goes, you know, we can&apos;t get into like what&apos;s going on until we start doing the work. So then whenever you get the result, the work, it&apos;s like, here&apos;s your result of the work that we&apos;re doing for you. Here&apos;s the limitations of what other people are saying is going on for the deposition or whatever the litigated.point you get to, and then here&apos;s our conclusion.Do you all, is there anything like that where it would make sense on, I&apos;m just thinking, if I go to law school and I have to read case studies and I have to read scholarly articles associated withhow to learn law, I&apos;m going to do it through the standard scholarly article structure.So if we can apply that, will that help the website be better or not? Would that help SIQ say like, here&apos;s page one, here&apos;s all of our findings on one page.Here&apos;s all of our, here&apos;s SIQ making it greater. And then here&apos;s all the data if you want to comb through it yourself. So now you have, here&apos;s 500 pages of data based on all these windows and all these things and all the stuff. If you want to go through the raw data, here it is, but you don&apos;t have to because we&apos;re tidying it up into a nice little package for you. And before that,Here&apos;s like an overview. Basically, I&apos;m looking at it like how Jeff said. We had to do a job in Corpus Christi, and it was a jury case. And he had to use non-Jeff level talking. He had to bring his vocabulary down to explain it to the layman in Corpus Christi, which isGoing to be different.And not saying that you&apos;re doing that, but here&apos;s a simplified version. Here&apos;s more, like here&apos;s what you&apos;re about to read. Psychological triggering, hey, cool. I know what I&apos;m about to read in this 250 words or 500 words. Now we get into the nitty gritty details of here&apos;s the 15 minutes of research that they did.that I&apos;m understanding now, and then if I need to correspond that with actual data, here it is. Thoughts, ideas, opinions.
+Wyatt Blome   1:05:34Yeah, I mean, I think I think that&apos;s really actually the basic. I mean, that&apos;s not how I would have framed what SIQ is, but that&apos;s essentially the build. We&apos;re going to share that with you because it&apos;s going to be client-facing. It&apos;s going to be an application that&apos;s client-facing. So we&apos;re going to share that with you to kind ofpretty up a little bit at some point anyway, I think. But yeah, I mean, I think that&apos;s the exact train of thought in how that&apos;s built. And it&apos;s very close to being done, but the entire purpose, and back to like why us, is that we can get things into layman&apos;s terms that you understand.So you have this complex matter, you have these giant estimates that you&apos;re not really sure what they say, no report, whatever, the engineer&apos;s report is written at a level that you&apos;re kind of like, what do I do with this? I think that&apos;s where the value and being the advisor reallyComes from is getting everything into that.very easy to understand bucket, but also still being able to support it.
+Dan L. Kessinger, HCI, WRT   1:06:58Yup.
+Anthoney Quebedeaux   1:07:01Okay, so...Getting rid of matter, keeping practice and process, changing what practice is about, changing what process is about, removing matters, making credentials, business appropriate.The contact form, oh, that&apos;s calling.How complex or simple do you want the?This to be.Do you want whenever they, I know we talked about this, Dan, do you want whenever they click the engage an expert or I think I might change that. I kind of like engage an expert, but then I feel like it&apos;s a little off sounding. Maybe contact. I don&apos;t know. I&apos;m going to go through some different vocabulary changes on some of this stuff.based on what you all said. Do you want whenever they click here, it takes them to the Calendly link directly? So this page doesn&apos;t even pop up?
+Dan L. Kessinger, HCI, WRT   1:08:07Well, what do you think? Well, that&apos;s that&apos;s...That&apos;s taking them to do what?
+Anthoney Quebedeaux   1:08:13You froze. Sorry, you froze, Dan.You froze.
+Dan L. Kessinger, HCI, WRT   1:08:18Oh, that&apos;s taking them when we, if they were to go straight to Calendly, then that&apos;s straight to either a virtual meeting or a phone call.
+Anthoney Quebedeaux   1:08:30Okay.
+Dan L. Kessinger, HCI, WRT   1:08:34I don&apos;t know.
+Anthoney Quebedeaux   1:08:34Okay, so then we do, you want to submit a case, engage an expert.They don&apos;t want to do the call yet, but we need to collect their information somehow. Click here. Once that submits, then it redirects them to, if you&apos;re interested in jumping on a call, now you can.
+Dan L. Kessinger, HCI, WRT   1:08:50Yeah, I mean, I think you then then there&apos;s a link to like, hey, schedule a schedule a virtual meeting or call and then that would take them to Calendly.
+Anthoney Quebedeaux   1:08:59Okay, so keep this page here. Keep it simple. We don&apos;t want to overcrowd this page. That&apos;s why I kept it like, there&apos;s not a lot going on here. Like I&apos;d probably remove this stuff.
+Dan L. Kessinger, HCI, WRT   1:09:03Yeah.Yeah.Yeah, I&apos;ll see a lot of times where it&apos;s like a schedule a virtual meeting and folks are using a Calendly or something similar to do that. And then it just takes you to that other page that we had worked on previously.
+Anthoney Quebedeaux   1:09:30I have a couple questions for her. Is there anything else on the website that you want to discuss or talk about? Anything you like, don&apos;t like?
+Dan L. Kessinger, HCI, WRT   1:09:37I&apos;d say get those changes made. And then I think this transcript will be good. We talked about a lot about our processes and how we really want to sell ourselves. So I don&apos;t know that we&apos;ve had like a conversation to this level about Meridian. So let&apos;s get those changes made and we&apos;ll probably look at it just one.one more time and like Wyatt and I then can do a deep dive. Hey, change this word, change this, move this around and one final pass and we can be done with it.
+Anthoney Quebedeaux   1:10:08going to ask you a couple questions and just to round off the transcript. Have you heard of, I can&apos;t think of his name, Simon Sinek&apos;s Golden Rule, Golden Circle?
+Dan L. Kessinger, HCI, WRT   1:10:12OK.No.
+Anthoney Quebedeaux   1:10:24Ohh.Okay.His idea is...Think about a three circles. A lot of people do the what and how you do something.And they never addressed the why.So...Oh.One.Apple had a...Go away. Apple had a really good...Why, which then invokes more of that?subconscious like psychological state of why they should trust you, right? Going back to is a website proving why we should trust.Meridian experts.And their statement was, let me load it.It&apos;s not going to. Basically, you&apos;ve said a lot about what you do and how you&apos;re doing it, but is there a why? So like some of the questions that I would be curious of is like, why does Meridian experts do what they&apos;re doing beyond just making money?Yeah, it&apos;s hard because it&apos;s like, I&apos;m not.
+Dan L. Kessinger, HCI, WRT   1:12:03The first thing that comes to mind is not necessarily like social justice, but we are the good guys. And so many times the insurance companies are villainized. And can an insurance company be the bad guy? Because they had an adjuster, they sent an adjuster out there that was supposed to be an independent third party and he was an idiot.Yeah, and so I guess indirectly, that&apos;s the insurance company&apos;s fault and they should make it right. But there is a concerted effort, almost a mafia-like type organization out there, that&apos;s a combination of contractors,public adjusters and attorneys that are out there to profit from insurance companies and from exaggerating claims and losses. And what Wyatt and I have seen is that there are a lot of dummies in this industry that work for insurance companies. And soFor lack of a better term, the insurance companies need some good guys, some folks that actually know what they&apos;re doing. And you know, we are independent. And if we say, hey, look, your adjuster wrote a low estimate and you owe more money, that&apos;s what we&apos;re going to say. And if the insurance company doesn&apos;t want to hire us again, because we say that, that&apos;s fine. But for the most part,
+Wyatt Blome   1:13:16Yeah.
+Dan L. Kessinger, HCI, WRT   1:13:27It&apos;s a little bit of that, but it&apos;s mostly, hey, they&apos;re asking for 16 million. We&apos;ve assessed this at zero. Everything that they&apos;re talking about is absolute garbage. And let us tell you why. And so, I don&apos;t know, that&apos;s kind of the first thing that comes to mind is that, like I said, there&apos;s this concerted effort.from a group of bad players to profit from insurance. And we&apos;re trying to just level the playing field and be qualified on our side.
+Anthoney Quebedeaux   1:14:00Nice. The Apple thing is...this, so Simon Sinek, the reason for why, stated a bad version would be like if Apple said, we make great computers, they&apos;re beautifully designed, simple to use, and user friendly. Do you want to buy one? That would be a bad version.
+Dan L. Kessinger, HCI, WRT   1:14:18Yeah.
+Anthoney Quebedeaux   1:14:20message. What Apple, what Steve Jobs said was, everything we do, we believe in challenging the status quo. We believe in thinking differently.
+Dan L. Kessinger, HCI, WRT   1:14:20Yeah.
+Anthoney Quebedeaux   1:14:33The way we challenge the status quo is by making our product beautifully ChatGPT cutting stuff off.
+Dan L. Kessinger, HCI, WRT   1:14:45The.
+Anthoney Quebedeaux   1:14:46ChatGPT isn&apos;t designed to provide this type of content.
+Wyatt Blome   1:14:50Yeah.
+Anthoney Quebedeaux   1:14:50Yes.
+Wyatt Blome   1:14:51Useful.
+Anthoney Quebedeaux   1:14:52The.Okay, there you go.They&apos;re basically saying like, and we also happen to design a good computer. So it&apos;s like, everyone else is saying like, we design like feature first and they&apos;re saying why first. So people use Apple products because of the why, not because of the features. And I was curious about like y&apos;all&apos;s why, because if we can put that into the website.Like you&apos;re saying, like your why is to provide truth without saying like we provide truth in the website. We&apos;re providing truth. And if you don&apos;t like our answer, like it&apos;s still the truth. Whereas other people are like, I just want to collect the money.
+Dan L. Kessinger, HCI, WRT   1:15:27What do you think, Wyatt? Would you answer that the same way? What&apos;s our why outside of just because we make money doing it? What&apos;s the why?
+Wyatt Blome   1:15:29Yeah.The part that I would have added to that is we we have this framed right now, like we we work for.Insurance company attorneys, that which is largely true, but...It&apos;s not all true. We&apos;re more than willing to work on the policyholder side. We care about being right more than we care about.
+Dan L. Kessinger, HCI, WRT   1:16:00what the side is. I think that needs to be sold.
+Wyatt Blome   1:16:01Yeah, we don&apos;t care. We&apos;ll be on either side. But before we take a case, we, it&apos;s ingrained that whatever it is, it is, we don&apos;t care. If it&apos;s more, so be it. If it&apos;s less, we&apos;re going to tell you. And if you don&apos;t want us to publish it, that&apos;s fine. But it just lands where it.Lance, but we&apos;re going to try, in our minds, we&apos;re going to be on the right side.
+Dan L. Kessinger, HCI, WRT   1:16:22Yeah.Anthoney, great point. This is a really big deal to sell on the website is that we consider ourselves truly independent, a true independent third party. Whereas there are guys out there that are, that they do, they&apos;re hired by insurance companies only, or they&apos;re hired byplaintiff attorneys only. We work for both sides. Now, do we primarily work for insurance companies? Yes. But have we worked for plaintiffs and written estimates where insurance companies had to pay large awards? Yes. We had one recently where our client prevailed. We wrote a, they paid $500,000 and we wrote a 12 plus $1,000,000 estimate. And the insurance company had to go up from $500,000.to 12 million plus penalties and interest. It cost them like $18 million. So do we just work for one side? No. Do we primarily get hired by an insurance company? Yes. But we want to sell that. He said it, and I say this a lot of times, we just want to be on the right side. And so that meansa lot of times defending an insurance company, but on a rare occasion, it means working for a homeowner where a builder did a bad job with construction defects, or working for a building owner where the insurance company did a poor job, the building consultant.and the adjuster for the insurance company did a very poor job. And they said, yeah, this is worth 500,000. We said it&apos;s worth 12 million. And the insurance company actually agreed and ended up paying our client that much. And so that&apos;s a really good point is thatWe do work for both sides and we evaluate each case and we think that we work on the right side.
+Wyatt Blome   1:18:14The.Well, and what we haven&apos;t said yet, Dan just told you that story about the client ended up getting like 16 million. What we didn&apos;t say in that is the public adjuster that was involved pre-lawsuit was at 20 million to begin with. We walked him far down and still had a highly favorable outcome.being in the middle. And we think that that&apos;s where most things fall. We rarely think this guy got it right, that guy got it wrong. We usually think it&apos;s somewhere in the middle, regardless of what side we&apos;re on. So we&apos;re usually walking insurance companies up and we&apos;re usually walking, if we&apos;re on the policyholder side, we&apos;re usually walking what they&apos;re askingor back down to a reasonable number at the same time.
+Dan L. Kessinger, HCI, WRT   1:19:01Yeah.
+Anthoney Quebedeaux   1:19:02O.Would you all consider that that would be?Generally speaking, for the website, right?The point of frustration with the world of BC of why you would create the company.
+Wyatt Blome   1:19:21Yeah.
+Anthoney Quebedeaux   1:19:21All the statements all stated.
+Wyatt Blome   1:19:23Yeah, to resolve.Fantasy numbers, essentially, to get it right.
+Anthoney Quebedeaux   1:19:33What do?
+Dan L. Kessinger, HCI, WRT   1:19:33Yeah, and there&apos;s known firms, there&apos;s known firms that are out there to write high estimates for plaintiff&apos;s attorneys, and there&apos;s known firms that are out there to write low estimates for the defendant, for the insurance companies. We don&apos;t place ourselves in either one of those. We&apos;d like to say that, hey, we&apos;re just here to get it right.
+Anthoney Quebedeaux   1:19:55It&apos;s all good stuff. What does...What do attorneys?I guess, looking at it from 2 lenses, what do you see that attorneys?Need to know what they don&apos;t normally get, because most...PCs suck. And is there any points where attorneys say, oh, I&apos;ve never seen someone do this. So like highlighting the things of like the attorneys struggle with X thing and Meridian&apos;s solving that thing.
+Dan L. Kessinger, HCI, WRT   1:20:23Yeah, so.Yeah, so the attorneys perception, they have an ill-conceived idea of building consultants because I said it earlier, I pride myself in construction experience and not being an adjuster. So for many building consultants, they&apos;re adjusters that have just been promoted to this new title that makes more money.
+Wyatt Blome   1:20:40Okay.
+Dan L. Kessinger, HCI, WRT   1:20:48So what they&apos;re used to is they&apos;ll get an Xactimate estimate and maybe it&apos;s got one or two paragraphs just talking about, hey, this estimate and this price list and what it used. So in our client&apos;s mind, a lot of times, if they haven&apos;t worked with us before, when we actually send over a 20 or 30 or 40 page report, they&apos;re like,Oh my goodness, you know, they really, their expectation was, I&apos;m going to get this estimate. And then we kind of open their eyes to, oh, well, this is really what the discipline of building consulting is, is it&apos;s not just an estimate, but it&apos;s more so the report explaining
+Wyatt Blome   1:21:19Yeah.
+Dan L. Kessinger, HCI, WRT   1:21:25And in an estimate that accompanies it, but it&apos;s really explaining, hey, these are the numbers that you&apos;re facing. These are the numbers that your adjuster gave you. And typically, neither one of them is right. It&apos;s somewhere in the middle. And that&apos;s what we&apos;re here to do is to bridge that gap.
+Anthoney Quebedeaux   1:21:43SC.
+Dan L. Kessinger, HCI, WRT   1:21:46of these differing opinions, but from a truly independent lens.
+Wyatt Blome   1:21:52Well, and I, I think that...
+Anthoney Quebedeaux   1:21:52So, you&apos;re trying to redefine what a building consultant is, basically?
+Dan L. Kessinger, HCI, WRT   1:21:57Yeah.
+Wyatt Blome   1:21:58Yeah, I mean, to us, building consulting is more about analysis of what we&apos;re up against. And then within the litigation lens, it&apos;s analyzing what we&apos;re up against, verifying or disproving it, and then being able to show youthrough that analysis, well, this is what they want. This is why that&apos;s wrong. Where instead, the typical building consultant says, this is what I see. That&apos;s all you get. There&apos;s a big difference.
+Dan L. Kessinger, HCI, WRT   1:22:27Yeah, here&apos;s my estimate in two paragraphs. We&apos;re going to call that a report, and then when I send a client a report or we get on a Teams meeting and I show them what we&apos;ve got, and they&apos;re like, oh, wow. Like, okay, this is really, like a lot of times they don&apos;t hire building consultants because they think they&apos;re just getting an estimate.they don&apos;t realize the value of getting the analysis and all the numbers. And I know that Jeff and Jared may disagree, but when something gets to the litigated lane in the road, I&apos;ve seen attorneys throw away engineers reports and just ask me to give them numbers.irregardless of what the engineer said. So maybe the engineer is more important in the...in the adjustment lane in the road, but in the litigation lane in the road, Wyatt and I think we&apos;re way more valuable than the engineers because at that point, if an attorney is going to a mediation, it doesn&apos;t matter that Jeff Gish had said that the windows were damaged from the storm. It matters what Dan and Wyatt say.it&apos;s actually going to cost and then how can I help me come up with numbers that I can settle this at a mediation. Does that distinction make sense?
+Anthoney Quebedeaux   1:23:44Yes, the first thought that comes in my head, which, because I don&apos;t know the system well enough, is looking at it through a scientific lens is like, that&apos;s my default. Whenever you say disprove or prove something, my warnings go off in my head and thinking like we can&apos;t prove or disprove anything.we can only reject or fail to reject a hypothesis based on the data we have. So inside the website, that makes me think, do we want to say something like disproving or proving rather based on the data we have, here is the output that we&apos;re able to provide.
+Dan L. Kessinger, HCI, WRT   1:24:23I don&apos;t know who used the, did I, did I say approve or just? Okay, okay.
+Wyatt Blome   1:24:25I used it, but that it&apos;s getting to the same conclusion, but.
+Anthoney Quebedeaux   1:24:26Mm.He said disprove. I&apos;m not saying that you&apos;re saying that. I&apos;m just saying like my, anytime I hear those words, like that&apos;s just my background, like red flags going off. And like, I want to clarify that for transcription purposes.
+Dan L. Kessinger, HCI, WRT   1:24:31Yeah.
+Wyatt Blome   1:24:31Yeah.Yeah, and ultimately, I think what...The big difference is, like, we approach these jobs almost backwards of what most VCs are, or even an engineer. Most people are going out and saying, well, this is my opinion, this is all that matters. And that&apos;s all that they offer. We&apos;re telling you, this is really what you&apos;re up against.We&apos;ll offer our opinions on it, but if you want to negotiate, you at least know what you&apos;re negotiating against. It&apos;s not just 10 million to 1 million. It&apos;s no, we have a $500,000 issue here. We have a million here. Let&apos;s negotiate.strategically through this at that point. Irregardless, all an expert can do is offer an opinion, like you&apos;re saying. And at some point...They just disagree. Well, there&apos;s not a negotiation and a total disagreement. A number gives you something to work from. That&apos;s really the basis of where we&apos;re coming from.
+Dan L. Kessinger, HCI, WRT   1:25:38Yeah, and that&apos;s where the litigated lane in the road is like, it doesn&apos;t really matter that some engineer wrote this report. That doesn&apos;t help settle something at mediation. Maybe it helps a trial, but 97% of cases settle in mediation. What do you need to settle a case? You need numbers.And so we were helping those client, those attorneys settle those cases by giving them good numbers. Hey, these are the areas to watch out for. These are the numbers. These are the areas where you could win. Don&apos;t give on this. But man, that&apos;s a gray area. I would probably give on that. And then that gives them the ability to write a report.go to their client, say, hey, client, I need $2,000,000 to settle this at mediation. And if we don&apos;t sell it, settle it at a mediation, it&apos;s going to cost, you know, $1,000,000 to try it or whatever it may be. And so really, really the goal for the building consultant in the lane that we operate in and litigation is to give them numbersto give them the information they need to settle at mediation, because 97% of cases are going to settle in that lane in the road. And then maybe we get even back out, like engineers and building consultants are important when something goes to trial, but that&apos;s only 3% of insurance lawsuits that are filed.
+Wyatt Blome   1:26:39And.You.
+Dan L. Kessinger, HCI, WRT   1:26:58So it&apos;s a very, very low number. So we really want to sell this consulting and this analysis and this numbers process to help settle in mediation and to move on.
+Anthoney Quebedeaux   1:27:12So...In lack of better terms, we could say that you&apos;re trying to make it as black and white as possible, so then the attorney can use their vocabulary jujitsu to make it as gray as they want.
+Dan L. Kessinger, HCI, WRT   1:27:27Sure, or or.
+Anthoney Quebedeaux   1:27:28Like, we&apos;re giving you factual information, depending on if you&apos;re a good attorney, because an attorney can talk to someone in a way to manipulate kind of what&apos;s going on in the direction that people are thinking. That&apos;s the whole purpose. You&apos;re not doing the attorney&apos;s job. You&apos;re giving them the data to do it. So you&apos;re like, here&apos;s as much black and white, like,
+Dan L. Kessinger, HCI, WRT   1:27:39Yeah.
+Anthoney Quebedeaux   1:27:47There is some gray here, but we&apos;re trying to give you as much, OK.
+Dan L. Kessinger, HCI, WRT   1:27:49Yeah.We&apos;re giving them the bullets. They&apos;re firing the gun. So they have to take what we&apos;ve given them and they have to do their job at mediation. And their job is to write a report that&apos;s compelling enough to their client that they get their client, typically the insurance company, to say, yes, we&apos;ll give you
+Anthoney Quebedeaux   1:27:53cool.
+Dan L. Kessinger, HCI, WRT   1:28:09authority. So they specifically write reports and ask for authority. Then they go to a mediation and they&apos;ve got, they know a number at mediation of what they can settle for. And so the ones that do a good job, they get those things settled. So.The goal, the goal in our world is not to go to trial. The goal is to, is for the other side, for plaintiffs to keep pressing the insurance company until they get some amount of money. And A plaintiff&apos;s attorney does a good job when they get their client more money. A defendant, the carrier&apos;s attorney does a
+Anthoney Quebedeaux   1:28:26Matthew.
+Dan L. Kessinger, HCI, WRT   1:28:46a good job when they limit their liability, but they&apos;re not, the insurance company hardly ever gets out paying zero. But instead of being faced with a $10 million lawsuit, if they can get it settled at mediation for one to $2 million, even though they don&apos;t own it, owe it, that&apos;s a win. But who are they utilizing to get that number?It&apos;s Meridian. They&apos;re not utilizing BSE for that. Doesn&apos;t matter what BSE says at that point. It&apos;s A negotiation.
+Anthoney Quebedeaux   1:29:13Okay.Is there a specific kind of attorney?
+Dan L. Kessinger, HCI, WRT   1:29:20If...
+Anthoney Quebedeaux   1:29:21or case that Meridian is suited for over someone else.
+Dan L. Kessinger, HCI, WRT   1:29:24It.It&apos;s well, our specialty would be we want to work for attorneys that are doing first party property insurance. That&apos;s specifically like whenever I built my scraper, I&apos;m looking for an attorney that has in their bio first party property.
+Anthoney Quebedeaux   1:29:43Is there any other information you can provide that you search for in that scraper? Like any keywords that you were thinking of?
+Dan L. Kessinger, HCI, WRT   1:29:51Yes, I can go through that.
+Anthoney Quebedeaux   1:29:53Okay, if you can send me the link of that, that&apos;d be cool. Or if you want to say it right now, either one.
+Dan L. Kessinger, HCI, WRT   1:29:57I don&apos;t recall. It&apos;s been, that was one of the first AI projects I worked on and I don&apos;t remember. It was, it&apos;s.
+Anthoney Quebedeaux   1:29:58Okay.That was before Fable Five.
+Dan L. Kessinger, HCI, WRT   1:30:05Yeah, yeah. I mean, I don&apos;t even know. I was even, I was blowing money on perplexity, so.
+Wyatt Blome   1:30:06Help or help us or funny.
+Dan L. Kessinger, HCI, WRT   1:30:14In fact, that project cost more than my monthly subscriptions to Collod for the last three months, but I didn&apos;t know any better. So, and then Jordan, he told me, like, just use perplexity.
+Anthoney Quebedeaux   1:30:28Um...Whenever an attorney visits the website, what should their...A leaf B after 10 seconds of seeing it.
+Dan L. Kessinger, HCI, WRT   1:30:41What should their what be?
+Anthoney Quebedeaux   1:30:43What should their belief or their emotional state be whenever they see your website for the 1st 10 seconds? Like judging, how should they judge?What should their judgment on Meridian experts be whenever they see the website?
+Dan L. Kessinger, HCI, WRT   1:30:56My thoughts, if I had three words that come to mind, professional, quality,Trustworthy.
+Wyatt Blome   1:31:06Yeah, confidence.
+Dan L. Kessinger, HCI, WRT   1:31:07Wyatt?
+Wyatt Blome   1:31:09Well, I was going to say two of the same, but I would just add confidence in there. Like I would, I want them to have confidence because of those things.I want them to see that we have depth that other BCs don&apos;t have right away.
+Dan L. Kessinger, HCI, WRT   1:31:22Yeah, these guys aren&apos;t, these guys aren&apos;t hacks.
+Wyatt Blome   1:31:26The.
+Anthoney Quebedeaux   1:31:32I think that&apos;s all I have.
+Wyatt Blome   1:31:34That&apos;s good. Bo.
+Dan L. Kessinger, HCI, WRT   1:31:34There&apos;s some good stuff in this transcript.
+Anthoney Quebedeaux   1:31:38Is there anything? Is there any questions?that I should be asking you all that I haven&apos;t asked you all.
+Dan L. Kessinger, HCI, WRT   1:31:47And I really think that, I don&apos;t think that we&apos;ve talked about it to this level of detail of like, hey, why would you hire Meridian? What do we do that&apos;s different? What is our...
+Wyatt Blome   1:31:57What do you actually do?
+Dan L. Kessinger, HCI, WRT   1:31:58Yeah, what is our methodology? But what more so is like, what is our mentality? Like, why hire us? Because we think we&apos;re your, without saying it, your trusted advisor, we&apos;re going to give you a real number. And we&apos;re not going to make up a number because you want us to be high. We&apos;re not going to make up a number because you want us to be low, hire somebody else.
+Anthoney Quebedeaux   1:32:22So who should not hire you? What attorneys shouldn&apos;t hire you? Going back to the AI saying like, don&apos;t do this.
+Dan L. Kessinger, HCI, WRT   1:32:26Up.Yeah, so like the plaintiff&apos;s attorneys that are looking for someone just to give them a ridiculous number of made up conditions, like on a 50 year old building where the building consultant goes out there or the public adjuster and every condition they possibly see from the last 50 years because it hasn&apos;t been maintained and they want them to write them an estimate for
+Wyatt Blome   1:32:31But.
+Dan L. Kessinger, HCI, WRT   1:32:53everything and it ends up being $16 million. We&apos;re just not, we&apos;re not gonna do that.we get back in the, we get back in the van and drive off. So, and, and likewise, the insurance carrier who says, oh, well, can you, can you change your number? Can you do this? Can you estimate this another way? Can you not do this or do that?
+Wyatt Blome   1:33:02From the, yeah.
+Dan L. Kessinger, HCI, WRT   1:33:17That&apos;s fine. I&apos;m not gonna work for you. This is what we saw. This is what we&apos;re gonna estimate for. I mean, we truly do try to be.like the voice of reason. Like we try to be reasonable with these things. And if we can give an insured the benefit of the doubt and say, all right, we can&apos;t really prove that this wasn&apos;t a condition before the event, hey, we&apos;ll give you this. But other things that we can tell and like, man, there&apos;sThere&apos;s stain upon stain upon stain like that was that&apos;s been happening for the last 50 years. We&apos;re not gonna give you that.
+Anthoney Quebedeaux   1:33:52Cool.Anything else you want to add? Anything else to the website? You don&apos;t do want? Want or don&apos;t want?
+Dan L. Kessinger, HCI, WRT   1:34:00No, get us a, take all this and then talk about the changes, get us like a 90% and then why not can finish it up next week. Because we&apos;re wanting to, we&apos;re getting really close on launching this product, kind of a predecessor to SIQ.
+Wyatt Blome   1:34:01Now, that.
+Anthoney Quebedeaux   1:34:01Yeah.OK.
+Dan L. Kessinger, HCI, WRT   1:34:20And so I need the website in the next couple weeks to be able to start marketing to select firms. And really, you know, if I&apos;m a client, the first thing I&apos;m going to do is like, I&apos;m going to go check out their website and it can&apos;t say coming soon. So.
+Anthoney Quebedeaux   1:34:34Yeah, can you send me the SIQ stuff and any other?All the stuff we&apos;ve talked about, if there&apos;s any other things that you&apos;ve done through research, drop it into a markdown file and send it to me just to give AI more reference, because I&apos;m putting all of this into a...hierarchy of how the website should be designed based on what you have already done and then on this transcript. So it&apos;s going to scrape through all of this information and create.Basically, like, here&apos;s the script of how everything&apos;s worded, how everything works. Here&apos;s how Dan is saying stuff. Here&apos;s how Wyatt is saying stuff. Now let&apos;s, and then here&apos;s how Anthoney&apos;s thinking of the design feature of it. And then we&apos;re going to bring all that together so that way it&apos;s like, whenever we&apos;re designing the website, it&apos;s utilizing all of those key factors.
+Dan L. Kessinger, HCI, WRT   1:35:21Yeah, okay.
+Anthoney Quebedeaux   1:35:23Okay.Cool. Anything else or is that it?
+Dan L. Kessinger, HCI, WRT   1:35:28Good stuff. No, I&apos;m anxious to see it and see also see what Fable can do this week before we lose it.
+Anthoney Quebedeaux   1:35:29And.Yeah, what?What was I going to ask you?
+Dan L. Kessinger, HCI, WRT   1:35:45I think next week, too.
+Anthoney Quebedeaux   1:35:45Based on the way the website&apos;s designed right now, if it was to not change at all, would you be happy with it? Or do you think, like, is it 90% there? Do you think it&apos;s 50% there? Like, we&apos;re just simply thinking about it. What you saw with the website, are you like, it&apos;s almost there? Like, that&apos;s a good direction.Or do we need to start changing stuff?
+Wyatt Blome   1:36:06I would say you&apos;re 90% on the right path. I think eliminating that page helps. I think that that&apos;s one thing we&apos;re always trying to do is eliminate noise and just like deal in brass tacks. That&apos;s kind of how we try to write our reports. That&apos;s how we try toGetting up, that&apos;s getting numbers down to simplicity. So I think just a little bit more streamlined maybe. But as far as the look and the design, it looks great.
+Anthoney Quebedeaux   1:36:40All right, cool. All right, that&apos;s all I have. We&apos;ll end up in this hour and 43 minute conversation.
+Dan L. Kessinger, HCI, WRT   1:36:49Awesome.
+Anthoney Quebedeaux   1:36:49They&apos;ll talk way too much.
+Wyatt Blome   1:36:52You asked a lot of questions.
+Dan L. Kessinger, HCI, WRT   1:36:52You asked too many questions, you wouldn&apos;t stop.
+Anthoney Quebedeaux   1:36:56That is a problem.
+Wyatt Blome   1:36:57He said Dan&apos;s answer was the worst answer ever when he said, &apos;cause we&apos;re Meridian.
+Dan L. Kessinger, HCI, WRT   1:36:58Mm.Yeah.
+Anthoney Quebedeaux   1:37:04But...
+Wyatt Blome   1:37:07Fairpoint.
+Anthoney Quebedeaux   1:37:07Yeah.
+Dan L. Kessinger, HCI, WRT   1:37:08That was the third grade answer. You just answered the question with the question.
+Anthoney Quebedeaux   1:37:09And there.
+Anthoney Quebedeaux stopped transcription
